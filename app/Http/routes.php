@@ -48,6 +48,9 @@ Route::get('/result/{page}', 'TestController@getResult');
 Route::get('/no-result', 'TestController@noResult');
 
 
+
+
+
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
 
