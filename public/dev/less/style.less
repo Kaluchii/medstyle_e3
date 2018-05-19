@@ -1,23 +1,23 @@
-*{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: @defaultFont;
-  &:focus, &:hover{
-    outline: none
-  }
-}
+/*plugins*/
+@import 'plugins/slick/slick';
+@import 'plugins/slick/slick-theme';
 
-/*core folder*/
-@import 'core/variable';
-@import 'core/mixins';
-@import 'core/text';
-
-/*other folder*/
-@import 'other/magnific-popup';
-@import 'other/popup';
-@import 'other/recaptcha';
+@import 'css/simplegrid';
+@import 'css/fonts';
 
 /*desctop folder*/
+@import 'desktop/style';
+
+@import 'css/smoothbox';
+@import 'css/popup';
+@import 'css/magnific-popup';
+@import 'css/jquery-ui';
+
 @import 'desktop/common';
+@import 'desktop/trowelling-block';
+@import 'desktop/technologies';
+@import 'desktop/services';
+@import 'desktop/video';
+@import 'desktop/new-video';
+@import 'desktop/slider';
+@import 'desktop/tile';

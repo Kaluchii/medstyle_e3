@@ -1,0 +1,49 @@
+@media screen and (max-width: 840px) {
+  .trowelling-block{
+    &__list{
+      &--technologies{
+        &:nth-child(2){
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .trowelling-block{
+    &__list{
+      &--services{
+        &:nth-child(2){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .trowelling-block{
+    flex-direction: column;
+    align-items: center;
+
+    &__list{
+      &--technologies{
+        &:nth-child(2){
+          margin-right: 0;
+        }
+
+        &:nth-child(3){
+          margin-top: 20px;
+        }
+      }
+
+      &--services{
+        &:nth-child(2){
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

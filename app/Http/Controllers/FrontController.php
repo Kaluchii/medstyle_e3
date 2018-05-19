@@ -17,10 +17,6 @@ class FrontController extends Controller
     private $extract;
     public function __construct(ExtractAgent $ext){
         $this->extract = $ext;
-        $scripts = $this->extract->getBlock('scripts');
-        view()->share([
-            'scripts' => $scripts,
-        ]);
     }
 
 

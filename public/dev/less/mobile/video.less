@@ -1,0 +1,123 @@
+@media screen and (max-width: 1170px) {
+  .video-block{
+    &__title{
+    }
+
+    &__text{
+    }
+
+    &__list{
+    }
+
+    &__item{
+      &:nth-child(even){
+        margin: 45px 0 0 35px;
+      }
+
+      &:nth-child(odd){
+        margin: 45px 35px 0 0;
+      }
+
+      &:hover{
+        .play{
+        }
+
+        .video-block__video-name{
+        }
+      }
+    }
+
+    &__video-wrap{
+    }
+
+    &__video{
+    }
+
+    &__name-wrap{
+    }
+
+    &__video-name{
+    }
+  }
+
+  .video_player {
+    .play {
+
+      &::after{
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .video-block__title {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .video-block{
+    &__item{
+      &:nth-child(even){
+        margin: 45px 0 0 15px;
+      }
+
+      &:nth-child(odd){
+        margin: 45px 15px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .video-block{
+    &__list{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item{
+      &:nth-child(n){
+        margin: 45px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px){
+  .video-block__title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .video-block{
+    &__title {
+      font-size: 44px;
+    }
+  }
+
+  .video-item{
+    &__name-wrap{
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .video-item{
+    &__video-wrap{
+      &--main{
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px){
+  .video-item{
+    &__video-wrap{
+      height: 135px;
+    }
+  }
+}

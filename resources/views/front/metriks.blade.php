@@ -1,2 +1,0 @@
-@section('metriks')
-@endsection
