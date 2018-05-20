@@ -1,17 +1,15 @@
 @extends('front.layout')
 @include('front.menu')
-@include('front.meta', ['meta_description' => $polez->seo_description_field, 'meta_keywords' => $polez->seo_keywords_field])
-    <?php $title = $polez->page_title_field ?>
-
+@include('front.meta', ['title' => $helpful->seo_title, 'description' => $helpful->seo_description, 'keywords' => $helpful->seo_keywords])
 @section('content')
     <div class="grid margin">
         <div class="col-1-1 head">
             <div class="head-section">
                 <div class="head-img-wrap">
-                    <img src="/images/{{$polez->background_image->primary_link}}" alt="" class="head-img">
+                    <img src="{{$helpful->img->link}}?{{$helpful->img->cache_index}}" alt="{{$item->img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
-                    <h1 class="product-title @if($polez->is_white_field) white @endif">{{$polez->name_field}}</h1>
+                    <h1 class="product-title">{{$helpful->tech_name}}</h1>
 
                     <div class="social-buttons">
                         <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
@@ -25,27 +23,27 @@
         <div class="grid content">
             <div class="col-1-2">
                 <div class="first-paragraph">
-                    {!! $polez->descr_1_field !!}
+                    {!! $helpful->descr_1 !!}
                 </div>
             </div>
             <div class="col-1-2">
-                @if($polez->right_side_1_field != '')
+                @if($helpful->right_side_1 != '')
                 <div class="interest">
-                    {!! $polez->right_side_1_field !!}
+                    {!! $helpful->right_side_1 !!}
                 </div>
                 @endif
             </div>
         </div>
-        @if( $polez->polez_pokazania_group->count() > 0 )
+        @if( $helpful->hel_pokazania_group->count() > 0 )
             <div class="grid content con-4">
                 <div class="col-1-2">
                     <div class="black-block after-proc">
                         <p class="title">
-                            После процедуры
+                            Показания
                         </p>
                         <ul class="list">
-                            @foreach($polez->polez_pokazania_group as $item)
-                                <li class="item">{{$item->p_name_field}}</li>
+                            @foreach($helpful->hel_pokazania_group as $item)
+                                <li class="item">{{$item->p_name}}</li>
                             @endforeach
                         </ul>
                     </div>
@@ -54,7 +52,7 @@
                 </div>
             </div>
         @endif
-        @if( $polez->polez_protivopokazania_group->count() > 0 )
+        @if( $helpful->hel_protivopokazania_group->count() > 0 )
             <div class="grid content con-4">
                 <div class="col-1-2">
                     <div class="black-block protiv">
@@ -62,8 +60,8 @@
                             Противапоказания
                         </p>
                         <ul class="list">
-                            @foreach($polez->polez_protivopokazania_group as $item)
-                                <li class="item">{{$item->p_name_field}}</li>
+                            @foreach($helpful->hel_protivopokazania_group as $item)
+                                <li class="item">{{$item->p_name}}</li>
                             @endforeach
                         </ul>
                     </div>
@@ -75,9 +73,9 @@
         <div class="grid content con-4">
             <div class="col-1-2">
                 <span class="head-reiting">Пожалуйста, оцените наш материал:</span>
-                <div class="raiting-star" data-entity="{{$polez->group_name_field}}" data-id="{{$polez->id_field}}">
+                <div class="raiting-star" data-entity="{{$helpful->name}}" data-id="{{$helpful->id}}">
                     <ul class="star-rating-default" style="width:125px">
-                        <li class="current-rating" style="width:{{$raiting['proc']}}%;">{{$raiting['sred']}}</li>
+                        <li class="current-rating" style="width:{{$rating['percent']}}%;">{{$rating['middle']}}</li>
                         <li class="star">
                             <a class="star-link" data-raiting="1" title="1/5" style="width:20%;z-index:6"
                                rel="nofollow">1</a>
@@ -100,9 +98,9 @@
                         </li>
                     </ul>
                     <span class="totalvotes" itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
-                    <meta itemprop="ratingValue" content="{{$raiting['sred']}}">Текущий рейтинг — {{$raiting['sred']}}
+                    <meta itemprop="ratingValue" content="{{$rating['middle']}}">Текущий рейтинг — {{$rating['middle']}}
                         <meta itemprop="bestRating" content="5">
-                    <meta itemprop="ratingCount" content="{{$raiting['count']}}"> ({{$raiting['count']}} человек)
+                    <meta itemprop="ratingCount" content="{{$rating['count']}}"> ({{$rating['count']}} человек)
                     </span>
                 </div>
             </div>

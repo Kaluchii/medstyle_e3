@@ -8,7 +8,7 @@
         <div class="box-body">
             <div class="form-group">
                 <label>Копирайт</label>
-                <textarea class="form-control text"
+                <textarea class="form-control text" data-reg="true"
                           data-name="copyright"
                           data-type="string"
                           data-block="all_site"

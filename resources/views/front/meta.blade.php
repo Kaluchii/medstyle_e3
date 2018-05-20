@@ -1,4 +1,5 @@
 @section('meta')
-    <meta name="description" content="{{$meta_description}}" />
-    <meta name="keywords" content="{{$meta_keywords}}" />
+    <title>{{$title}}</title>
+    <meta name="description" content="{{$description}}" />
+    <meta name="keywords" content="{{$keywords}}" />
 @endsection

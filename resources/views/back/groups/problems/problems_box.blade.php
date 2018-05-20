@@ -22,8 +22,8 @@
             <label>Вид ссылки в адресной строке</label>
             <input class="form-control string"
                    type="text" placeholder=""
-                   value="{{$item->link_field}}"
-                   data-name="link"
+                   value="{{$item->slug_field}}"
+                   data-name="slug"
                    data-type="string"
                    data-block="problems"
                    data-id="{{$item->id_field}}">

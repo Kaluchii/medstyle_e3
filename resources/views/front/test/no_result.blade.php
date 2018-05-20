@@ -2,7 +2,7 @@
 @include('front.menu')
 @section('content')
     @include('front.test.meta')
-    <?php $title = 'Результаты теста | MEDSTYLE Алматы' ?>
+    @php $title = 'Результаты теста | MEDSTYLE Алматы' @endphp
     <article class="content" data-page="recomend">
         <div class="grid grid-pad">
             <div class="col-1-1">
@@ -14,7 +14,7 @@
             </div>
             <div class="col-1-2 acp-after">
                 <div class="img-test">
-                    <img src="/images/photo.png" alt="">
+                    <img src="/img/photo.png" alt="">
                 </div>
             </div>
             <div class="col-1-2 left ret-1">

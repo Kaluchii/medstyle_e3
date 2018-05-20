@@ -1,22 +1,21 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.meta', ['meta_description' => $service->seo_description_field, 'meta_keywords' => $service->seo_keywords_field])
-    <?php $title = $service->page_title_field ?>
-    @if($service->slug_field == 'диспорт')
+@include('front.meta', ['title' => $service->seo_title, 'description' => $service->seo_description, 'keywords' => $service->seo_keywords])
+    @if($service->slug == 'диспорт')
         @include('front.page_close')
     @endif
-    <div class="grid @if($service->discount_comment_field == '') margin @endif">
+    <div class="grid @if($service->discount_in == '') margin @endif">
         <div class="col-1-1 head">
             <div class="head-section">
                 <div class="head-img-wrap">
-                    @if($service->over_background_image->primary_link != '')
-                        <img src="/images/{{$service->over_background_image->primary_link}}" alt="" class="head-img over">
+                    @if($service->img->link != '')
+                        <img src="{{$service->img->link}}?{{$service->img->cache_index}}" alt="{{$service->img->alt}}" class="head-img over">
                     @endif
-                    <img src="/images/{{$service->background_image->primary_link}}" alt="" class="head-img">
+                    <img src="{{$service->bg_img->link}}?{{$service->bg_img->cache_index}}" alt="{{$service->bg_img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
-                    <h1 class="product-title @if($service->is_white_field) white  @endif">{{$service->name_field}}</h1>
+                    <h1 class="product-title">{{$service->serv_name}}</h1>
                     <div class="all-product">
                         <a href="#serv-popup" class="popup-changer all_serv">Все услуги <span class="treangle">▼</span></a>
                     </div>
@@ -27,10 +26,10 @@
             </div>
         </div>
     </div>
-    @if($service->discount_comment_field != '')
+    @if($service->discount_in != '')
         <div class="discount-block">
             <div class="discount-text">
-                <p>{{$service->discount_comment_field}}</p>
+                <p>{{$service->discount_in}}</p>
             </div>
         </div>
     @endif
@@ -39,7 +38,7 @@
         <div class="grid content">
             <div class="col-1-2">
                 <div class="first-paragraph">
-                    {!! $service->descr_1_field !!}
+                    {!! $service->descr_1 !!}
                 </div>
             </div>
             <div class="col-1-2 fr-1 service-right-col">
@@ -58,50 +57,31 @@
         <div class="grid content con-2">
             <div class="col-1-2">
                 <div class="overall">
-                    {!! $service->descr_2_field !!}
+                    {!! $service->descr_2 !!}
                 </div>
             </div>
             <div class="col-1-2 fr-2  service-right-col">
-                @if( $service->right_side_1_field != '')
+                @if( $service->right_side_1 != '')
                     <div class="interest">
-                        {!! $service->right_side_1_field !!}
+                        {!! $service->right_side_1 !!}
                     </div>
                 @endif
             </div>
         </div>
-        {{--
-        <div class="grid content con-3">
-            <div class="col-1-1"><img src="/images/{{$service->big_pict_image->primary_link}}" alt="Большое фото" class="big-image"></div>
-        </div>
-        --}}
         <div class="grid content con-2">
             <div class="col-1-2">
                 <div class="overall">
-                    {!! $service->descr_3_field !!}
+                    {!! $service->descr_3 !!}
                 </div>
             </div>
-            @if($service->right_side_2_field != '')
+            @if($service->right_side_2 != '')
                 <div class="col-1-2 service-right-col">
                     <div class="interest">
-                        {!! $service->right_side_2_field !!}
+                        {!! $service->right_side_2 !!}
                     </div>
-{{--                    {!! $service->right_side_3_field !!}--}}
                 </div>
             @endif
         </div>
-        @if($service->serv_slider_group->count() > 0 )
-            <div class="grid content con-4">
-                <div class="col-1-2">
-                    <ul class="service_slider">
-                        @foreach($service->serv_slider_group as $item)
-                            <li><img src="/images/{{$item->slide_image->primary_link}}" alt=""></li>
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="col-1-2">
-                </div>
-            </div>
-        @endif
         <div class="grid content con-4">
             <div class="col-1-2 int"></div>
         </div>
@@ -114,7 +94,7 @@
                         </p>
                         <ul class="list">
                             @foreach($service->serv_pokazania_group as $item)
-                                <li class="item">{{$item->p_name_field}}</li>
+                                <li class="item">{{$item->p_name}}</li>
                             @endforeach
                         </ul>
                     </div>
@@ -132,7 +112,7 @@
                         </p>
                         <ul class="list">
                             @foreach($service->serv_after_proc_group as $item)
-                                <li class="item">{{$item->p_name_field}}</li>
+                                <li class="item">{{$item->p_name}}</li>
                             @endforeach
                         </ul>
                     </div>
@@ -150,7 +130,7 @@
                         </p>
                         <ul class="list">
                             @foreach($service->serv_protivopokazania_group as $item)
-                                <li class="item">{{$item->p_name_field}}</li>
+                                <li class="item">{{$item->p_name}}</li>
                             @endforeach
                         </ul>
                     </div>
@@ -162,9 +142,9 @@
         <div class="grid content con-4">
             <div class="col-1-2">
                 <span class="head-reiting">Пожалуйста, оцените наш материал:</span>
-                <div class="raiting-star" data-entity="{{$service->group_name_field}}" data-id="{{$service->id_field}}">
+                <div class="raiting-star" data-entity="{{$service->name}}" data-id="{{$service->id}}">
                     <ul class="star-rating-default" style="width:125px">
-                        <li class="current-rating" style="width:{{$raiting['proc']}}%;">{{$raiting['sred']}}</li>
+                        <li class="current-rating" style="width:{{$rating['percent']}}%;">{{$rating['middle']}}</li>
                         <li class="star">
                             <a class="star-link" data-raiting="1" title="1/5" style="width:20%;z-index:6"
                                rel="nofollow">1</a>
@@ -187,9 +167,9 @@
                         </li>
                     </ul>
                     <span class="totalvotes" itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
-                    <meta itemprop="ratingValue" content="{{$raiting['sred']}}">Текущий рейтинг — {{$raiting['sred']}}
+                    <meta itemprop="ratingValue" content="{{$rating['middle']}}">Текущий рейтинг — {{$rating['middle']}}
                     <meta itemprop="bestRating" content="5">
-                    <meta itemprop="ratingCount" content="{{$raiting['count']}}"> ({{$raiting['count']}} человек)
+                    <meta itemprop="ratingCount" content="{{$rating['count']}}"> ({{$rating['count']}} человек)
                     </span>
                 </div>
             </div>
@@ -197,46 +177,12 @@
         </article>
         <div class="phone-and-consult">
             <p class="text-to-phone">Задайте вопрос или запишитесь на процедуру</p>
-            <p class="phone-number">+7 (727) 311-31-81</p>
+            <p class="phone-number">{{$all_site->phone}}</p>
         </div>
         <article class="content">
-        @if($service->serv_effect_up_group->count() > 0 )
-            {{--<div class="grid content proc-upgrade">--}}
-                {{--<div class="col-1-1">--}}
-                    {{--<div class="proc-upgrade">--}}
-                        {{--<div class="our-block">--}}
-                            {{--<p class="title">Эффект процедуры усиливают</p>--}}
-                            {{--<p class="text">Применяя процедуры комплексно, вы усилите эффект и продолжительность каждой--}}
-                                {{--из них</p>--}}
-                            {{--<div class="procedures">--}}
-                                <?php $j = 0?>
-                                {{--@foreach($service->serv_effect_up_group as $item)--}}
-                                    <?php $j++?>
-                                    {{--@if ($j == 1)--}}
-                                        {{--<div class="left-col">--}}
-                                            {{--@elseif( $j == 4)--}}
-                                        {{--</div>--}}
-                                        {{--<div class="right-col">--}}
-                                            {{--@endif--}}
-                                            {{--<div class="proc">--}}
-                                                {{--<a href="{{$item->link_field}}"--}}
-                                                   {{--class="proc">{{$item->serv_name_field}}</a>--}}
-                                            {{--</div>--}}
-                                            {{--@endforeach--}}
-                                        {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="all-product bottom">--}}
-                            {{--<a href="#serv-popup" class="popup-changer gray all_serv">Все услуги <span class="treangle">▼</span></a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-
-                {{--</div>--}}
-            {{--</div>--}}
-        @endif
-        @include('front.specials')
-        @yield('special')
-    </article>
+            @include('front.specials')
+            @yield('special')
+        </article>
     @include('front.popups.all_services')
     @yield('all_services')
 @endsection

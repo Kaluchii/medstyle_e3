@@ -1,9 +1,9 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-    <?php $title = $quest->page_title_field ?>
+    @php $title = $quest->page_title_field @endphp
     <article class="content" data-page="questions">
-        <div class="content-head questions-page" style="background: url(/images/static_questions_background_0_primary.jpg) no-repeat center top/ cover;">
+        <div class="content-head questions-page" style="background: url(/img/clinics.jpg) no-repeat center top/ cover;">
             <h1 class="content-head-title">{{$quest->title_field}}</h1>
             <div class="all-product category">
                 <a  class="popup-changer category" id="category">Все категории <span class="treangle">▼</span></a>
@@ -33,7 +33,7 @@
                                         <div class="specialist">
                                             @foreach($spec as $spec_item)
                                                 @if($spec_item->id_field  == $item->spec_id_field)
-                                                    <img src="/images/{{$spec_item->spec_photo_image->icon_link}}" alt="{{$spec_item->spec_photo_image->alt}}" class="photo">
+                                                    <img src="{{$spec_item->spec_photo_image->icon_link}}" alt="{{$spec_item->spec_photo_image->alt}}" class="photo">
                                                 @endif
                                             @endforeach
                                         </div>
@@ -66,11 +66,11 @@
                 <div class="ask-me" id="question-page">
                     <div class="row">
                         <p class="row-name">Имя</p>
-                        <input class="input popup_field" type="text" data-field-type="string" data-field-name="name">
+                        <input class="input popup_field" type="text" data-field-type="string" data-field-name="user_name">
                     </div>
                     <div class="row">
                         <p class="row-name">Почта</p>
-                        <input class="input popup_field" type="text" data-field-type="string" data-field-name="mail">
+                        <input class="input popup_field" type="text" data-field-type="string" data-field-name="email">
                     </div>
                     <div class="row">
                         <p class="row-name">Вопрос</p>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="row">
                         <span class="prompt">Заполните все поля</span>
-                        <a class="send-ask" data-type-name="questions" data-popup-id="question-page">Оправить</a>
+                        <a class="send-ask" data-type-name="question" data-popup-id="question-page">Оправить</a>
 
                     </div>
                 </div>

@@ -20,12 +20,13 @@ use ReCaptcha\ReCaptcha;
 class MailController extends Controller
 {
     private $feedback;
-    public function __construct( FeedbackAgent $feedback){
+    public function __construct( FeedbackAgent $feedback ){
 
         $this->feedback = $feedback;
         // Объявляем все шаблоны писем для форм
 
-        $this->feedback->setBodyTemplate('sponsor_form', 'back/mail/sponsor_form_mail');
+        $this->feedback->setBodyTemplate('consultation', 'back/mail/consultation_mail');
+        $this->feedback->setBodyTemplate('question', 'back/mail/question_mail');
 
     }
 

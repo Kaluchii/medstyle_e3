@@ -2,8 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title> <?php echo $title ?> </title>
-
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="cmsmagazine" content="8595dcaa5a4b96a7f4b87b77b13368cb" />
     <link rel="shortcut icon" href="/img/fav.png" type="image/png">

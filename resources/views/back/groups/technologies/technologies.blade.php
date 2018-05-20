@@ -186,7 +186,7 @@
                     </div>
                 </div>
 
-                <div class="box box-info group-item-widget" data-block="tech_after_proc">
+                {{--<div class="box box-info group-item-widget" data-block="tech_after_proc">
                     <div class="box-header with-border">
                         <h3 class="box-title"> После процедуры </h3>
                         <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
@@ -198,9 +198,9 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div>--}}
 
-                <div class="box box-info group-item-widget" data-block="tech_effect_up">
+                {{--<div class="box box-info group-item-widget" data-block="tech_effect_up">
                     <div class="box-header with-border">
                         <h3 class="box-title"> Эффект усиливают </h3>
                         <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
@@ -212,7 +212,7 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div>--}}
             </div>
 
 

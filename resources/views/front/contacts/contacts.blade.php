@@ -1,18 +1,17 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.meta', ['meta_description' => $contact->seo_description_field, 'meta_keywords' => $contact->seo_keywords_field])
-    <?php $title = $contact->page_title_field ?>
+@include('front.meta', ['title' => $contacts->seo_title, 'description' => $contacts->seo_description, 'keywords' => $contacts->seo_keywords])
 <article class="content">
     <div class="content-head">
-        <h1 class="content-head-title spec">Контакты</h1>
+        <h1 class="content-head-title spec">{{$contacts->title}}</h1>
     </div>
     <div class="grid grid-pad contacts">
         <div class="col-1-2 text-block">
-           {!! $contact->contacts_field !!}
+           {!! $contacts->contacts_field !!}
         </div>
         <div class="col-1-2">
-            <img src="/images/{{$contact->photo_image->primary_link}}" alt="{{$contact->photo_image->alt}}" class="building-photo">
+            <img src="{{$contacts->img->link}}?{{$contacts->img->cache_index}}" alt="{{$contacts->img->alt}}" class="building-photo">
         </div>
     </div>
     <div class="grid grid-pad attention">
@@ -29,7 +28,7 @@
 
         <div class="col-1-1">
             <div class="map">
-                {!! $contact->maps_field !!}
+                {!! $contacts->maps_field !!}
             </div>
         </div>
     </div>

@@ -7,6 +7,16 @@
         </div>
         <div class="box-body">
             <div class="form-group">
+                <label>Заголовок страницы</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$block->title_field}}"
+                       data-name="title"
+                       data-type="string"
+                       data-block="videos_block"
+                       data-id="0">
+            </div>
+            <div class="form-group">
                 <label>Текст под заголовком</label>
                 <textarea class="form-control text" data-reg="true"
                           data-name="text"

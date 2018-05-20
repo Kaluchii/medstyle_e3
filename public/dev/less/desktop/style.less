@@ -637,6 +637,7 @@ p.question-text {
 .answer-wrapper .specialist{
   float: left;
   padding: 0 15px 15px 0;
+  max-width: 117px;
 }
 
 a.poleznoe-link, a.send-ask {
@@ -742,8 +743,15 @@ h3.sert, li.problem-item, p.spec-name {
 }
 
 a.send-ask.load {
-  background: url(load.svg) center center no-repeat, #915a78;
-  color: transparent
+  background: url(../img/load.svg) center center no-repeat, #915a78;
+  color: transparent;
+  user-select: none;
+  pointer-events: none;
+
+  &:hover{
+    background: url(../img/load.svg) center center no-repeat, #915a78;
+    color: transparent;
+  }
 }
 
 span.prompt {

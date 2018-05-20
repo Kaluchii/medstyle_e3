@@ -43,7 +43,7 @@ return [
             'services' => [
                 'image' => ['bg_img','img'],
                 'string' => ['serv_name', 'discount_common', 'discount_in'],
-                'text' => ['descr_1','descr_2','descr_3','right_side_1','right_side_2','right_side_3'],
+                'text' => ['descr_1','descr_2','descr_3','right_side_1','right_side_2'],
                 'serv_category' => ['superior']
             ],
             'serv_pokazania' =>[
@@ -97,7 +97,7 @@ return [
             'helpful' => [
                 'image' => ['preview','img'],
                 'string' => ['tech_name'],
-                'text' => ['descr_1','descr_2','preview_descr','right_side_1','right_side_2']
+                'text' => ['descr_1','preview_descr','right_side_1']
             ],
             'hel_pokazania' =>[
                 'string' => ['p_name'],
@@ -121,7 +121,7 @@ return [
     'problems_block' => [
         'groups' => [
             'problems' => [
-                'string' => ['problem_name','link']
+                'string' => ['problem_name']
             ]
         ]
     ],

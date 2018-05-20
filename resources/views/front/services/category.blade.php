@@ -1,6 +1,6 @@
-<?php $i = 0?>
+@php $i = 0@endphp
 @foreach($category as $item_category)
-    <?php $i++?>
+    @php $i++@endphp
     @if( $i == 1)
         <div class="col-1-3 first">
     @elseif( $i == 3 )
@@ -15,7 +15,7 @@
     @else
         <div class="category">
     @endif
-            <img src="/images/{{$item_category->category_pict_image->primary_link}}" alt="{{$item_category->category_pict_image->alt}}" class="category-img">
+            <img src="{{$item_category->category_pict_image->primary_link}}" alt="{{$item_category->category_pict_image->alt}}" class="category-img">
             <h3 class="category-name" id="{{$item_category->category_title_field}}">{{$item_category->category_title_field}}</h3>
             <ul class="category-list">
                 @foreach($item_category->services_group as $serv_item)
@@ -30,5 +30,4 @@
     @if( $i == 2 || $i == 4 || $i == 6)
         </div>
     @endif
-
 @endforeach

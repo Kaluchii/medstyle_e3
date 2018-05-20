@@ -19,7 +19,7 @@ r(function(){
     var nb_videos = videos.length;
     for (var i=0; i<nb_videos; i++) {
         // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
-        videos[i].style.backgroundImage = 'url(/images/' + videos[i].getAttribute("data-preview");
+        videos[i].style.backgroundImage = 'url(' + videos[i].getAttribute("data-preview");
 
         // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
         var play = document.createElement("div");

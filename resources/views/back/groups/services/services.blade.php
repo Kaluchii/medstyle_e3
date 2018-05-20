@@ -176,14 +176,6 @@
                                   data-block="services"
                                   data-id="{{$item->id_field}}">{{$item->right_side_2_field}}</textarea>
                     </div>
-                    <div class="form-group">
-                        <label>Блок справа №3</label>
-                        <textarea class="form-control text-editor"
-                                  data-name="right_side_3"
-                                  data-type="string"
-                                  data-block="services"
-                                  data-id="{{$item->id_field}}">{{$item->right_side_3_field}}</textarea>
-                    </div>
                 </div>
 
                 <div class="box box-info group-item-widget" data-block="serv_pokazania">
@@ -228,7 +220,7 @@
                     </div>
                 </div>
 
-                <div class="box box-info group-item-widget" data-block="serv_effect_up">
+                {{--<div class="box box-info group-item-widget" data-block="serv_effect_up">
                     <div class="box-header with-border">
                         <h3 class="box-title"> Эффект усиливают </h3>
                         <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
@@ -240,7 +232,7 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div>--}}
             </div>
 
 

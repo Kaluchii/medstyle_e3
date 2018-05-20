@@ -5,11 +5,11 @@
     </div>
     <div class="header-block">
         <a href="/" class="logo">
-            <img src="/images/logo.png" alt="MEDSTYLE - клиника эстетической медицины">
+            <img src="/img/logo.png" alt="MEDSTYLE - клиника эстетической медицины">
         </a>
     </div>
     <div class="header-block">
-        <p class="right-text ringo-phone">+7 (727) 311-31-81</p>
+        <p class="right-text ringo-phone">{{$all_site->phone}}</p>
     </div>
 </header>
 @endsection

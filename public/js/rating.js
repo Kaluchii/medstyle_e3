@@ -16,7 +16,7 @@ $(document).ready(function(){
         var deferred = $.ajax(
             {
                 type: 'POST',
-                url: '/raiting/send',
+                url: '/rating/send',
                 dataType: 'json',
                 data: obj
             }
@@ -25,7 +25,7 @@ $(document).ready(function(){
            if( data.status == "OK"){
                $('.head-reiting').text(data.text);
                $('.current-rating').css('width', data.raiting['proc']+'%');
-               $('.totalvotes').html(' <meta itemprop="ratingValue" content="'+data.raiting['sred']+'">Текущий рейтинг — '+data.raiting['sred']+' <meta itemprop="bestRating" content="5"> <meta itemprop="ratingCount" content="727"> ('+data.raiting['count']+' человек)');
+               $('.totalvotes').html(' <meta itemprop="ratingValue" content="'+data.raiting['sred']+'">Текущий рейтинг — '+data.raiting['sred']+' <meta itemprop="bestRating" content="5"> <meta itemprop="ratingCount" content="'+data.raiting['count']+'"> ('+data.raiting['count']+' человек)');
            }else if( data.status == "NO"){
                $('.head-reiting').text(data.text);
            }

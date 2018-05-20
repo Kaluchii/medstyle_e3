@@ -2,7 +2,7 @@
 @include('front.menu')
 @section('content')
     @include('front.test.meta')
-    <?php $title = 'Тестирование | Medstyle.kz' ?>
+    @php $title = 'Тестирование | Medstyle.kz' @endphp
     <article class="content">
         <div class="grid grid-pad">
             <h1 class="page-title">Для получения рекомендаций по косметологическим процедурам,</br>укажите сколько вам лет</h1>

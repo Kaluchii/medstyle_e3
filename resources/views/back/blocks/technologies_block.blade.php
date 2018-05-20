@@ -9,6 +9,16 @@
 
         <div class="tab-content">
             <div class="tab-pane active" id="tab_g1">
+                <div class="form-group">
+                    <label>Заголовок страницы</label>
+                    <input class="form-control string"
+                           type="text" placeholder=""
+                           value="{{$block->title_field}}"
+                           data-name="title"
+                           data-type="string"
+                           data-block="technologies_block"
+                           data-id="0">
+                </div>
 
                 <div class="box box-info">
                     <div class="box-header with-border">

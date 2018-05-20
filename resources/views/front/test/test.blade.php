@@ -1,7 +1,7 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-    <?php $title = 'Тестирование | MEDSTYLE Алматы' ?>
+    @php $title = 'Тестирование | MEDSTYLE Алматы' @endphp
     @include('front.test.meta')
     <article class="content" data-page="testing">
         <div class="grid grid-pad">
@@ -10,12 +10,12 @@
             </div>
         </div>
         <div class="hide_block">
-            <?php $i = 0?>
+            @php $i = 0@endphp
             @foreach($answers as $item)
-                <?php $i++ ?>
+                @php $i++ @endphp
                 @if ($i == 1)
-                    <?php $first = $item->question_text_field;
-                          $id    = $item->id_field;?>
+                    @php $first = $item->question_text_field;
+                          $id    = $item->id_field;@endphp
                 @endif
                 <p data-quest-id="{{$item->id_field}}">{{$item->question_text_field}}</p>
             @endforeach

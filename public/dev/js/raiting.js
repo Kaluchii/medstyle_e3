@@ -16,7 +16,7 @@ $(document).ready(function(){
         var deferred = $.ajax(
             {
                 type: 'POST',
-                url: '/raiting/send',
+                url: '/rating/send',
                 dataType: 'json',
                 data: obj
             }

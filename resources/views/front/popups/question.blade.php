@@ -6,11 +6,11 @@
                 <h3 class="popup_title">Задать вопрос</h3>
                 <div class="row">
                     <p class="row-name">Имя</p>
-                    <input class="input popup_field" type="text" data-field-type="string" data-field-name="name">
+                    <input class="input popup_field" type="text" data-field-type="string" data-field-name="user_name">
                 </div>
                 <div class="row">
                     <p class="row-name">Почта</p>
-                    <input class="input popup_field" type="text" data-field-type="string" data-field-name="mail">
+                    <input class="input popup_field" type="text" data-field-type="string" data-field-name="email">
                 </div>
                 <div class="row">
                     <p class="row-name">Вопрос</p>
@@ -20,7 +20,7 @@
                 <div class="row last-row-quest">
                     <label class="public">
                     </label>
-                    <a class="send-ask" data-type-name="questions" data-popup-id="quest">Отправить</a>
+                    <a class="send-ask" data-type-name="question" data-popup-id="quest">Отправить</a>
                 </div>
             </div>
         </div>

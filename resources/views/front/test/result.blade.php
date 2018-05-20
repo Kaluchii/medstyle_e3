@@ -1,7 +1,7 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-    <?php $title = 'Результаты теста | MEDSTYLE Алматы' ?>
+    @php $title = 'Результаты теста | MEDSTYLE Алматы' @endphp
     @include('front.test.meta')
     <article class="content" data-page="recomend">
         <div class="grid grid-pad">
@@ -14,7 +14,7 @@
             </div>
             <div class="col-1-2 acp-after">
                 <div class="img-test">
-                    <img src="/images/photo.png" alt="">
+                    <img src="/img/photo.png" alt="">
                 </div>
             </div>
             <div class="col-1-2 left ret-1">
@@ -37,9 +37,9 @@
             </div>
             <div class="col-1-2 left ret-2">
                 <div class="testing-ans-bloks">
-                    <?php $i = 0 ?>
+                    @php $i = 0 @endphp
                     @foreach($answers as $item)
-                        <?php $i++ ?>
+                        @php $i++ @endphp
                         <div class="testing-answer">
                             <p class="answ-title">{{$numbs[$i]}} {{$item->question_name_field}}</p>
                             <p class="ans-text">{!! $item->question_answer_text_field !!}</p>

@@ -12,7 +12,6 @@
 */
 
 Route::get('/','FrontController@getIndex');
-Route::get('/full','FrontController@getFull');
 
 Route::get('/about','FrontController@getAbout');
 
@@ -25,17 +24,15 @@ Route::get('/specialist/{slug}','FrontController@getSpecialist');
 Route::get('/services', 'FrontController@getServices');
 Route::get('/service/{slug}', 'FrontController@getService');
 
-Route::get('/technology', 'FrontController@getTechnologys');
+Route::get('/technology', 'FrontController@getTechnologies');
 Route::get('/technology/{slug}', 'FrontController@getTechnology');
 
-Route::get('/helpful', 'FrontController@getPoleznoes');
-Route::get('/helpful/{slug}', 'FrontController@getPoleznoe');
+Route::get('/helpful', 'FrontController@getHelpfulCommon');
+Route::get('/helpful/{slug}', 'FrontController@getHelpful');
 
-Route::get('/news', 'FrontController@getNews');
-Route::get('/news/{slug}', 'FrontController@getNew');
+Route::get('/news', 'FrontController@getStocks');
 
-Route::get('/questions', 'FrontController@getQuestions');
-Route::get('/questions/{slug}', 'FrontController@getQuestions_pr');
+Route::get('/questions/{slug?}', 'FrontController@getQuestions');
 
 Route::get('/video', 'FrontController@getVideos');
 
@@ -53,6 +50,7 @@ Route::get('/no-result', 'TestController@noResult');
 
 Route::post('/captcha',          'Back\MailController@Captcha');
 Route::post('/feedback/mail',    'Back\MailController@send');
+Route::post('/rating/send',      'RatingController@saveRating');
 
 
 Route::auth();

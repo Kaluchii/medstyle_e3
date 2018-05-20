@@ -9,18 +9,20 @@
                             <div class="row">
                                 <p class="row-name">Имя</p>
                                 <input class="input popup_field" type="text" data-field-type="string"
-                                       data-field-name="name">
+                                       data-field-name="user_name">
                             </div>
                             <div class="row">
                                 <p class="row-name">Почта</p>
                                 <input class="input popup_field" type="text" data-field-type="string"
-                                       data-field-name="phone">
+                                       data-field-name="email">
                             </div>
                             <div class="row question-select">
                                 <p class="row-name">Услуга</p>
-                                <select class="input popup_field" data-field-type="numb" data-field-name="service_id">
-                                    @foreach($serv as $item)
-                                        <option value="{{$item->id_field}}">{{$item->name_field}}</option>
+                                <select class="input popup_field" data-field-type="numb" data-field-name="service">
+                                    @foreach($services->serv_category_group as $cat)
+                                        @foreach($cat->services_group as $item)
+                                            <option value="{{$item->serv_name}}">{{$item->serv_name}}</option>
+                                        @endforeach
                                     @endforeach
                                 </select>
                             </div>
@@ -29,7 +31,7 @@
                             <div class="row">
                                 <p class="row-name">Комментарий</p>
                                 <textarea class="input popup_field" cols="30" rows="10" data-field-type="text"
-                                          data-field-name="comment"></textarea>
+                                          data-field-name="question"></textarea>
                             </div>
                             <div class="row top">
                                 <a class="send-ask" data-type-name="consultation" data-popup-id="cons">Отправить</a>

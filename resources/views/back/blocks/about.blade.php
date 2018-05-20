@@ -11,6 +11,16 @@
             <div class="tab-pane active" id="tab_g1">
                 <div class="box-body">
                     <div class="form-group">
+                        <label>Заголовок страницы</label>
+                        <input class="form-control string"
+                               type="text" placeholder=""
+                               value="{{$block->title_field}}"
+                               data-name="title"
+                               data-type="string"
+                               data-block="about"
+                               data-id="0">
+                    </div>
+                    <div class="form-group">
                         <label>Текст</label>
                         <textarea class="form-control text-editor"
                                   data-name="text"

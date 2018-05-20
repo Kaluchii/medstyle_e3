@@ -7,6 +7,6 @@
     <script  defer src="/js/main.js?3"></script>
     <script  defer src="/js/testing.js"></script>
     <script  defer src="/js/send.js"></script>
-    <script  defer src="/js/raiting.js"></script>
+    <script  defer src="/js/rating.js"></script>
     <script  defer type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
 @endsection

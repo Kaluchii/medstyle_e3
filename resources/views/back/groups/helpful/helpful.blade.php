@@ -125,7 +125,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Текстовый блок №1</label>
+                        <label>Текстовый блок</label>
                         <textarea class="form-control text-editor"
                                   data-name="descr_1"
                                   data-type="string"
@@ -133,28 +133,12 @@
                                   data-id="{{$item->id_field}}">{{$item->descr_1_field}}</textarea>
                     </div>
                     <div class="form-group">
-                        <label>Текстовый блок №2</label>
-                        <textarea class="form-control text-editor"
-                                  data-name="descr_2"
-                                  data-type="string"
-                                  data-block="helpful"
-                                  data-id="{{$item->id_field}}">{{$item->descr_2_field}}</textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Блок справа №1</label>
+                        <label>Блок справа</label>
                         <textarea class="form-control text-editor"
                                   data-name="right_side_1"
                                   data-type="string"
                                   data-block="helpful"
                                   data-id="{{$item->id_field}}">{{$item->right_side_1_field}}</textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Блок справа №2</label>
-                        <textarea class="form-control text-editor"
-                                  data-name="right_side_2"
-                                  data-type="string"
-                                  data-block="helpful"
-                                  data-id="{{$item->id_field}}">{{$item->right_side_2_field}}</textarea>
                     </div>
                 </div>
 
@@ -186,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="box box-info group-item-widget" data-block="hel_after_proc">
+                {{--<div class="box box-info group-item-widget" data-block="hel_after_proc">
                     <div class="box-header with-border">
                         <h3 class="box-title"> После процедуры </h3>
                         <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
@@ -198,9 +182,9 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div>--}}
 
-                <div class="box box-info group-item-widget" data-block="hel_effect_up">
+                {{--<div class="box box-info group-item-widget" data-block="hel_effect_up">
                     <div class="box-header with-border">
                         <h3 class="box-title"> Эффект усиливают </h3>
                         <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
@@ -212,7 +196,7 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div>--}}
             </div>
 
 

@@ -73,7 +73,7 @@
 
         <div class="form-group">
             <label>Краткое описание</label>
-            <textarea class="form-control text"
+            <textarea class="form-control text" data-reg="true"
                       data-name="descr"
                       data-type="string"
                       data-block="slides"
