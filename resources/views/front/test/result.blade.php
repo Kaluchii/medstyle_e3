@@ -1,9 +1,9 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-    @php $title = 'Результаты теста | MEDSTYLE Алматы' @endphp
-    @include('front.test.meta')
-    <article class="content" data-page="recomend">
+@include('front.test.meta')
+@php $title = 'Результаты теста | MEDSTYLE Алматы' @endphp
+<article class="content" data-page="recomend">
         <div class="grid grid-pad">
             <div class="col-1-1">
             </div>
@@ -38,21 +38,27 @@
             <div class="col-1-2 left ret-2">
                 <div class="testing-ans-bloks">
                     @php $i = 0 @endphp
-                    @foreach($answers as $item)
+                    @foreach($answers->anket_item_group as $item)
                         @php $i++ @endphp
-                        <div class="testing-answer">
-                            <p class="answ-title">{{$numbs[$i]}} {{$item->question_name_field}}</p>
-                            <p class="ans-text">{!! $item->question_answer_text_field !!}</p>
-                            @foreach($item->recommend_group as $recommend)
-                                @foreach($all_services as $item_s)
-                                    @if($item_s->id_field == $recommend->service_id_field)
-                                        <p><a class="link" href="/service/{{$item_s->slug_field}}"
-                                              target="_blank">{{$item_s->name_field}}</a>@if($item_s->discount_field != '')
-                                                <span class="discount">{{$item_s->discount_field}}</span>@endif&nbsp;→</p>
-                                    @endif
-                                @endforeach
-                            @endforeach
-                        </div>
+                        @foreach($yes_list as $yes_item)
+                            @if($item->id == $yes_item)
+                                <div class="testing-answer">
+                                    <p class="answ-title">{{$i.'.'}} {{$item->question_name}}</p>
+                                    {{--<p class="ans-text">{!! $item->question_text !!}</p>--}}
+                                    @foreach($item->recommend_group as $recommend)
+                                        @foreach($all_services->serv_category_group as $item_cat)
+                                            @foreach($item_cat->services_group as $item_s)
+                                                @if($item_s->id == $recommend->service_id)
+                                                    <p><a class="link" href="/service/{{$item_s->slug}}"
+                                                          target="_blank">{{$item_s->name}}</a>@if($item_s->discount_common != '')
+                                                            <span class="discount">{{$item_s->discount_common}}</span>@endif&nbsp;→</p>
+                                                @endif
+                                            @endforeach
+                                        @endforeach
+                                    @endforeach
+                                </div>
+                            @endif
+                        @endforeach
                     @endforeach
                 </div>
             </div>

@@ -1,8 +1,8 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-    @include('front.test.meta')
-    @php $title = 'Результаты теста | MEDSTYLE Алматы' @endphp
+@include('front.test.meta')
+@php $title = 'Результаты теста | MEDSTYLE Алматы' @endphp
     <article class="content" data-page="recomend">
         <div class="grid grid-pad">
             <div class="col-1-1">
@@ -19,8 +19,8 @@
             </div>
             <div class="col-1-2 left ret-1">
                 <div class="text append text-block">
-                   <h1> Поздравляем!</h1>
-                  <p>  У вас нет косметологических проблем.</p>
+                   <h1>Поздравляем!</h1>
+                  <p>У вас нет косметологических проблем.</p>
                 </div>
             </div>
         </div>

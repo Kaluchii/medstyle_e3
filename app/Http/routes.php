@@ -41,7 +41,7 @@ Route::get('/contacts', 'FrontController@getContacts');
 
 Route::get('/age', 'TestController@selectAge');
 Route::get('/test/{id}', 'TestController@getTest');
-Route::get('/result/{page}', 'TestController@getResult');
+Route::get('/result/{slug}', 'TestController@getResult');
 Route::get('/no-result', 'TestController@noResult');
 
 

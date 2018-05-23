@@ -7,7 +7,6 @@
     </div>
     <div class="box-body">
         <div class="form-group">
-            <label>Специалист</label>
             <select  class="form-control int"
                      data-name="service_id"
                      data-type="int"

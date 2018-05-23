@@ -20,7 +20,7 @@
                             <textarea class="form-control text" data-reg="true"
                                       data-name="page_title"
                                       data-type="string"
-                                      data-block="all_site"
+                                      data-block="testing_block"
                                       data-id="0">{{$block->page_title_field}}</textarea>
                         </div>
                     </div>

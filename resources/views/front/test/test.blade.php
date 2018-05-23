@@ -1,23 +1,17 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-    @php $title = 'Тестирование | MEDSTYLE Алматы' @endphp
-    @include('front.test.meta')
+@include('front.test.meta')
+@php $title = 'Тестирование | MEDSTYLE Алматы' @endphp
     <article class="content" data-page="testing">
         <div class="grid grid-pad">
             <div class="col-1-1">
-                <h1 class="test-title">@foreach($test_title as $item) {{$item->testing_title_field}}  @endforeach</h1>
+                <h1 class="test-title">{{$test->text}}</h1>
             </div>
         </div>
         <div class="hide_block">
-            @php $i = 0@endphp
-            @foreach($answers as $item)
-                @php $i++ @endphp
-                @if ($i == 1)
-                    @php $first = $item->question_text_field;
-                          $id    = $item->id_field;@endphp
-                @endif
-                <p data-quest-id="{{$item->id_field}}">{{$item->question_text_field}}</p>
+            @foreach($test->anket_item_group as $item)
+                <p data-quest-id="{{$item->id}}">{{$item->question_text}}</p>
             @endforeach
         </div>
         <div class="grid grid-pad">
@@ -34,6 +28,11 @@
                         </div>
                         <div class="grid quest">
                             <div class="col-1-1">
+                                @php
+                                    $first_item = $test->anket_item_group->first();
+                                    $first = $first_item->question_text;
+                                    $id    = $first_item->id;
+                                @endphp
                                 <p class="ask-text" data-quest-id="{{$id}}">1. {{$first}}</p>
                             </div>
                         </div>
