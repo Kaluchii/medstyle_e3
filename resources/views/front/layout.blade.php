@@ -6,6 +6,7 @@
 	<meta name="cmsmagazine" content="8595dcaa5a4b96a7f4b87b77b13368cb" />
     <link rel="shortcut icon" href="/img/fav.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow" />
     @yield('meta')
     @yield('page_close')
     @include('front.scripts')
