@@ -1912,12 +1912,46 @@ p.button-wrapper {
   line-height: 1.5
 }
 
+.footer-block--social{
+  max-width: 210px;
+}
+
 p.footer-text {
   color: #999
 }
 
 a.footer-link, span.phone {
   color: #fff
+}
+
+p.big-phone {
+  display: block;
+  margin-top: 5px;
+  font-size: 36px;
+  letter-spacing: -0.7px;
+  white-space: nowrap;
+  line-height: 1;
+  color: #fff;
+}
+
+.wa-block{
+  margin-top: 40px;
+}
+
+.footer-soc-link{
+  display: inline-block;
+  margin-top: 5px;
+  width: 32px;
+  height: 32px;
+
+  &__inst{
+    margin-left: 10px;
+    background: url("/img/instagram.svg") no-repeat center;
+  }
+
+  &__fb{
+    background: url("/img/facebook.svg") no-repeat center;
+  }
 }
 
 a.footer-link {
@@ -1967,7 +2001,7 @@ a.footer-link:hover {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin: 40px auto 0
+  margin: -20px auto 0
 }
 
 .footer-block:nth-child(2) {

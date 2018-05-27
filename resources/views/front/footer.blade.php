@@ -9,14 +9,14 @@
             </div>
             <div class="footer-block">
                 <ul>
-                    <li><p class="footer-text">Запись на процедуры: <span class="phone ringo-phone">{{$all_site->phone}}</span></p></li>
-                    <li><p class="footer-text">WhatsApp: <span class="phone">{{$all_site->whatsapp}}</span></p></li>
+                    <li><p class="footer-text">Запись на процедуры</p><p class="big-phone ringo-phone">{{$all_site->phone}}</p></li>
+                    <li class="wa-block"><p class="footer-text">WhatsApp: <span class="phone">{{$all_site->whatsapp}}</span></p></li>
                 </ul>
             </div>
-            <div class="footer-block">
+            <div class="footer-block footer-block--social">
                 <ul>
-                    <li><p class="footer-text">Полезные советы и скидки</p></li>
-                    <li><p class="footer-text">в <a href="{{$all_site->fb}}" rel="nofollow" target="_blank" class="footer-link">Facebook</a> и <a href="{{$all_site->inst}}" rel="nofollow" target="_blank" class="footer-link">Instagram</a></p></li>
+                    <li><p class="footer-text">Полезные советы и скидки в&nbsp;наших&nbsp;группах</p></li>
+                    <li><a href="{{$all_site->fb}}" class="footer-soc-link footer-soc-link__fb" rel="nofollow" target="_blank"></a><a href="{{$all_site->inst}}" class="footer-soc-link footer-soc-link__inst" rel="nofollow" target="_blank"></a></li>
                 </ul>
             </div>
         </div>
