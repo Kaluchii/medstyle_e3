@@ -51,7 +51,7 @@
 
         <div class="form-group">
             <label>Заголовок (используйте "#" для указания начала и "#" для указания окончания ссылочноко текста)</label>
-            <textarea class="form-control string textarea--small" data-reg="true"
+            <textarea class="form-control text textarea--small" data-reg="true"
                    placeholder=""
                    data-name="slide_title"
                    data-type="string"
