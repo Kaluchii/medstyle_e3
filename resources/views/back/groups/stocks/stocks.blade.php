@@ -8,22 +8,22 @@
         <div class="box-body">
             <div class="form-group">
                 <label>Заголовок (используйте "#" для указания начала и "#" для указания окончания ссылочноко текста)</label>
-                <input class="form-control string"
-                       type="text" placeholder=""
-                       value="{{$item->stock_name_field}}"
+                <textarea class="form-control string textarea--small" data-reg="true"
+                       placeholder=""
                        data-name="stock_name"
                        data-type="string"
                        data-block="stocks"
-                       data-id="{{$item->id_field}}">
+                       data-id="{{$item->id_field}}">{{$item->stock_name_field}}</textarea>
             </div>
             <div class="form-group">
                 <label>Ссылка на акцию</label>
-                <textarea class="form-control string textarea--small" data-reg="true"
-                       placeholder=""
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$item->link_field}}"
                        data-name="link"
                        data-type="string"
                        data-block="stocks"
-                       data-id="{{$item->id_field}}">{{$item->link_field}}</textarea>
+                       data-id="{{$item->id_field}}">
             </div>
             <div class="form-group">
                 <label>Время проведения акции</label>
