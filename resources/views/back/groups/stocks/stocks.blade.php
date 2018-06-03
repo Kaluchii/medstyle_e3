@@ -18,13 +18,12 @@
             </div>
             <div class="form-group">
                 <label>Ссылка на акцию</label>
-                <input class="form-control string"
-                       type="text" placeholder=""
-                       value="{{$item->link_field}}"
+                <textarea class="form-control string textarea--small" data-reg="true"
+                       placeholder=""
                        data-name="link"
                        data-type="string"
                        data-block="stocks"
-                       data-id="{{$item->id_field}}">
+                       data-id="{{$item->id_field}}">{{$item->link_field}}</textarea>
             </div>
             <div class="form-group">
                 <label>Время проведения акции</label>
