@@ -33,7 +33,7 @@
                                                 @foreach($specialists->specialists_group as $spec_item)
                                                     @if($spec_item->id == $item->spec_id)
                                                     <div class="specialist">
-                                                        <img src="{{$spec_item->img->link}}?{{$spec_item->img->cache_index}}" alt="{{$spec_item->img->alt}}" class="photo">
+                                                        <img src="{{$spec_item->img->link}}?{{$spec_item->img->cache_index}}" alt="{{$spec_item->img->alt}}" width="102px" class="photo">
                                                     </div>
                                                     <p class="specialist-name">{{$spec_item->spec_name}}</p>
                                                     <p class="specialist-profession">{{$spec_item->profession}}</p>

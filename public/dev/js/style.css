@@ -296,7 +296,7 @@ li.item {
 
 .proc-upgrade {
     border-top: 1px solid #e5e5e5;
-    background: url(../images/proc-up.png) no-repeat 19px 32px;
+    background: url(../img/proc-up.png) no-repeat 19px 32px;
     padding-left: 190px;
 }
 
@@ -491,7 +491,7 @@ li.category-name {
     margin: 0;
     padding: 0 0 60px 0;
     border: 1px solid #d7dee2;
-    background: url("../images/1.png") 90% bottom no-repeat;
+    background: url("../img/1.png") 90% bottom no-repeat;
     box-shadow: 0 5px 10px #b4c0c6;
 }
 
@@ -728,7 +728,7 @@ input[type="checkbox"] {
 }
 
 .public input[type="checkbox"] + span {
-    background: url(../images/check.png) no-repeat;
+    background: url(../img/check.png) no-repeat;
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -739,7 +739,7 @@ input[type="checkbox"] {
 }
 
 .public input[type="checkbox"]:checked + span {
-    background: url(../images/checked.png) no-repeat;
+    background: url(../img/checked.png) no-repeat;
 }
 
 .input:focus {
@@ -1114,7 +1114,7 @@ li.procedure-item {
 }
 
 span.play-video {
-    background: url(../images/play-hover.png) no-repeat;
+    background: url(../img/play-hover.png) no-repeat;
     width: 40px;
     height: 40px;
     position: relative;
@@ -1125,7 +1125,7 @@ span.play-video {
 }
 
 a.video-wrapper:hover span.play-video {
-    background: url(../images/play-hover.png) no-repeat;
+    background: url(../img/play-hover.png) no-repeat;
     width: 40px;
     height: 40px;
     position: relative;
@@ -1912,7 +1912,7 @@ p.button-wrapper {
 
 .grid.grid-pad.testing-index-block .col-1-1 {
     padding: 25px 0 42px;
-    background: url(../images/й.jpg) no-repeat center top;
+    background: url(../img/й.jpg) no-repeat center top;
 }
 .footer-block {
     flex-basis: 33.33333333333333333%;
@@ -2019,7 +2019,7 @@ a.send-ask:hover {
     margin-bottom: 10px;
 }
 .left-slide {
-    background: url(../images/st.png) center top no-repeat;
+    background: url(../img/st.png) center top no-repeat;
     background-size: cover;
     min-width: 32px;
     min-height: 62px;
@@ -2027,7 +2027,7 @@ a.send-ask:hover {
 }
 
 .right-slide {
-    background: url(../images/st.png) center top no-repeat;
+    background: url(../img/st.png) center top no-repeat;
     background-size: cover;
     min-width: 32px;
     min-height: 62px;
@@ -2036,12 +2036,12 @@ a.send-ask:hover {
 }
 
 .bx-next:hover .right-slide {
-    background: url(../images/hv.png) center top no-repeat;
+    background: url(../img/hv.png) center top no-repeat;
     transform: rotate(0deg);
 }
 
 .bx-prev:hover .left-slide {
-    background: url(../images/hv.png) center top no-repeat;
+    background: url(../img/hv.png) center top no-repeat;
     transform: rotate(180deg);
 }
 .bx-viewport {

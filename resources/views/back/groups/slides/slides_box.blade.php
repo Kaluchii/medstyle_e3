@@ -50,14 +50,13 @@
         </div>
 
         <div class="form-group">
-            <label>Заголовок (используйте "#" для оборачивания части текста в ссылку)</label>
-            <input class="form-control string"
-                   type="text" placeholder=""
-                   value="{{$item->slide_title_field}}"
+            <label>Заголовок (используйте "#" для указания начала и "#" для указания окончания ссылочноко текста)</label>
+            <textarea class="form-control string textarea--small" data-reg="true"
+                   placeholder=""
                    data-name="slide_title"
                    data-type="string"
                    data-block="slides"
-                   data-id="{{$item->id_field}}">
+                   data-id="{{$item->id_field}}">{{$item->slide_title_field}}</textarea>
         </div>
 
         <div class="form-group">

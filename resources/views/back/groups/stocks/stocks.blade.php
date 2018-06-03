@@ -7,7 +7,7 @@
         </div>
         <div class="box-body">
             <div class="form-group">
-                <label>Заголовок (используйте "#" для оборачивания части текста в ссылку)</label>
+                <label>Заголовок (используйте "#" для указания начала и "#" для указания окончания ссылочноко текста)</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$item->stock_name_field}}"

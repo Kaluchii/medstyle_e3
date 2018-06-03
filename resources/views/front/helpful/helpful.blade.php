@@ -6,7 +6,7 @@
         <div class="col-1-1 head">
             <div class="head-section">
                 <div class="head-img-wrap">
-                    <img src="{{$helpful->img->link}}?{{$helpful->img->cache_index}}" alt="{{$item->img->alt}}" class="head-img">
+                    <img src="{{$helpful->img->link}}?{{$helpful->img->cache_index}}" alt="{{$helpful->img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
                     <h1 class="product-title">{{$helpful->tech_name}}</h1>
