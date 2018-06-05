@@ -1,3 +1,8 @@
+@php
+    $ext = \Illuminate\Support\Facades\App::make('Interpro\Entrance\Contracts\Extract\ExtractAgent');
+    $services_block = $ext->getBlock('services_block');
+@endphp
+
 <div class="box">
     <div class="box-header with-border">
         <h3 class="box-title">Услуга {{$item->sorter_field}}</h3>
