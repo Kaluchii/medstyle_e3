@@ -50,7 +50,7 @@
                                             @foreach($item_cat->services_group as $item_s)
                                                 @if($item_s->id == $recommend->service_id)
                                                     <p><a class="link" href="/service/{{$item_s->slug}}"
-                                                          target="_blank">{{$item_s->name}}</a>@if($item_s->discount_common != '')
+                                                          target="_blank">{{$item_s->serv_name}}</a>@if($item_s->discount_common != '')
                                                             <span class="discount">{{$item_s->discount_common}}</span>@endif&nbsp;→</p>
                                                 @endif
                                             @endforeach
