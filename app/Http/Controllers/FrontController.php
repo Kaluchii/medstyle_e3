@@ -87,8 +87,11 @@ class FrontController extends Controller
         $this->extract->tuneSelection('services')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('spec_sertificates')->sortBy('sorter','ASC');
 
-        $specialists = $this->extract->getBlock('specialists_about');
         $specialist = $this->extract->getBySlug('specialists', $slug);
+        if (empty($specialist)) {
+            return view('errors.404');
+        }
+        $specialists = $this->extract->getBlock('specialists_about');
         $services = $this->extract->getBlock('services_block');
         return view('front.specialists.specialist', [
             'specialists' => $specialists,
@@ -114,9 +117,12 @@ class FrontController extends Controller
         $this->extract->tuneSelection('services')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('stocks')->like('show', true)->take(3)->sortBy('sorter','ASC');
 
+        $service = $this->extract->getBySlug('services', $slug);
+        if (empty($service)) {
+            return view('errors.404');
+        }
         $services = $this->extract->getBlock('services_block');
         $stocks = $this->extract->getBlock('stocks_block');
-        $service = $this->extract->getBySlug('services', $slug);
         $rating = $this->getRatingById($service->id);
         return view('front.services.service', [
             'services' => $services,
@@ -141,9 +147,12 @@ class FrontController extends Controller
         $this->extract->tuneSelection('technologies')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('stocks')->like('show', true)->take(3)->sortBy('sorter','ASC');
 
+        $technology = $this->extract->getBySlug('technologies', $slug);
+        if (empty($technology)) {
+            return view('errors.404');
+        }
         $technologies = $this->extract->getBlock('technologies_block');
         $stocks = $this->extract->getBlock('stocks_block');
-        $technology = $this->extract->getBySlug('technologies', $slug);
         $rating = $this->getRatingById($technology->id);
         return view('front.technologies.technology', [
             'technologies' => $technologies,
@@ -167,8 +176,11 @@ class FrontController extends Controller
     public function getHelpful( $slug ){
         $this->extract->tuneSelection('stocks')->like('show', true)->take(3)->sortBy('sorter','ASC');
 
-        $stocks = $this->extract->getBlock('stocks_block');
         $helpful = $this->extract->getBySlug('helpful', $slug);
+        if (empty($helpful)) {
+            return view('errors.404');
+        }
+        $stocks = $this->extract->getBlock('stocks_block');
         $rating = $this->getRatingById($helpful->id);
         return view('front.helpful.helpful', [
             'helpful' => $helpful,
@@ -181,6 +193,9 @@ class FrontController extends Controller
     public function getQuestions( $slug = '' ){
         if ($slug != '') {
             $problem = $this->extract->getBySlug('problems', $slug);
+            if (empty($problem)) {
+                return view('errors.404');
+            }
             $this->extract->tuneSelection('questions')->like('show', true)->like('problem_id', $problem->id)->sortBy('sorter','ASC');
         } else {
             $this->extract->tuneSelection('questions')->like('show', true)->sortBy('sorter','ASC');

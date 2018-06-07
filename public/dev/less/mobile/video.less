@@ -10,11 +10,11 @@
     }
 
     &__item{
-      &:nth-child(even){
+      &:nth-child(2n+3){
         margin: 45px 0 0 35px;
       }
 
-      &:nth-child(odd){
+      &:nth-child(2n+2){
         margin: 45px 35px 0 0;
       }
 
@@ -58,11 +58,11 @@
 @media screen and (max-width: 900px) {
   .video-block{
     &__item{
-      &:nth-child(even){
+      &:nth-child(2n+3){
         margin: 45px 0 0 15px;
       }
 
-      &:nth-child(odd){
+      &:nth-child(2n+2){
         margin: 45px 15px 0 0;
       }
     }
