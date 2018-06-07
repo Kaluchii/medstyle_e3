@@ -1,2 +1,27 @@
 User-agent: *
-Disallow:/
+Disallow: /adm
+Disallow: /node
+Disallow: /m/
+Disallow: /mobile/
+Disallow: /?width
+Disallow: /*?width
+Disallow: */*?width
+Disallow: /?inline
+Disallow: /*?inline
+Disallow: */*?inline
+Disallow: /service/диспорт
+
+User-agent: Yandex
+Disallow: /adm
+Disallow: /node
+Disallow: /m/
+Disallow: /mobile/
+Disallow: /?width
+Disallow: /*?width
+Disallow: */*?width
+Disallow: /?inline
+Disallow: /*?inline
+Disallow: */*?inline
+Disallow: /service/диспорт
+Host: medstyle.kz
+Sitemap: http://medstyle.kz/sitemap.xml

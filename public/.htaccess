@@ -1,19 +1,42 @@
- <IfModule mod_headers.c>
-        Header set X-XSS-Protection "1; mode=block"
-        Header set X-Frame-Options "DENY"
+# <IfModule mod_headers.c>
+#        Header set X-XSS-Protection "1; mode=block"
+#        Header set X-Frame-Options "DENY"
+#
+#        Header always edit Set-Cookie (.*) "$1; HTTPOnly"
+#        Header always edit Set-Cookie (.*) "$1; Secure"
+#    </IfModule>
+#<IfModule mod_rewrite.c>
+#    <IfModule mod_negotiation.c>
+#        Options -MultiViews
+#    </IfModule>
+#
+#    RewriteEngine On
+#
+#    # Redirect Trailing Slashes If Not A Folder...
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^(.*)/$ /$1 [L,R=301]
+#
+#    # Handle Front Controller...
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteRule ^ index.php [L]
+#
+#    # Handle Authorization Header
+#    RewriteCond %{HTTP:Authorization} .
+#    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#</IfModule>
 
-        Header always edit Set-Cookie (.*) "$1; HTTPOnly"
-        Header always edit Set-Cookie (.*) "$1; Secure"
-    </IfModule>
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews
-    </IfModule>
 
+    Header set Cache-Control "max-age=604800, public"
     RewriteEngine On
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{HTTP_HOST} ^www.medstyle.kz$ [NC]
+	RewriteRule ^(.*)$ http://medstyle.kz/$1 [L,R=301]
+
+    # Redirect Trailing Slashes...
+	RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+	RewriteRule . %1/%2 [R=301,L]
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
     # Handle Front Controller...
@@ -21,7 +44,171 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+	RewriteRule ^index\.php$ http://medstyle.kz/ [R=301,L]
+
+
 </IfModule>
+
+# === 14.11.2016 ==========================================
+Redirect 301 /specialist/shuvaev-mihail-vladimirovich http://medstyle.kz/specialists
+Redirect 301 /service/dport http://medstyle.kz/service/dysport
+Redirect 301 /services/dysport http://medstyle.kz/service/dysport
+Redirect 301 /services/plazmolifting-gel http://medstyle.kz/service/plazmolifting-gel
+Redirect 301 /services/uhod-za-kozhey http://medstyle.kz/service/uhod-za-kozhej
+Redirect 301 /services/poverhnostnye-glikolevye-pilingit http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301 /services/ultraformer?width=304&height=397&inline=true	 http://medstyle.kz/service/ul-trazvukovoj-smas-lifting
+Redirect 301 /services/korrekciya-vesa-i-razrabotka-diety?inline=true http://medstyle.kz/service/korrekciya-vesa-i-razrabotka-diety
+Redirect 301 /services/disport http://medstyle.kz/service/dysport
+Redirect 301 /services/radiess http://medstyle.kz/service/radiesse
+Redirect 301 /services/omolozhenie-kozhi http://medstyle.kz/service
+Redirect 301 /content/udalenie-sosudov-na-lice-i-tele http://medstyle.kz/service/udalenie-sosudov-na-lice-i-tele
+Redirect 301 /content/starenie-kozhi-i-morshchiny	 http://medstyle.kz/problems/starenie-kozhi-i-morshiny
+Redirect 301 /tehnologii http://medstyle.kz/technology
+Redirect 301 /question http://medstyle.kz/questions
+Redirect 301 /content/radiess-revolyuciya-v-inekcionnyh-metodah-omolozheniya http://medstyle.kz/helpful/radiesse-—-revolyuciya-v-in-ekcionnyh-metodah-omolozheniya
+Redirect 301 /content/nyu-irina-veniaminovna http://medstyle.kz/specialist/nyu-irina-veniaminovna
+Redirect 301 /questions/starenie-kozhi-i-morshchiny http://medstyle.kz/problems/starenie-kozhi-i-morshiny
+Redirect 301 /services/chistka-lica-dekolte-i-spiny http://medstyle.kz/service/chistka-lica-dekol-te-i-spiny
+Redirect 301 /content/lazer-mediostar-next http://medstyle.kz/technology/lazer-mediostar-next
+Redirect 301 /content/korrekciya-kontura-lica-i-tela http://medstyle.kz/problems/korrekciya-kontura-lica-i-telaRedirect
+Redirect 301 /services/inekcii-lipolitikov http://medstyle.kz/service/in-ekcii-lipolitikov
+
+# === 09.12.2016 ==========================================
+Redirect 301 /kontakty http://medstyle.kz/contacts
+Redirect 301 /services/mezoniti http://medstyle.kz/service/mezoniti
+Redirect 301 /services/niti-aptos-excellence-visage http://medstyle.kz/service/niti-aptos-excellence-visage
+Redirect 301 /services/rf-lifting http://medstyle.kz/service/rf-lifting
+Redirect 301 /content/rf-lifting http://medstyle.kz/service/rf-lifting
+Redirect 301 /services/aqualyx http://medstyle.kz/service/aqualyx
+Redirect 301 /services/niti-silhouette-soft http://medstyle.kz/service/niti-silhouette-soft
+Redirect 301 /services/otbelivanie-kozhi http://medstyle.kz/services
+Redirect 301 /sertificate http://medstyle.kz/about
+Redirect 301 /services/sredinnye-pilingi http://medstyle.kz/service/sredinnye-pilingi
+Redirect 301 /services/frakcionnyy-lazer http://medstyle.kz/service/frakcionnyj-lazer
+Redirect 301 /services/3d-lifting http://medstyle.kz/service/3d-lifting
+Redirect 301 /services/lazernaya-epilyaciya http://medstyle.kz/service/lazernaya-epilyaciya
+Redirect 301 /content/omarova-meruert-erbolovna http://medstyle.kz/specialist/omarova-meruert-erbolovna
+Redirect 301 /novinki http://medstyle.kz/news
+Redirect 301 /services/korrekciya-rubcov http://medstyle.kz/service/korrekciya-rubcov
+Redirect 301 /content/doktor-skulptor http://medstyle.kz/helpful/doktor-skul-ptor
+Redirect 301 /services/udalenie-sosudov-na-lice-i-tele http://medstyle.kz/service/udalenie-sosudov-na-lice-i-tele
+Redirect 301 /mobile/service/radiesse http://medstyle.kz/service/radiesse
+
+# === 30.06.2017 ==========================================
+Redirect 301	/content/nezhelatelnye-volosy	http://medstyle.kz/
+Redirect 301	/services/udalenie-sosudov	http://medstyle.kz/service/udalenie-sosudov-na-lice-i-tele
+Redirect 301	/services/radiesse	http://medstyle.kz/service/radiesse
+Redirect 301	/services/retinoevye-pilingi	http://medstyle.kz/services
+Redirect 301	/users	http://medstyle.kz/
+
+# === 25.07.2017 ==========================================
+Redirect 301	/services/podtyazhka-tela-nityami-na-kanyulyah	http://medstyle.kz/service/podtyazhka-tela-nityami-na-kanyulyah
+Redirect 301	/services/konturnaya-plastika	http://medstyle.kz/service/konturnaya-plastika
+Redirect 301	/services/lechenie-ugrevoy-sypi	http://medstyle.kz/service/lechenie-ugrevoj-sypi
+Redirect 301	/services/mezoterapiya	http://medstyle.kz/service/mezoterapiya
+Redirect 301	/content/ugri-rubcy-nevusy-papilomy	http://medstyle.kz/helpful
+Redirect 301	/services/biorevitalizaciya	http://medstyle.kz/service/biorevitalizaciya
+Redirect 301	/content/kak-izbavitsya-ot-lishnego-vesa	http://medstyle.kz/helpful
+Redirect 301	/services/klassicheskiy-massazh-lica-shei-i-dekolte	http://medstyle.kz/service/massazh
+Redirect 301	/publications	http://medstyle.kz/helpful
+Redirect 301	/content/krasnota-i-rasshirennye-sosudy	http://medstyle.kz/helpful/udalenie-sosudov-na-lice-i-tele
+Redirect 301	/services/plasmolifting-gel	http://medstyle.kz/service/plazmolifting-gel
+Redirect 301	/content/zapis-na-konsultaciyu	http://medstyle.kz/contacts
+Redirect 301	/services/poverhnostnye-glikolevye-pilingi	http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301	/services/udalenie-aterom-keratom-ksantelazm-papilom-i-nevusov	http://medstyle.kz/service/udalenie-aterom-keratom-ksantelazm-papilom-i-nevusov
+Redirect 301	/services/massazh-lica	http://medstyle.kz/service/massazh-lica
+Redirect 301	/services/lazernoe-lechenie-akne	http://medstyle.kz/service/lazernoe-lechenie-akne
+Redirect 301	/news/novogodnia-skidka-15	http://medstyle.kz/news
+Redirect 301	/problems/korrekciya-kontura-lica-i-telaRedirect	http://medstyle.kz/questions
+Redirect 301	/questions/lishniy-ves	http://medstyle.kz/questions
+
+# === 25.08.2017 ==========================================
+Redirect 301	/kategoriya/apparatnye-metodiki	http://medstyle.kz/services
+Redirect 301	/content/lazer-mcl-31-dermablate	http://medstyle.kz/technology/lazer-mcl-31-dermablate
+Redirect 301	/services/plazmolifting	http://medstyle.kz/service/plazmolifting
+
+# === 04.10.2017 ==========================================
+Redirect 301	/services/bioarmirovanie	http://medstyle.kz/service/bioarmirovanie
+Redirect 301	/content/korrekciya-figury-i-lishniy-ves	http://medstyle.kz/helpful/kak-izbavit-sya-ot-lishnego-vesa
+Redirect 301	/content/rf-lifting-trio-xt-ssha	http://medstyle.kz/
+Redirect 301	/services/udalenie-aterom-keratom-ksantelazm	http://medstyle.kz/service/udalenie-aterom-keratom-ksantelazm-papilom-i-nevusov
+Redirect 301	/service/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/service/service/poverhnostnye-glikolevye-pilingi	http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301	/services/ultraformer-3	http://medstyle.kz/technology/ultraformer
+Redirect 301	/services/plasmolifting-krem	http://medstyle.kz/service/plasmolifting-krem
+Redirect 301	/services/radiesse-mezo	http://medstyle.kz/service/radiesse-mezo
+Redirect 301	/services/elektrokoagulyaciya	http://medstyle.kz/services
+Redirect 301	/content/vopros-specialistu	http://medstyle.kz/questions
+Redirect 301	/services/sredinnye-pillingi	http://medstyle.kz/service/sredinnye-pilingi
+Redirect 301	/technology/service/poverhnostnye-glikolevye-pilingi	http://medstyle.kz/technology
+Redirect 301	/problems/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/content/povyshennaya-potlivost	http://medstyle.kz/
+Redirect 301	/news/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/content/korrekciya-vesa	http://medstyle.kz/helpful/kak-izbavit-sya-ot-lishnego-vesa
+Redirect 301	/helpful/service/poverhnostnye-glikolevye-pilingi	http://medstyle.kz/questions
+Redirect 301	/kategoriya/korrekciya-figury	http://medstyle.kz/services
+Redirect 301	/helpful/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/technology/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/news/service/poverhnostnye-glikolevye-pilingi	http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301	/content/fotoomolozhenie-i-fotoepilyaciya-trios-izrail	http://medstyle.kz/
+Redirect 301	/problems/service/poverhnostnye-glikolevye-pilingi	http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301	/content/s-1-oktyabrya-do-1-dekabrya	http://medstyle.kz/
+
+# === 13.11.2017 ==========================================
+Redirect 301	/services/korrekciya-vesa-i-razrabotka-diety	http://medstyle.kz/service/korrekciya-vesa-i-razrabotka-diety
+Redirect 301	/services/lechebnyy-massazh-po-zhake	http://medstyle.kz/service/massazh
+Redirect 301	/services/meso-wharton	http://medstyle.kz/service/meso-wharton
+Redirect 301	/services/ultraformer	http://medstyle.kz/technology/ultraformer
+Redirect 301	/services/lazernaya-revitalizaciya	http://medstyle.kz/service/lazernaya-revitalizaciya
+Redirect 301	/content/put-k-stroynosti-o-celyah-vere-i-somneniyah	http://medstyle.kz/helpful
+Redirect 301	/services/frakcionnyy-lazer-mcl-31	http://medstyle.kz/technology/lazer-mcl-31-dermablate
+Redirect 301	/services/gommazh	http://medstyle.kz/
+Redirect 301	/letnyaya-akciya-0	http://medstyle.kz/
+Redirect 301	/flash/main.swf	http://medstyle.kz/
+Redirect 301	/content/zhidkiy-hirurg	http://medstyle.kz/helpful/zhidkij-hirurg
+Redirect 301	/services/radiess-mezo	http://medstyle.kz/service/radiesse-mezo
+Redirect 301	/content/s-1-sentyabrya-do-30-noyabrya	http://medstyle.kz/
+Redirect 301	/skidka-20-na-procedury-frakcionnogo-lazera-mcl-31-germaniya	http://medstyle.kz/news
+Redirect 301	/content/shuvaev-mihail-vladimirovich	http://medstyle.kz/specialist/shuvaev-mihail-vladimirovich
+Redirect 301	/content/skidka-7-pri-pervom-vizite	http://medstyle.kz/news
+Redirect 301	/service/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/helpful/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+Redirect 301	/technology/service/lpg-cellu-endermolab-franciya	http://medstyle.kz/service/lpg-cellu-endermolab-franciya
+
+# === 15.02.2018 ==========================================
+Redirect 301	/services/glikolevye-pilingi	http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301	/services/terapiya-akne	http://medstyle.kz/service/lazernoe-lechenie-akne
+Redirect 301	/services/uhod-za-suhoy-kozhey	http://medstyle.kz/
+Redirect 301	/skidka-7-pri-pervom-vizite	http://medstyle.kz/
+Redirect 301	/kategoriya/inekcionnye-metodiki	http://medstyle.kz/services
+Redirect 301	/services/omolozhenie-kozhi-lazernaya-revitalizaciya	http://medstyle.kz/service/lazernaya-revitalizaciya
+Redirect 301	/services/liposkulptura	http://medstyle.kz/service/liposkul-ptura
+Redirect 301	/services/udalenie-papilom-i-nevusov	http://medstyle.kz/service/udalenie-aterom-keratom-ksantelazm-papilom-i-nevusov
+Redirect 301	/services/giaplazma	http://medstyle.kz/service/giaplazma
+Redirect 301	/anticellyulitnaya-mezoterapiya	http://medstyle.kz/service/mezoterapiya
+Redirect 301	/vesennyaya-akciya	http://medstyle.kz/news
+Redirect 301	/content/bezoperacionnyy-smas-lifting-lica	http://medstyle.kz/service/ul-trazvukovoj-smas-lifting
+Redirect 301	/aktualnoe-predlozhenie-do-konca-zimy	http://medstyle.kz/news
+Redirect 301	/vesennyaya-akciya-0	http://medstyle.kz/
+Redirect 301	/content/udarnaya-sila	http://medstyle.kz/helpful/udarnaya-sila
+Redirect 301	/content/lazernaya-epilyaciya	http://medstyle.kz/service/lazernaya-epilyaciya
+Redirect 301	/content/ultraformer	http://medstyle.kz/technology/ultraformer
+Redirect 301	/content/meso-warthon	http://medstyle.kz/
+Redirect 301	/content/anticellyulitnaya-mezoterapiya	http://medstyle.kz/
+Redirect 301	/content/skidka-20-na-frakcionnyy-lazer	http://medstyle.kz/news
+Redirect 301	/sites/default/files/Medstyle_discount_coupon.pdf	http://medstyle.kz/
+Redirect 301	/content/lazernaya-revitalizaciya	http://medstyle.kz/
+Redirect 301	/news/skidochnyj-kupon-na-7	http://medstyle.kz/news
+Redirect 301	/news/skidka-8-pri-pervom-vizite	http://medstyle.kz/news
+Redirect 301	/technology/rf-lifting-trio-xt-ssha	http://medstyle.kz/technology/trio-xt-ssha
+Redirect 301	/news/aqualyx	http://medstyle.kz/service/aqualyx
+Redirect 301	/news/lazer-mcl-31-dermablate	http://medstyle.kz/service/frakcionnyj-lazer
+Redirect 301	/news/radiess-mezo	http://medstyle.kz/service/radiesse-mezo
+Redirect 301	/news/niti-aptos-excellence-visage	http://medstyle.kz/service/niti-aptos-excellence-visage
+Redirect 301	/news/neodimovyy-lazer-skin-clear	http://medstyle.kz/news
+Redirect 301	/news/ultraformer	http://medstyle.kz/technology/ultraformer
+Redirect 301	/news/podtyazhka-tela-nityami-na-kanyulyah	http://medstyle.kz/service/podtyazhka-tela-nityami-na-kanyulyah
+Redirect 301	/news/plasmolifting-gel	http://medstyle.kz/service/plazmolifting-gel
+Redirect 301	/news/plasmolifting-krem	http://medstyle.kz/service/plasmolifting-krem
+Redirect 301	/news/lazer-mediostar-next	http://medstyle.kz/technology/lazer-mediostar-next
