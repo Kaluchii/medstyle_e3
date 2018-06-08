@@ -19,8 +19,8 @@ class RatingController extends Controller
             $ipAddress = array_pop($tmp);
         }
 
-        if (!($ip->where('ip', '=', $ipAddress)->where('entity_name', '=', $data['entity_name'])->where('entity_id', '=', $data['entity_id'])->count() > 0)) {
-
+//        if (!($ip->where('ip', '=', $ipAddress)->where('entity_name', '=', $data['entity_name'])->where('entity_id', '=', $data['entity_id'])->count() > 0)) {
+        if (true){
 
             $rait['ip'] = $ipAddress;
             $rait['entity_name'] = $data['entity_name'];

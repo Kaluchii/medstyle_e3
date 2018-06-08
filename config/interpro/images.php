@@ -46,6 +46,10 @@ return [
         'resizes' => ['preview']
     ],
 
+    'videos_block.img' => [
+        'resizes' => ['preview']
+    ],
+
     'contacts.img' => [
         'resizes' => ['preview']
     ],

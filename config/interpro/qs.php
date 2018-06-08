@@ -148,6 +148,8 @@ return [
 
     'videos_block' => [
         'text' => ['text'],
+        'image'   => ['img'],
+        'string'  => ['video_name','video_link','service_link'],
         'groups' =>[
             'videos' => [
                 'image'   => ['img'],

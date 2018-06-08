@@ -50,7 +50,7 @@ class FrontController extends Controller
 
     public function getIndex(){
         $this->extract->tuneSelection('slides')->sortBy('sorter','ASC');
-        $this->extract->tuneSelection('videos')->take(3)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('videos')->take(3)->sortBy('sorter','DESC');
         $this->extract->tuneSelection('serv_category')->like('show', true)->sortBy('sorter','ASC');
 
         $slider = $this->extract->getBlock('slider');
@@ -226,7 +226,7 @@ class FrontController extends Controller
 
 
     public function getVideos(){
-        $this->extract->tuneSelection('videos')->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('videos')->sortBy('sorter','DESC');
 
         $videos = $this->extract->getBlock('videos_block');
         return view('front.videos.videos', [
