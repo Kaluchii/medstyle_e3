@@ -43,10 +43,10 @@ a.close {
     right: 20px;
     transition:1s;
     top:25px;
-    background:url(../img/close.png)no-repeat;
+    background:url(../images/close.png)no-repeat;
 }
 a.close:hover{
-    background: url(../img/close-hover.png) no-repeat;
+    background: url(../images/close-hover.png) no-repeat;
     cursor: pointer;
     transform: rotate(360deg);
 }
