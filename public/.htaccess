@@ -61,6 +61,7 @@
 </IfModule>
 
 # === 14.11.2016 ==========================================
+Redirect 301 /problems http://medstyle.kz/questions
 Redirect 301 /specialist/shuvaev-mihail-vladimirovich http://medstyle.kz/specialists
 Redirect 301 /service/dport http://medstyle.kz/service/dysport
 Redirect 301 /services/dysport http://medstyle.kz/service/dysport
