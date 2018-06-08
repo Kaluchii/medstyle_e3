@@ -28,7 +28,7 @@
 
 <IfModule mod_rewrite.c>
 
-    Header set Cache-Control "max-age=604800, public"
+    #Header set Cache-Control "max-age=604800, public"
     RewriteEngine On
 
 	RewriteCond %{HTTP_HOST} ^www.medstyle.kz$ [NC]
