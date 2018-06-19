@@ -1,8 +1,7 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.test.meta')
-@php $title = 'Тестирование | MEDSTYLE Алматы' @endphp
+@include('front.meta', ['title' => $test->seo_title, 'description' => $test->seo_description, 'keywords' => $test->seo_keywords])
     <article class="content">
         <div class="grid grid-pad">
             <h1 class="page-title">{!! $test->page_title !!}</h1>
