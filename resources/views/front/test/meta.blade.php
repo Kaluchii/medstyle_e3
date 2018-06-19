@@ -1,4 +1,4 @@
 @section('meta')
-    <title>Тестирование | MEDSTYLE Алматы</title>
+    <title>{{$title}}</title>
     <meta name="robots" content="noindex, nofollow" />
 @endsection
