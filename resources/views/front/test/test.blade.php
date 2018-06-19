@@ -1,8 +1,7 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.test.meta')
-@php $title = 'Тестирование | MEDSTYLE Алматы' @endphp
+@include('front.test.meta', ['title' => 'Тестирование | MEDSTYLE Алматы'])
     <article class="content" data-page="testing">
         <div class="grid grid-pad">
             <div class="col-1-1">
