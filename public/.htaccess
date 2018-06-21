@@ -223,3 +223,17 @@ Redirect 301	/news/podtyazhka-tela-nityami-na-kanyulyah	http://medstyle.kz/servi
 Redirect 301	/news/plasmolifting-gel	http://medstyle.kz/service/plazmolifting-gel
 Redirect 301	/news/plasmolifting-krem	http://medstyle.kz/service/plasmolifting-krem
 Redirect 301	/news/lazer-mediostar-next	http://medstyle.kz/technology/lazer-mediostar-next
+
+# === 20.06.2018 ==========================================		
+Redirect 301	/news/sreda-bez-morshin	http://medstyle.kz/news
+Redirect 301	/kategoriya/pilingi-i-uhod-za-kozhey	http://medstyle.kz/services
+Redirect 301	/news/skidka-8-procentov	http://medstyle.kz/news
+Redirect 301	/s-1-oktyabrya-do-1-dekabrya	http://medstyle.kz/news
+Redirect 301	/%D0%BF%D0%BE%D0%BB%D0%B5%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%20-%20link	http://medstyle.kz/
+Redirect 301	/video/241472144/fallback?noscript	http://medstyle.kz/
+Redirect 301	/video/258760059/fallback?noscript	http://medstyle.kz/
+Redirect 301	/video/256027776/fallback?noscript	http://medstyle.kz/
+Redirect 301	/video/242723821/fallback?noscript	http://medstyle.kz/
+Redirect 301	/service	http://medstyle.kz/services
+Redirect 301	/flash/proezd/FINAL_PROEZD.swf	http://medstyle.kz/
+Redirect 301	/raiting/send	http://medstyle.kz/
