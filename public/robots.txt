@@ -9,7 +9,8 @@ Disallow: */*?width
 Disallow: /?inline
 Disallow: /*?inline
 Disallow: */*?inline
-Disallow: /service/диспорт
+Disallow: /диспорт
+Sitemap: http://medstyle.kz/sitemap.xml
 
 User-agent: Yandex
 Disallow: /adm
@@ -22,6 +23,6 @@ Disallow: */*?width
 Disallow: /?inline
 Disallow: /*?inline
 Disallow: */*?inline
-Disallow: /service/диспорт
+Disallow: /диспорт
 Host: medstyle.kz
 Sitemap: http://medstyle.kz/sitemap.xml
