@@ -234,6 +234,5 @@ Redirect 301	/video/241472144/fallback?noscript	http://medstyle.kz/
 Redirect 301	/video/258760059/fallback?noscript	http://medstyle.kz/
 Redirect 301	/video/256027776/fallback?noscript	http://medstyle.kz/
 Redirect 301	/video/242723821/fallback?noscript	http://medstyle.kz/
-Redirect 301	/service	http://medstyle.kz/services
 Redirect 301	/flash/proezd/FINAL_PROEZD.swf	http://medstyle.kz/
 Redirect 301	/raiting/send	http://medstyle.kz/
