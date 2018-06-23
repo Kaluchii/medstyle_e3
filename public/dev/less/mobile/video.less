@@ -91,12 +91,11 @@
     &__titular-video{
       max-width: 350px;
       margin: 0 auto;
+      font-size: 0;
     }
 
     &__titular-preview-wrap{
       position: relative;
-      font-size: 0;
-      border-radius: 5px;
 
       &::after{
         content: '';
@@ -109,7 +108,9 @@
       }
     }
 
-    &__titular-preview{}
+    &__titular-preview{
+      border-radius: 5px;
+    }
 
     &__name-wrap{
       font-size: 16px;
@@ -146,6 +147,7 @@
     &__preview-wrap{
       position: relative;
       align-self: flex-start;
+      height: 80px;
       width: 130px;
       max-width: 45%;
       flex-grow: 1;
@@ -179,7 +181,7 @@
     }
 
     &__service-link{
-      margin-top: 20px;
+      margin-top: 16px;
       font-size: 16px;
       line-height: 1;
       color: #666666;
