@@ -51,6 +51,14 @@
                                    data-id="0">
                         </div>
                         <div class="form-group">
+                            <label>Текст под заголовком</label>
+                            <textarea class="form-control text" data-reg="true"
+                                      data-name="subtitle"
+                                      data-type="string"
+                                      data-block="videos_block"
+                                      data-id="0">{{$block->subtitle_field}}</textarea>
+                        </div>
+                        <div class="form-group">
                             <label>Ссылка на видео</label>
                             <input class="form-control string"
                                    type="text" placeholder=""

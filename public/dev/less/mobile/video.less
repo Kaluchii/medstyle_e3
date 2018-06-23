@@ -72,14 +72,114 @@
 @media screen and (max-width: 770px) {
   .video-block{
     &__list{
-      flex-direction: column;
-      align-items: center;
+      display: none;
+      /*flex-direction: column;
+      align-items: center;*/
     }
-
+/*
     &__item{
       &:nth-child(n){
         margin: 45px 0 0;
       }
+    }*/
+  }
+
+  .mobile-videos{
+    display: block;
+    margin-top: 40px;
+
+    &__titular-video{
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    &__titular-preview-wrap{
+      position: relative;
+      font-size: 0;
+
+      &::after{
+        content: '';
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background: url(../img/play-hover.png) no-repeat;
+      }
+    }
+
+    &__titular-preview{
+      border-radius: 5px;
+    }
+
+    &__name-wrap{
+      font-size: 16px;
+      line-height: 1.5;
+      font-family: RobotoBold;
+
+      &--titular{
+        font-size: 24px;
+        font-family: RobotoCondensedRegular;
+        text-align: center;
+      }
+    }
+
+    &__video-name{}
+
+    &__subtitle{
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666666;
+      text-align: center;
+    }
+
+    &__list{
+      margin-top: 15px;
+    }
+
+    &__item{
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    &__preview-wrap{
+      position: relative;
+      width: 130px;
+      max-width: 45%;
+      flex-grow: 1;
+      font-size: 0;
+
+      &::after{
+        content: '';
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/play-hover.png) no-repeat center / cover;
+      }
+    }
+
+    &__preview{
+      border-radius: 3px;
+    }
+
+    &__links-wrap{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-shrink: 6;
+      width: ~'calc(100% - 20px)';
+      padding-left: 20px;
+    }
+
+    &__service-link{
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1;
+      color: #666666;
     }
   }
 }
@@ -96,28 +196,28 @@
       font-size: 44px;
     }
   }
-
+/*
   .video-item{
     &__name-wrap{
       margin-top: 15px;
     }
-  }
+  }*/
 }
 
 @media screen and (max-width: 450px){
-  .video-item{
+/*  .video-item{
     &__video-wrap{
       &--main{
         height: 180px;
       }
     }
-  }
+  }*/
 }
 
 @media screen and (max-width: 360px){
-  .video-item{
+/*  .video-item{
     &__video-wrap{
       height: 135px;
     }
-  }
+  }*/
 }

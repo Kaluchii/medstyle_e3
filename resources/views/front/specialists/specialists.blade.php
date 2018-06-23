@@ -2,7 +2,7 @@
 @include('front.menu')
 @section('content')
 @include('front.meta', ['title' => $specialists->seo_title, 'description' => $specialists->seo_description, 'keywords' => $specialists->seo_keywords])
-    <article class="content" data-page="services" >
+    <article class="content" data-page="specialists" >
         <div class="content-head">
             <h1 class="content-head-title spec">{{$specialists->title}}</h1>
             <div class="grid grid-pad head-grid">

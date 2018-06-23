@@ -7,6 +7,11 @@ return [
         'when_upload' => true
     ],
 
+    'small_spec' => [
+        'width' => 90,
+        'when_upload' => true
+    ],
+
     'res100x100' => [
         'width' => 100,
         'height' => 100,

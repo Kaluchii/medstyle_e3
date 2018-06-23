@@ -467,7 +467,8 @@ h1.content-head-title {
   padding-top: 32px;
   font-family: RobotoCondensedLight;
   font-size: 43px;
-  width: 410px;
+  width: 100%;
+  max-width: 410px;
   color: #333;
   line-height: 1.3em;
   position: relative;
@@ -769,6 +770,8 @@ span.prompt {
 
 .answer p.specialist-profession {
   font-size: 12px;
+  line-height: 1.5;
+  padding: 3px 0;
   color: #999;
   margin-top: 5px
 }
@@ -903,7 +906,14 @@ img.spec {
 }
 
 .grid.grid-pad.specialists {
-  padding-left: 90px
+  padding-left: 90px;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  .col-1-4{
+    margin-top: 40px;
+  }
 }
 
 p.spec-name {
@@ -1717,6 +1727,10 @@ h1.test-title {
 
 .content[data-page=recomend] .col-1-1 h1.test-title {
   padding-top: 10px
+}
+
+.content[data-page=specialists] .content-head {
+  padding-bottom: 0;
 }
 
 .test-questions {

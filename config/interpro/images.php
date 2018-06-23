@@ -7,7 +7,7 @@ return [
     ],
 
     'specialists.img' => [
-        'resizes' => ['preview']
+        'resizes' => ['preview', 'small_spec']
     ],
 
     'spec_sertificates.img' => [

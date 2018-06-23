@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    @if($app->environment('local'))
+        <meta name="robots" content="noindex, nofollow" />
+    @endif
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="cmsmagazine" content="8595dcaa5a4b96a7f4b87b77b13368cb" />
