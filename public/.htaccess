@@ -236,3 +236,8 @@ Redirect 301	/video/256027776/fallback?noscript	http://medstyle.kz/
 Redirect 301	/video/242723821/fallback?noscript	http://medstyle.kz/
 Redirect 301	/flash/proezd/FINAL_PROEZD.swf	http://medstyle.kz/
 Redirect 301	/raiting/send	http://medstyle.kz/
+
+ # === 25.06.2018 ==========================================		
+Redirect 301	services/plazmagel	http://medstyle.kz/service/plazmolifting-gel
+Redirect 301	services/glikolevye-pillingi	http://medstyle.kz/service/poverhnostnye-glikolevye-pilingi
+Redirect 301	services/massazh	http://medstyle.kz/service/massazh
