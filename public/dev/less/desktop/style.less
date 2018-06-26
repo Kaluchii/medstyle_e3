@@ -629,6 +629,7 @@ p.question-text {
 }
 
 .specialist {
+  display: inline-block;
   vertical-align: top;
   padding-bottom: 200px;
   -webkit-box-sizing: border-box;
@@ -910,8 +911,9 @@ img.spec {
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
-  .col-1-4{
+  .specialists__item{
     margin-top: 40px;
   }
 }
@@ -936,6 +938,10 @@ p.spec-prof {
 .specialists a.specialist:hover .specialist-photo .spec {
   border: 2px solid #ae2755;
   padding: 4px
+}
+
+.specialists__item{
+  width: 33.33333%;
 }
 
 .specialists .specialist .spec-name .name {
@@ -964,6 +970,7 @@ p.spec-prof {
 
 .specialist-photo {
   max-width: 202px;
+  font-size: 0;
 }
 
 .from-life:hover p.text-from span, a.link:hover {

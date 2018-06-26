@@ -442,8 +442,9 @@
     margin: 15px auto 0;
   }
 
-  .grid.grid-pad.specialists .col-1-4 {
+  .grid.grid-pad.specialists .specialists__item {
     display: block;
+    padding-right: 30px;
     width: 100% !important
   }
 
@@ -550,12 +551,6 @@
     max-width: 680px;
     min-width: initial;
     margin-top: 0
-  }
-
-  .grid.grid-pad.specialists .col-1-4 {
-    width: 50%;
-    vertical-align: top;
-    min-height: 320px
   }
 
   .grid.grid-pad.head-grid .col-1-2:first-child {
@@ -1108,6 +1103,16 @@
 
   .grid.margin .all-product {
     padding-top: 325px
+  }
+
+  .grid.grid-pad.specialists{
+    justify-content: flex-start;
+  }
+
+  .grid.grid-pad.specialists .specialists__item {
+    width: 50%;
+    vertical-align: top;
+    min-height: 320px
   }
 }
 
