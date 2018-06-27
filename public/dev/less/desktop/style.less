@@ -895,7 +895,11 @@ a.popup-changer.category.clicked:hover {
   max-width: 560px;
   padding-top: 20px
 }
-
+h1.content-head-title.specialists-title{
+  text-align: center;
+  padding: 30px 15px 0;
+  margin: 0 auto;
+}
 h1.content-head-title.spec {
   padding-bottom: 0;
   padding-top: 30px
@@ -912,9 +916,14 @@ img.spec {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 960px;
 
   .specialists__item{
     margin-top: 40px;
+
+    &:nth-child(n+4){
+      margin-top: 60px;
+    }
   }
 }
 
@@ -1001,12 +1010,8 @@ p.text-from {
   background-repeat: repeat-x
 }
 
-.grid.grid-pad.head-grid {
-  padding-left: 90px
-}
-
 .grid.grid-pad.head-grid .col-1-2:first-child {
-  width: 80%
+  width: 100%
 }
 
 .grid.grid-pad.head-grid .col-1-2:last-child {
@@ -2260,8 +2265,13 @@ article.content[data-page=services] {
   padding-bottom: 60px
 }
 
-.head-grid .text-block p {
-  max-width: 570px
+.head-grid{
+  text-align: center;
+
+  .text-block p {
+    max-width: 570px;
+    margin: 0 auto;
+  }
 }
 
 .text-block ul {
