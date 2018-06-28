@@ -1480,12 +1480,21 @@
     min-height: 240px;
   }
 
+  .head-img-wrap{
+    top: 50px;
+  }
+
   img.head-img.over {
     left: 50%;
     transform: translateX(-50%);
     min-height: 240px;
     max-height: 100%;
     object-position: initial;
+
+    & + img.head-img {
+      min-height: 240px;
+      object-position: initial;
+    }
   }
 
   .service-proc__title {
