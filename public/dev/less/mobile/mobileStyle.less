@@ -1075,6 +1075,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .service-right-col{
+    display: none !important;
+  }
+
   h1.product-title {
     width: 100%;
     background: #e5e5e5;
@@ -1466,8 +1470,22 @@
 }
 
 @media screen and (max-width: 600px) {
+  h1.product-title{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: RobotoCondensedLight;
+  }
+
+  .head-section{
+    min-height: 240px;
+  }
+
   img.head-img.over {
-    left: 0
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 240px;
+    max-height: 100%;
+    object-position: initial;
   }
 
   .service-proc__title {
