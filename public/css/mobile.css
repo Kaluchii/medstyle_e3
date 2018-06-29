@@ -898,7 +898,7 @@
 	}
 	.social-buttons {
 		padding-top : 10px;
-		top : 530px;
+		top : 530px;display: none;
 	}
 	.discount-block {
 		padding : 15px 0;
