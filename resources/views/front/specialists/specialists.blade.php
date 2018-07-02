@@ -7,9 +7,9 @@
             <h1 class="content-head-title specialists-title">{{$specialists->title}}</h1>
             <div class="grid grid-pad head-grid">
                 <div class="col-1-2">
-                    <div class="text-block specialists__text-block">
+                    <p class="specialists__text-block">
                         {!! $specialists->text !!}
-                    </div>
+                    </p>
                 </div>
                 <div class="col-1-2"></div>
             </div>
