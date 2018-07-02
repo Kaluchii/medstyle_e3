@@ -41,7 +41,7 @@
                     {!! $service->descr_1 !!}
                 </div>
             </div>
-            <div class="col-1-2 fr-1 service-right-col">
+            <div class="col-1-2 fr-1 service-right-col service-right-col--test">
                     <div class="interest">
                         <h2>Индивидуальный тест</h2>
                         <br>
