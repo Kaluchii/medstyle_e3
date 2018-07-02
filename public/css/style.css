@@ -1288,7 +1288,7 @@ img.spec {
     color: #666666;
 }
 .specialists__text-block * {
-    font-size: inherit;
+    font-size: inherit !important;
 }
 p.spec-name {
 	font-size : 24px;
