@@ -1282,13 +1282,13 @@ img.spec {
 	margin-top : 60px;
 }
 .specialists__text-block{
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
     line-height: 1.5;
     font-size: 20px;
     font-family: RobotoCondensedLight;
     color: #666666;
-}
-.specialists__text-block * {
-    font-size: inherit !important;
 }
 p.spec-name {
 	font-size : 24px;
