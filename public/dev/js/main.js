@@ -20,6 +20,7 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        speed: 1200,
         autoplay: true,
         autoplaySpeed: 7000,
         variableWidth: true,
@@ -42,6 +43,7 @@ $(document).ready(function () {
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        speed: 800,
         responsive: [
             {
                 breakpoint: 841,
