@@ -19,6 +19,36 @@
                            data-block="services_block"
                            data-id="0">
                 </div>
+                <div class="form-group">
+                    <label>Количество категорий в 1-ом столбце</label>
+                    <input class="form-control string"
+                           type="number" placeholder=""
+                           value="{{$block->count_1_field}}"
+                           data-name="count_1"
+                           data-type="int"
+                           data-block="services_block"
+                           data-id="0">
+                </div>
+                <div class="form-group">
+                    <label>Количество категорий в 2-ом столбце</label>
+                    <input class="form-control string"
+                           type="number" placeholder=""
+                           value="{{$block->count_2_field}}"
+                           data-name="count_2"
+                           data-type="int"
+                           data-block="services_block"
+                           data-id="0">
+                </div>
+                <div class="form-group">
+                    <label>Количество категорий в 3-ем столбце</label>
+                    <input class="form-control string"
+                           type="number" placeholder=""
+                           value="{{$block->count_3_field}}"
+                           data-name="count_3"
+                           data-type="int"
+                           data-block="services_block"
+                           data-id="0">
+                </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="box table-widget">
