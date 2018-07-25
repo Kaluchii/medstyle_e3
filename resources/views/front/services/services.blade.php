@@ -15,7 +15,7 @@
                          $c_1 = $services->count_1;
                          $c_2 = $services->count_2;
                          $c_3 = $services->count_3;
-                         $cat_count = $services->serv_category_group->count();
+                         $cat_count = 7;
                     @endphp
                     @foreach($services->serv_category_group as $item_category)
                         @if( $i == 0 or $i == $c_1 or $i == ($c_1 + $c_2) ) <ul class="trowelling-block__list trowelling-block__list--services vertical-list"> @endif
@@ -29,8 +29,11 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            @php $i++ @endphp
                         @if( $i == ($c_1 - 1) or $i == ($c_1 + $c_2 - 1) or ($cat_count - 1) ) </ul> @endif
+
+                        @if( $i == 0 or $i == 1 or $i == 3 ) @endif
+                        @if( $i == 0 or $i == 2 or $i == 5 ) @endif
+                        @php $i++ @endphp
                     @endforeach
                 </div>
             </div>
