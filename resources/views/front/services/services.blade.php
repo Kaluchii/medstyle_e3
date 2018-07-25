@@ -19,7 +19,7 @@
                     @endphp
                     @foreach($services->serv_category_group as $item_category)
                         @if( $i == 0 or $i == $c_1 or $i == ($c_1 + $c_2) ) <ul class="trowelling-block__list trowelling-block__list--services vertical-list"> @endif
-                            <li class="vertical-list__item category-item @if( $i > $c_2 ) movable @endif">
+                            <li class="vertical-list__item category-item @if( $i > $c_1 ) movable @endif">
                                 <h3 class="category-item__title" id="{{$item_category->cat_name}}">{{$item_category->cat_name}}</h3>
                                 <ul class="category-item__services-list strings-list">
                                     @foreach($item_category->services_group as $item_service)
