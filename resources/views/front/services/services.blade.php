@@ -29,10 +29,7 @@
                                     @endforeach
                                 </ul>
                             </li>
-                        @if( $i == ($c_1 - 1) or $i == ($c_1 + $c_2 - 1) or ($cat_count - 1) ) </ul> @endif
-
-                        @if( $i == 0 or $i == 1 or $i == 3 ) @endif
-                        @if( $i == 0 or $i == 2 or $i == 5 ) @endif
+                        @if( $i == ($c_1 - 1) or $i == ($c_1 + $c_2 - 1) or $i == ($cat_count - 1) ) </ul> @endif
                         @php $i++ @endphp
                     @endforeach
                 </div>
