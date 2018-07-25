@@ -29,8 +29,8 @@
                                     @endforeach
                                 </ul>
                             </li>
+                            @php $i++ @endphp
                         @if( $i == ($c_1 - 1) or $i == ($c_1 + $c_2 - 1) or ($cat_count - 1) ) </ul> @endif
-                        @php $i++ @endphp
                     @endforeach
                 </div>
             </div>
