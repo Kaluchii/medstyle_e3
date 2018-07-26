@@ -28,7 +28,7 @@ var texteditor = (function () {
                     ['paragraph', ['ul', 'ol', 'paragraph']],
                     ['misc', ['fullscreen', 'codeview', 'cleaner']]
                 ],
-                styleTags : ['p', 'h2', 'h3', 'h4', 'h5'],
+                styleTags : ['p', 'blockquote', 'h2', 'h3', 'h4', 'h5'],
                 cleaner:{
                     notTime: 2400, // Time to display Notifications.
                     action: 'button', // both|button|paste 'button' only cleans via toolbar button, 'paste' only clean when pasting content, both does both options.
