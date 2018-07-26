@@ -38,7 +38,7 @@ var texteditor = (function () {
                     keepHtml: true, // Remove all Html formats
                     keepOnlyTags: ['<p>', '<div>', '<br>', '<hr>', '<pre>', '<ul>', '<ol>', '<table>', '<tbody>', '<tr>', '<td>', '<th>', '<iframe>', '<blockquote>', '<li>', '<big>', '<b>', '<strong>','<i>', '<a>', '<h1>', '<h2>', '<h3>', '<h4>', '<h5>', '<h6>', '<img>'], // If keepHtml is true, remove all tags except these
                     keepClasses: false, // Remove Classes
-                    badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html'], // Remove full tags with contents
+                    badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html', 'span', 'font'], // Remove full tags with contents
                     badAttributes: ['style', 'start', 'dir'] // Remove attributes from remaining tags
                 },
                 callbacks : {
