@@ -10,6 +10,14 @@ class FrontController extends Controller
 {
     private $extract;
 
+    public function __construct(ExtractAgent $ext){
+        $this->extract = $ext;
+        $all_site = $this->extract->getBlock('all_site');
+        view()->share([
+            'all_site' => $all_site,
+        ]);
+    }
+
     private function getRatingById( $id ){
         $rating = new rating();
         $rating = $rating->where('entity_id','=',$id)->get();
@@ -21,7 +29,7 @@ class FrontController extends Controller
             //=Средняя оценка============================
             $sum = 0;
             foreach($rating as $item){
-                $sum += $item['value'];
+              $sum += $item['value'];
             }
 
             $rating_front['middle'] = round( $sum / $rating_front['count'], 1 );
@@ -37,14 +45,6 @@ class FrontController extends Controller
         }
 
         return $rating_front;
-    }
-
-    public function __construct(ExtractAgent $ext){
-        $this->extract = $ext;
-        $all_site = $this->extract->getBlock('all_site');
-        view()->share([
-            'all_site' => $all_site,
-        ]);
     }
 
 
