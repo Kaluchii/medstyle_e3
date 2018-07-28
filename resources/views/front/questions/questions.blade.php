@@ -1,7 +1,7 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@if($slug == '')
+@if(true)
     @include('front.meta', ['title' => $questions->seo_title, 'description' => $questions->seo_description, 'keywords' => $questions->seo_keywords])
 @else
     @include('front.meta', ['title' => $problem->seo_title, 'description' => $problem->seo_description, 'keywords' => $problem->seo_keywords])
