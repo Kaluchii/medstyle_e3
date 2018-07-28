@@ -191,6 +191,7 @@ class FrontController extends Controller
 
 
     public function getQuestions( $slug = '' ){
+        $problem = '';
         if ($slug != '') {
             $problem = $this->extract->getBySlug('problems', $slug);
             if (empty($problem)) {
@@ -209,6 +210,7 @@ class FrontController extends Controller
         return view('front.questions.questions', [
             'questions' => $questions,
             'problems' => $problems,
+            'problem' => $problem,
             'specialists' => $specialists,
             'slug' => $slug,
         ]);
