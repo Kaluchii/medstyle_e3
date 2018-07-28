@@ -209,6 +209,7 @@ class FrontController extends Controller
         return view('front.questions.questions', [
             'questions' => $questions,
             'problems' => $problems,
+            'problem' => $problem,
             'specialists' => $specialists,
             'slug' => $slug,
         ]);

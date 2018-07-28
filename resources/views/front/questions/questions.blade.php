@@ -1,7 +1,11 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.meta', ['title' => $questions->seo_title, 'description' => $questions->seo_description, 'keywords' => $questions->seo_keywords])
+@if($slug == '')
+    @include('front.meta', ['title' => $questions->seo_title, 'description' => $questions->seo_description, 'keywords' => $questions->seo_keywords])
+@else
+    @include('front.meta', ['title' => $problem->seo_title, 'description' => $problem->seo_description, 'keywords' => $problem->seo_keywords])
+@endif
     <div class="content-head questions-page" style="background: url('/img/questions_bg.jpg') no-repeat center top;">
         <div class="wrapper-block">
             <h1 class="content-head-title">{{$questions->title}}</h1>

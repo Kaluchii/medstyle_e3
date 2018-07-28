@@ -7,12 +7,12 @@
     </div>
     <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab_g1" data-toggle="tab" aria-expanded="true">Контент</a></li>
-            <li><a href="#tab_g2" data-toggle="tab" aria-expanded="false">Метаданные</a></li>
+            <li class="active"><a href="#tab_g{{$item->id_field}}_1" data-toggle="tab" aria-expanded="true">Контент</a></li>
+            <li><a href="#tab_g{{$item->id_field}}_2" data-toggle="tab" aria-expanded="false">Метаданные</a></li>
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane active" id="tab_g1">
+            <div class="tab-pane active" id="tab_g{{$item->id_field}}_1">
 
                 <div class="form-group">
                     <label>Название</label>
@@ -36,7 +36,7 @@
                            data-id="{{$item->id_field}}">
                 </div>
             </div>
-            <div class="tab-pane" id="tab_g2">
+            <div class="tab-pane" id="tab_g{{$item->id_field}}_2">
                 <div class="box-body">
                     <div class="form-group">
                         <label>Тайтл</label>
