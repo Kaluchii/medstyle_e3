@@ -20,6 +20,7 @@ return [
             'helpful_block',
             'helpful',
             'questions_block',
+            'problems',
             'stocks_block',
             'videos_block',
             'contacts',
