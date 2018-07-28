@@ -11,10 +11,15 @@
                     <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="test-block__button">Пройти тест</a>
                 </div>
                 <div class="services-page__category-list trowelling-block">
-                    @php $i = 0 @endphp
+                    @php $i = 0;
+                         $c_1 = $services->count_1;
+                         $c_2 = $services->count_2;
+                         $c_3 = $services->count_3;
+                         $cat_count = $services->serv_category_group->count();
+                    @endphp
                     @foreach($services->serv_category_group as $item_category)
-                        @if( $i == 0 or $i == 1 or $i == 3 ) <ul class="trowelling-block__list trowelling-block__list--services vertical-list"> @endif
-                            <li class="vertical-list__item category-item @if( $i > 2 ) movable @endif">
+                        @if( $i == 0 or $i == $c_1 or $i == ($c_1 + $c_2) ) <ul class="trowelling-block__list trowelling-block__list--services vertical-list"> @endif
+                            <li class="vertical-list__item category-item @if( $i > ($c_1 + $c_2 - 1) ) movable @endif">
                                 <h3 class="category-item__title" id="{{$item_category->cat_name}}">{{$item_category->cat_name}}</h3>
                                 <ul class="category-item__services-list strings-list">
                                     @foreach($item_category->services_group as $item_service)
@@ -24,7 +29,7 @@
                                     @endforeach
                                 </ul>
                             </li>
-                        @if( $i == 0 or $i == 2 or $i == 5 ) </ul> @endif
+                        @if( $i == ($c_1 - 1) or $i == ($c_1 + $c_2 - 1) or $i == ($cat_count - 1) ) </ul> @endif
                         @php $i++ @endphp
                     @endforeach
                 </div>

@@ -35,8 +35,9 @@ return [
     ],
 
     'services_block' => [
-        'groups' => [
-            'serv_category' => [
+      'int' => ['count_1', 'count_2', 'count_3'],
+      'groups' => [
+          'serv_category' => [
                 'string' => ['cat_name'],
                 'text' => ['descr_on_main'],
             ],

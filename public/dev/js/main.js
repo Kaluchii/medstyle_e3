@@ -160,7 +160,7 @@ $(document).ready(function () {
                 var count = $('.vertical-list:first-child .movable').length;
                 var half = count / 2 | 0;
                 $('.vertical-list:first-child .movable').each(function(i){
-                    if(i<half){
+                    if(i<half+1){
                         $(this).prependTo($('.vertical-list:nth-child(2)'));
                     }else{
                         $(this).prependTo($('.vertical-list:nth-child(3)'));

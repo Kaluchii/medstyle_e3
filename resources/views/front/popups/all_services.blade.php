@@ -11,23 +11,21 @@
                             <div class="description-wrap"><p>Чтобы помочь вам с выбором процедуры, специалисты «Медстайла» разработали несложный тест.</p></div>
                             <div class="p-button-wrap"><p class="button"><a href="/age" class="go-to-test">Пройти тест</a></p></div>
                         </div>
-                        @php $i = 0 @endphp
+                        @php $i = 0;
+                             $c_1 = $services->count_1;
+                             $c_2 = $services->count_2;
+                             $c_3 = $services->count_3;
+                             $cat_count = $services->serv_category_group->count();
+                        @endphp
                         @foreach($services->serv_category_group as $item_category)
-                            @php $i++ @endphp
-                            @if( $i == 1)
+                            @if( $i == 0 )
                             <div class="col-1-3 first">
-                            @elseif( $i == 2 )
+                            @elseif( $i == $c_1 )
                             <div class="col-1-3 second">
-                            @elseif( $i == 5 )
+                            @elseif( $i == ($c_1 + $c_2) )
                             <div class="col-1-3 editable">
                             @endif
-                                @if($i == 5)
-                                <div class="category category-1-1">
-                                @elseif( $i == 6)
-                                <div class="category category-1-2">
-                                @else
                                 <div class="category">
-                                @endif
                                     <h3 class="category-name">{{$item_category->cat_name}}</h3>
                                     <ul class="category-list">
                                         @foreach($item_category->services_group as $service_item)
@@ -50,9 +48,10 @@
                                         @endforeach
                                     </ul>
                                 </div>
-                                @if( $i == 1 || $i == 4 || $i == 6)
+                                @if( $i == ($c_1 - 1) || $i == ($c_1 + $c_2 - 1) || $i == ($cat_count - 1))
                             </div>
                             @endif
+                        @php $i++ @endphp
                         @endforeach
                     </div>
                 </div>
