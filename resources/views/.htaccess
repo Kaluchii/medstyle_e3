@@ -222,3 +222,10 @@ Redirect 301	/news/podtyazhka-tela-nityami-na-kanyulyah	http://medstyle.kz/servi
 Redirect 301	/news/plasmolifting-gel	http://medstyle.kz/service/plazmolifting-gel
 Redirect 301	/news/plasmolifting-krem	http://medstyle.kz/service/plasmolifting-krem
 Redirect 301	/news/lazer-mediostar-next	http://medstyle.kz/technology/lazer-mediostar-next
+
+# === 08.08.2018 ==========================================		
+Redirect 301	/kategoriya/dermatologiya 	http://medstyle.kz/services
+Redirect 301	/services/rf-lifting-trio-xt-ssha	http://medstyle.kz/service/rf-lifting
+Redirect 301	/novinka	http://medstyle.kz/services
+Redirect 301	/news/radiess	http://medstyle.kz/service/radiesse
+Redirect 301	/service/news/novogodnia-skidka-15	http://medstyle.kz/news
