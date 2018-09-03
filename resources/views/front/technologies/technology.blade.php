@@ -28,12 +28,10 @@
     <article class="content" data-page="technology" itemscope itemtype="http://schema.org/Service">
         <div class="grid content text-block">
             <div class="col-1-2">
-                <div class="first-paragraph">
-                    {!! $technology->descr_1 !!}
-                </div>
+                <div class="first-paragraph">@if($technology->descr_1 !== '<p><br></p>'){!! $technology->descr_1 !!}@endif</div>
             </div>
             <div class="col-1-2">
-                @if($technology->right_side_1 != '')
+                @if($technology->right_side_1 != '' && $technology->right_side_1 != '<p><br></p>')
                 <div class="interest">
                     {!! $technology->right_side_1 !!}
                 </div>

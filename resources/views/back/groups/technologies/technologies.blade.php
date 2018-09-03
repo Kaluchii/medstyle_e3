@@ -132,14 +132,14 @@
                                   data-block="technologies"
                                   data-id="{{$item->id_field}}">{{$item->descr_1_field}}</textarea>
                     </div>
-                    <div class="form-group">
+                    {{--<div class="form-group">
                         <label>Текстовый блок №2</label>
                         <textarea class="form-control text-editor"
                                   data-name="descr_2"
                                   data-type="string"
                                   data-block="technologies"
                                   data-id="{{$item->id_field}}">{{$item->descr_2_field}}</textarea>
-                    </div>
+                    </div>--}}
                     <div class="form-group">
                         <label>Блок справа №1</label>
                         <textarea class="form-control text-editor"
@@ -148,14 +148,14 @@
                                   data-block="technologies"
                                   data-id="{{$item->id_field}}">{{$item->right_side_1_field}}</textarea>
                     </div>
-                    <div class="form-group">
+                    {{--<div class="form-group">
                         <label>Блок справа №2</label>
                         <textarea class="form-control text-editor"
                                   data-name="right_side_2"
                                   data-type="string"
                                   data-block="technologies"
                                   data-id="{{$item->id_field}}">{{$item->right_side_2_field}}</textarea>
-                    </div>
+                    </div>--}}
                 </div>
 
                 <div class="box box-info group-item-widget" data-block="tech_pokazania">

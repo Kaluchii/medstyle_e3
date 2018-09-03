@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col-1-2">
-                @if($helpful->right_side_1 != '')
+                @if($helpful->right_side_1 != '' && $helpful->right_side_1 != '<p><br></p>')
                 <div class="interest">
                     {!! $helpful->right_side_1 !!}
                 </div>
