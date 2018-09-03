@@ -37,9 +37,7 @@
 
         <div class="grid content">
             <div class="col-1-2">
-                <div class="first-paragraph">
-                    {!! $service->descr_1 !!}
-                </div>
+                <div class="first-paragraph">@if($service->descr_1 !== '<p><br></p>'){!! $service->descr_1 !!}@endif</div>
             </div>
             <div class="col-1-2 fr-1 service-right-col service-right-col--test">
                     <div class="interest">
@@ -56,12 +54,10 @@
         </div>
         <div class="grid content con-2">
             <div class="col-1-2">
-                <div class="overall">
-                    {!! $service->descr_2 !!}
-                </div>
+                <div class="overall">@if($service->descr_2 !== '<p><br></p>'){!! $service->descr_2 !!}@endif</div>
             </div>
             <div class="col-1-2 fr-2  service-right-col">
-                @if( $service->right_side_1 != '')
+                @if($service->right_side_1 != '' && $service->right_side_1 != '<p><br></p>')
                     <div class="interest">
                         {!! $service->right_side_1 !!}
                     </div>
@@ -70,11 +66,9 @@
         </div>
         <div class="grid content con-2">
             <div class="col-1-2">
-                <div class="overall">
-                    {!! $service->descr_3 !!}
-                </div>
+                <div class="overall">@if($service->descr_3 !== '<p><br></p>'){!! $service->descr_3 !!}@endif</div>
             </div>
-            @if($service->right_side_2 != '')
+            @if($service->right_side_2 != '' && $service->right_side_2 != '<p><br></p>')
                 <div class="col-1-2 service-right-col">
                     <div class="interest">
                         {!! $service->right_side_2 !!}

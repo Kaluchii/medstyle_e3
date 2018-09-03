@@ -42,9 +42,6 @@ var texteditor = (function () {
                     badAttributes: ['style', 'start', 'dir'] // Remove attributes from remaining tags
                 },
                 callbacks : {
-                    onInit: function() {
-                        console.log('Summernote is launched');
-                    },
                     onImageUpload: function (files, editor, welEditable) {
                         sendFile(files[0], editor, welEditable);
                     }
