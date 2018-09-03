@@ -22,7 +22,7 @@
                             <div class="technologies-item__img-wrap">
                                 <img src="{{$item->preview->link}}?{{$item->preview->cache_index}}" alt="{{$item->preview->alt}}" class="technologies-item__img">
                             </div>
-                            <h3 class="technologies-item__title"><span class="technologies-item__link-text">{{$i}}{{$item->tech_name}}</span></h3>
+                            <h3 class="technologies-item__title"><span class="technologies-item__link-text">{{$item->tech_name}}</span></h3>
                         </a>
                         <div class="technologies-item__text">{!! $item->preview_descr !!}</div>
                     </li>
