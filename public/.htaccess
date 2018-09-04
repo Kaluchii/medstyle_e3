@@ -244,3 +244,6 @@ Redirect 301	/services/massazh	http://medstyle.kz/service/massazh
 
 # === 25.06.2018 ==========================================		
 Redirect 301	/service/liposkul-ptura	http://medstyle.kz/service/lipofiling
+
+# === 04.09.2018 ==========================================		
+Redirect 301	/content/lukashova-nelya-nikolaevna http://medstyle.kz/specialist/lukashova-nelya-nikolaevna
