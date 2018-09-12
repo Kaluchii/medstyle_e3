@@ -9,7 +9,7 @@
             </li>
             <li>
                 <a href="/adm/meta">
-                    <i class="fa fa-circle-o"></i> <span>Мета-данные <br>главной</span>
+                    <i class="fa fa-circle-o"></i> <span>Мета-данные главной</span>
                 </a>
             </li>
             <li>
