@@ -9,8 +9,14 @@
             </div>
             <div class="footer-block">
                 <ul>
-                    <li><p class="footer-text">Запись на процедуры</p><p class="big-phone ringo-phone">{{$all_site->phone}}</p></li>
-                    <li class="wa-block"><p class="footer-text">WhatsApp: <span class="phone">{{$all_site->whatsapp}}</span></p></li>
+                    <li><p class="footer-text">Запись на процедуры</p><p class="big-phone ringo-phone">
+                            <span class="footer-phone phone-link mobile-hide">{{$all_site->phone}}</span>
+                            <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer-phone phone-link desktop-hide">{{$all_site->phone}}</a>
+                        </p>
+                    </li>
+                    <li class="wa-block">
+                        <p class="footer-text">WhatsApp: <span class="phone"><a href="https://wa.me/{{str_replace(['+', ' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="phone-link">{{$all_site->whatsapp}}</a></span></p>
+                    </li>
                 </ul>
             </div>
             <div class="footer-block footer-block--social">

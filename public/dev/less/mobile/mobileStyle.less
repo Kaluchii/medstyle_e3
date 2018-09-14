@@ -93,13 +93,6 @@
     font-size: 28px
   }
 
-  header.header {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-  }
-
   .col-1-2.col-head {
     width: 50%;
     margin-top: 70px;
@@ -741,10 +734,6 @@
 @media screen and (max-width: 700px) {
   .grid.grid-pad.specialist .col-1-2:last-child {
     width: 100%
-  }
-
-  .header-block:first-child, .header-block:last-child {
-    display: none
   }
 
   header.header {
@@ -1426,6 +1415,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .desktop-hide{
+    display: initial;
+  }
+
+  .mobile-hide{
+    display: none;
+  }
+
   img.head-img.desctop {
     display: none
   }
@@ -1605,5 +1602,14 @@
 
   .col:last-child {
     margin-top: 20px
+  }
+
+  .footer-phone{
+    &::before{
+      top: 8px;
+      left: -30px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }

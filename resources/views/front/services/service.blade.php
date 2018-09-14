@@ -171,7 +171,10 @@
         </article>
         <div class="phone-and-consult">
             <p class="text-to-phone">Задайте вопрос или запишитесь на процедуру</p>
-            <p class="phone-number">{{$all_site->phone}}</p>
+            <p class="phone-number">
+                <span class="phone-link mobile-hide">{{$all_site->phone}}</span>
+                <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="phone-link desktop-hide">{{$all_site->phone}}</a>
+            </p>
         </div>
         <article class="content">
             @include('front.specials')

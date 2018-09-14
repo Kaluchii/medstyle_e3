@@ -16,6 +16,7 @@
 }
 
 .footer-wrapper, header.header {
+  display: flex;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox
@@ -107,13 +108,7 @@ li.menu-item a.item, .main-menu {
 
 header.header {
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
+  justify-content: center;
   align-items: flex-start;
   padding: 20px 20px 15px;
   max-width: 1360px;
@@ -2059,6 +2054,20 @@ a.footer-link:hover {
   text-align: center
 }
 
+.footer-phone{
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: -37px;
+    width: 25px;
+    height: 25px;
+    background: url("/img/phone.svg") no-repeat center / contain;
+  }
+}
+
 .col:last-child {
   text-align: right
 }
@@ -3455,3 +3464,9 @@ p.shares-date:empty {
 .menu-wrap {
   height: 50px
 }
+
+.desktop-hide{
+  display: none;
+}
+
+.mobile-hide{}
