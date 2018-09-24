@@ -39,7 +39,7 @@
             </li>
             <li>
                 <a href="/adm/helpful">
-                    <i class="fa fa-circle-o"></i> <span>Полезное</span>
+                    <i class="fa fa-circle-o"></i> <span>Новинки</span>
                 </a>
             </li>
             <li>

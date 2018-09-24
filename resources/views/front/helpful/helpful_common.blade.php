@@ -12,12 +12,12 @@
             @foreach($helpful->helpful_group as $item)
 
                 <div class="poleznoe-block-item">
-                    <a class="item-helpful" href="/helpful/{{$item->slug}}">
+                    <a class="item-helpful" href="{{$item->slug}}">
                         <div class="image-wrap">
                             <img src="{{$item->preview->link}}?{{$item->preview->cache_index}}" alt="{{$item->preview->alt}}">
                             <div class="hover-special"></div>
                         </div>
-                        <p><a href="/helpful/{{$item->slug}}" class="poleznoe-link">{{$item->tech_name}}</a></p>
+                        <p><a href="{{$item->slug}}" class="poleznoe-link">{{$item->tech_name}}</a></p>
                         <div class="about-helpful">
                             {!! $item->preview_descr !!}
                         </div>

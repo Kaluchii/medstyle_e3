@@ -1,6 +1,6 @@
 @extends('back.layout')
 @section('content')
-    @include('back.content-top', ['title' => 'Полезное'])
+    @include('back.content-top', ['title' => 'Новинки'])
     <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tab_g1" data-toggle="tab" aria-expanded="true">Контент</a></li>

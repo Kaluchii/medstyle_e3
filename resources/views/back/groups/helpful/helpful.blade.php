@@ -1,6 +1,6 @@
 @extends('back.layout')
 @section('content')
-    @include('back.content-top', ['title' => 'Полезное'])
+    @include('back.content-top', ['title' => 'Новинки'])
     <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tab_g1" data-toggle="tab" aria-expanded="true">Контент</a></li>
@@ -21,7 +21,7 @@
                                data-id="{{$item->id_field}}">
                     </div>
                     <div class="form-group">
-                        <label>Название полезного</label>
+                        <label>Название новинки</label>
                         <input class="form-control string"
                                type="text" placeholder=""
                                value="{{$item->tech_name_field}}"
@@ -81,7 +81,7 @@
                                   data-block="helpful"
                                   data-id="{{$item->id_field}}">{{$item->preview_descr_field}}</textarea>
                     </div>
-                    <div class="form-group">
+                    {{--<div class="form-group">
                         <label>Задний фон</label>
                         <div class="dropzone">
                             <div class="file-input">
@@ -139,10 +139,10 @@
                                   data-type="string"
                                   data-block="helpful"
                                   data-id="{{$item->id_field}}">{{$item->right_side_1_field}}</textarea>
-                    </div>
+                    </div>--}}
                 </div>
 
-                <div class="box box-info group-item-widget" data-block="hel_pokazania">
+                {{--<div class="box box-info group-item-widget" data-block="hel_pokazania">
                     <div class="box-header with-border">
                         <h3 class="box-title"> Показания </h3>
                         <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
@@ -168,7 +168,7 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div>--}}
 
                 {{--<div class="box box-info group-item-widget" data-block="hel_after_proc">
                     <div class="box-header with-border">
