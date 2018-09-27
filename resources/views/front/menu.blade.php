@@ -1,7 +1,7 @@
 @section('menu')
     <nav class="main-menu">
         <div class="menu-button">☰</div>
-        <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="menu-phone">{{$all_site->phone}}</a>
+        <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="menu-phone"></a>
         <div class="popup-for-menu">
             <ul class="menu">
                 <li class="menu-item"><a href="/about" class="item">О клинике</a></li>
