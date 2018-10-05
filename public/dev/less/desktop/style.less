@@ -1965,10 +1965,25 @@ a.footer-link, span.phone {
   color: #fff
 }
 
+.phone-wa{
+  position: relative;
+  font-size: 28px;
+
+  &::before{
+    content: url('/img/whatsapp.svg');
+    position: relative;
+    padding-right: 10px;
+    left: -5px;
+    top: 10px;
+    width: 50px;
+    display: inline-block;
+  }
+}
+
 p.big-phone {
   display: block;
-  margin-top: 5px;
-  font-size: 36px;
+  margin-top: 11px;
+  font-size: 28px;
   letter-spacing: -0.7px;
   white-space: nowrap;
   line-height: 1;
@@ -1976,7 +1991,7 @@ p.big-phone {
 }
 
 .wa-block{
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .footer-soc-link{
@@ -2047,25 +2062,11 @@ a.footer-link:hover {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin: -20px auto 0
+  margin: -25px auto 0
 }
 
 .footer-block:nth-child(2) {
   text-align: center
-}
-
-.footer-phone{
-  position: relative;
-
-  &::before{
-    content: '';
-    position: absolute;
-    top: 13px;
-    left: -37px;
-    width: 25px;
-    height: 25px;
-    background: url("/img/phone.svg") no-repeat center / contain;
-  }
 }
 
 .col:last-child {
@@ -3088,20 +3089,24 @@ span.totalvotes:last-child {
 }
 
 .phone-and-consult p.phone-number {
-  font-size: 64px;
+  margin-top: 8px;
+  font-size: 48px;
   color: #fff;
   font-family: RobotoCondensedRegular;
-  background: url(../img/phone-icon-big.png) ~'calc(50% - 280px)' center no-repeat
 }
 
-.phone-and-consult p.phone-number:before {
-  display: inline-block;
-  background: url(../img/phone-icon-big.png);
-  width: 40px;
-  height: 40px;
+.consult-phone{
   position: relative;
-  left: -34px;
-  top: -3px
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: -53px;
+    width: 32px;
+    height: 32px;
+    background: url("/img/phone.svg") no-repeat center / contain;
+  }
 }
 
 a.go-to-test.right-side {
