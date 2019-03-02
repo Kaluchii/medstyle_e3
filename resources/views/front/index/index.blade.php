@@ -106,7 +106,7 @@
                         <span class="new-video__link pink-link">Подписаться на YouTube</span>
                     </p>
                 </a>
-                <p class="new-video__subscribe">Подпишитесь на наш <a target="_blank" href="https://www.youtube.com/channel/UCE2HHrjCN11fRl1J6Fyj-Gw?sub_confirmation=1" class="pink-link">YouTube-канал</a>, чтобы узнавать о роликах сразу, как они вышли.</p>
+                <p class="new-video__subscribe">Подпишитесь на наш <a target="_blank" href="{{$all_site->youtube}}?sub_confirmation=1" class="pink-link">YouTube-канал</a>, чтобы узнавать о роликах сразу, как они вышли.</p>
             </div>
         </div>
         <div class="block-shadow"><img src="/img/block_shadow.png" alt="Тень"></div>

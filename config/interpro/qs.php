@@ -3,7 +3,7 @@
 return [
 
     'all_site' => [
-        'string' => ['copyright','inst','fb','phone','whatsapp']
+        'string' => ['copyright','inst','fb','phone','whatsapp','youtube']
     ],
 
     'slider' => [

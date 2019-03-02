@@ -22,7 +22,7 @@
             <div class="footer-block footer-block--social">
                 <ul>
                     <li><p class="footer-text">Полезные советы и скидки в&nbsp;наших&nbsp;группах</p></li>
-                    <li><a href="{{$all_site->fb}}" class="footer-soc-link footer-soc-link__fb" rel="nofollow" target="_blank"></a><a href="{{$all_site->inst}}" class="footer-soc-link footer-soc-link__inst" rel="nofollow" target="_blank"></a><a href="{{$all_site->inst}}" class="footer-soc-link footer-soc-link__youtube" rel="nofollow" target="_blank"></a></li>
+                    <li><a href="{{$all_site->fb}}" class="footer-soc-link footer-soc-link__fb" rel="nofollow" target="_blank"></a><a href="{{$all_site->inst}}" class="footer-soc-link footer-soc-link__inst" rel="nofollow" target="_blank"></a><a href="{{$all_site->youtube}}" class="footer-soc-link footer-soc-link__youtube" rel="nofollow" target="_blank"></a></li>
                 </ul>
             </div>
         </div>

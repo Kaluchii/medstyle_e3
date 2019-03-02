@@ -54,6 +54,16 @@
                        data-block="all_site"
                        data-id="0">
             </div>
+            <div class="form-group">
+                <label>Ссылка на YouTube</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$block->youtube_field}}"
+                       data-name="youtube"
+                       data-type="string"
+                       data-block="all_site"
+                       data-id="0">
+            </div>
         </div>
     </div>
 @endsection
