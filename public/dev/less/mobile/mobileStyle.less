@@ -608,12 +608,12 @@
     width: auto
   }
 
-  .footer-block:nth-child(2) li {
-    margin-bottom: 5px
+  .wa-block{
+    margin-top: 20px;
   }
 
   .footer-row {
-    margin-top: 25px
+    margin-top: 45px
   }
 }
 
@@ -1179,20 +1179,17 @@
   }
 
   .phone-and-consult p.phone-number {
-    font-size: 32px;
-    color: #fff;
-    font-family: RobotoCondensedRegular
+    margin-top: 12px;
+    font-size: 24px;
   }
 
-  .phone-and-consult p.phone-number:before {
-    content: "";
-    display: none;
-    background: url(../img/phone-icon-big.png);
-    width: 40px;
-    height: 40px;
-    position: relative;
-    left: -34px;
-    top: -3px
+  .consult-phone{
+    &::before{
+      top: 9px;
+      left: -23px;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -1608,7 +1605,19 @@
   }
 
   p.big-phone {
-    font-size: 24px;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: initial;
+  }
+
+  .phone-wa{
+    font-size: 16px;
+
+    &::before{
+      left: -1px;
+      top: 7px;
+      width: 34px;
+    }
   }
 
   .col:last-child {
