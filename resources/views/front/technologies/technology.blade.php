@@ -18,9 +18,6 @@
                             @endforeach
                         </select>
                     </div>
-                    <div class="social-buttons">
-                        <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
-                    </div>
                 </div>
             </div>
         </div>
