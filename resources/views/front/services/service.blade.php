@@ -19,9 +19,6 @@
                     <div class="all-product">
                         <a href="#serv-popup" class="popup-changer all_serv">Все услуги <span class="treangle">▼</span></a>
                     </div>
-                    <div class="social-buttons">
-                        <div class="ya-share2" data-services="vkontakte,facebook" data-counter=""></div>
-                    </div>
                 </div>
             </div>
         </div>
