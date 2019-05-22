@@ -23,7 +23,7 @@
 
             @foreach($slider->slides_group as $item)
                 @php $i++ @endphp
-                <div class="head-slider__item tile-item" style="@if($i % 3 == 2)max-width: 520px; @else max-width: 370px; @endif">
+                <div class="head-slider__item tile-item" style="@if($i % 3 == 2)max-width: 410px; @else max-width: 410px; @endif">
                     <a href="{{$item->link}}" class="tile-item__img-wrap">
                         <img src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->img->alt}}" class="tile-item__img">
                     </a>
