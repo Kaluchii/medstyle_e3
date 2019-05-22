@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+
+  <data name="en_project_title"><![CDATA[MEDSTYLE]]></data>
+
+
+
+  <data name="en_pano19_title"><![CDATA[id_00]]></data>
+
+  <data name="en_panogroup34_title"><![CDATA[Клиника эстетической медицины]]></data>
+
+  <data name="en_pano20_title"><![CDATA[id_01]]></data>
+  <data name="en_pano21_title"><![CDATA[id_02]]></data>
+  <data name="en_pano22_title"><![CDATA[id_03]]></data>
+  <data name="en_pano23_title"><![CDATA[id_04]]></data>
+  <data name="en_pano24_title"><![CDATA[id_05]]></data>
+  <data name="en_pano25_title"><![CDATA[id_06]]></data>
+  <data name="en_pano26_title"><![CDATA[id_07]]></data>
+
+
+
+
+	<data name="en_project_floor_title"><![CDATA[РАСПОЛОЖЕНИЕ НА КАРТЕ]]></data>
+	<data name="en_spotmap130_tooltip"><![CDATA[id_01]]></data>
+
+
+<data name="en_descriptiondescription_title"><![CDATA[КОНТАКТНАЯ ИНФОРМАЦИЯ]]></data>
+<data name="en_project_description"><![CDATA[<div id="infobox">
+<center><img src="logo.png" /></center>
+<br />
+<font size="3" face="Cuprum"> 
+<b>Адрес</b> : 050060, Алматы ул.Кекилбайулы (бывшая ул.Каблукова), 270/3, ЖК Мега Тауэрс, блок №3,<br />
+рядом с ТРЦ MEGA Alma-Ata.<br /><br />
+<b>Часы работы</b> : ПН-СБ, 09:00 - 18:00<br />
+<b>Телефоны</b> : +7 727 311 3181, +7 777 178 2926<br /><br />
+<b>Сайт</b> : www.medstyle.kz<br /><br />
+
+<b>Copyright</b> 2011-2019 Medstyle LLP<br />
+<b>Developer</b> 2019 Gumir J Production<br />
+</font>
+</div>]]></data>
+
+</krpano>

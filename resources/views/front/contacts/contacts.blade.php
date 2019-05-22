@@ -11,7 +11,14 @@
            {!! $contacts->contacts_field !!}
         </div>
         <div class="col-1-2">
-            <img src="{{$contacts->img->link}}?{{$contacts->img->cache_index}}" alt="{{$contacts->img->alt}}" class="building-photo">
+            <div class="from-life-block">
+                <a href="/tour/index.html" target="_blank" class="from-life">
+                    <div class="from-life-photo">
+                        <img src="{{$contacts->img->link}}?{{$contacts->img->cache_index}}" alt="{{$contacts->img->alt}}" class="from-life building-photo">
+                        <p class="text-from"><span>3D-тур</span></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="grid grid-pad attention">
