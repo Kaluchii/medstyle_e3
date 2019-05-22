@@ -36,7 +36,7 @@
     </div>
     <article class="content test-1 test-2" data-page="index">
         <div class="service-proc">
-            <h2 class="service-proc__title">Услуги и процедуры</h2>
+            <h2 class="service-proc__title">Выберите процедуру</h2>
             <div class="service-proc__services-category services-category">
                 @foreach($services->serv_category_group as $item_cat)
                     <div class="services-category__services-category-item services-category-item">
