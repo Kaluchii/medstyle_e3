@@ -38,6 +38,10 @@ Route::get('/video', 'FrontController@getVideos');
 
 Route::get('/contacts', 'FrontController@getContacts');
 
+Route::get('/privacy-policy', function(){
+    return view('front.privacy-policy.privacy-policy');
+});
+
 
 Route::get('/age', 'TestController@selectAge');
 Route::get('/test/{id}', 'TestController@getTest');
