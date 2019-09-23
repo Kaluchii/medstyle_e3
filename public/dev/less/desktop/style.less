@@ -15,7 +15,7 @@
   -webkit-box-direction: normal
 }
 
-.footer-wrapper, header.header {
+.footer-old-wrapper, header.header {
   display: flex;
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,13 +95,6 @@ p.right-text {
   color: #c69
 }
 
-li.menu-item a.item, .main-menu {
-  background: #915a78;
-  width: 100%;
-  position: relative;
-  z-index: 1000;
-}
-
 .header-wrap {
   background-color: #fff
 }
@@ -110,7 +103,7 @@ header.header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px 20px 15px;
+  padding: 20px 20px 30px;
   max-width: 1360px;
   margin: 0 auto
 }
@@ -121,35 +114,6 @@ header.header {
 
 .grid.content.con-4 .col-1-2.int:empty, .menu-button {
   display: none
-}
-
-li.menu-item {
-  margin-left: -.36em;
-  text-align: center
-}
-
-.li.menu-item a.item {
-  padding: 10px
-}
-
-li.menu-item a.item {
-  padding: 13px 22px;
-  color: #fff;
-  font-family: RobotoCondensedRegular;
-  font-size: 18px
-}
-
-li.menu-item a.item:hover {
-  background: #713d58
-}
-
-ul.menu {
-  width: 1060px;
-  margin: 0 auto
-}
-
-li.menu-item a.item.active {
-  background: #8c3e67
 }
 
 h1.product-title {
@@ -325,14 +289,6 @@ p.overall-title {
   text-align: right
 }
 
-.menu-button {
-  padding: 4px 22px 5px;
-  background: #915a78;
-  color: #fff;
-  width: 100%;
-  font-size: 30px
-}
-
 .description-text, .left-col, .our-block, .proc, .right-col, a.send-ask, span.prompt {
   display: inline-block
 }
@@ -366,10 +322,6 @@ p.text {
 
 p.string.right, span.prompt {
   text-align: right
-}
-
-.procedures {
-  margin-top: 33px
 }
 
 .left-col, .right-col {
@@ -425,11 +377,11 @@ article.content {
   margin: 0 auto
 }
 
-.footer .grid.grid-pad {
+.footer-old .grid.grid-pad {
   padding-top: 30px
 }
 
-footer.footer {
+footer-old.footer-old {
   background: #2e3339;
   padding: 45px 0;
   margin-top: 50px
@@ -1930,7 +1882,7 @@ p.about-testing {
   border-radius: 3px
 }
 
-.col a, .col a:hover, a.footer-link, a.footer-link:hover, p.footer-text, span.phone {
+.col a, .col a:hover, a.footer-old-link, a.footer-old-link:hover, p.footer-old-text, span.phone {
   font-family: RobotoRegular
 }
 
@@ -1948,32 +1900,32 @@ p.button-wrapper {
   background: url(../img/q.jpg) center top no-repeat #666
 }
 
-.footer-row, .footer-wrapper {
+.footer-old-row, .footer-old-wrapper {
   padding: 0 75px;
   max-width: 1360px
 }
 
-.footer-block:not(:nth-child(2)) {
+.footer-old-block:not(:nth-child(2)) {
   width: 210px
 }
 
-.footer-block:last-child {
+.footer-old-block:last-child {
   text-align: right
 }
 
-.footer-block li {
+.footer-old-block li {
   line-height: 1.5
 }
 
-.footer-block--social{
+.footer-old-block--social{
   max-width: 210px;
 }
 
-p.footer-text {
+p.footer-old-text {
   color: #999
 }
 
-a.footer-link, span.phone {
+a.footer-old-link, span.phone {
   color: #fff
 }
 
@@ -2006,7 +1958,7 @@ p.big-phone {
   margin-top: 25px;
 }
 
-.footer-soc-link{
+.footer-old-soc-link{
   display: inline-block;
   margin-top: 5px;
   width: 32px;
@@ -2027,7 +1979,7 @@ p.big-phone {
   }
 }
 
-a.footer-link {
+a.footer-old-link {
   font-size: 16px;
   background: -webkit-gradient(linear, 0 0, 90% 0, from(#999), to(#b2d1e0));
   background: -webkit-linear-gradient(left, #999, #999 90%);
@@ -2040,7 +1992,7 @@ a.footer-link {
   font-weight: 400
 }
 
-a.footer-link:hover {
+a.footer-old-link:hover {
   color: #fcc;
   background: -webkit-gradient(linear, 0 0, 90% 0, from(#fcc), to(#fcc));
   background: -webkit-linear-gradient(left, #fcc, #fcc 90%);
@@ -2053,7 +2005,7 @@ a.footer-link:hover {
   font-weight: 400
 }
 
-.footer-wrapper {
+.footer-old-wrapper {
   display: flex;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -2062,13 +2014,13 @@ a.footer-link:hover {
   margin: 0 auto
 }
 
-.footer-row, .services-category {
+.footer-old-row, .services-category {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox
 }
 
-.footer-row {
+.footer-old-row {
   display: flex;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -2077,7 +2029,7 @@ a.footer-link:hover {
   margin: -25px auto 0
 }
 
-.footer-block:nth-child(2) {
+.footer-old-block:nth-child(2) {
   text-align: center
 }
 
@@ -3478,21 +3430,8 @@ p.shares-date:empty {
   color: #903
 }
 
-.menu-wrap {
-  height: 50px
-}
-
 .desktop-hide{
   display: none;
 }
 
 .mobile-hide{}
-
-
-.menu-phone{
-  display: none;
-  margin-left: 10px;
-  width: 60px;
-  height: 49px;
-  background: url(/img/phone.svg) no-repeat center / 25px;
-}

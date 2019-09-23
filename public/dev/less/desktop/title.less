@@ -1,0 +1,42 @@
+.title{
+  &--l1{
+    font-family: "RobotoCondensedLight", sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  &--l2{
+    font-family: "RobotoCondensedRegular", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  &--l3{
+    font-family: "RobotoCondensedRegular", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  &--l4{
+    font-family: "RobotoCondensedLight", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  &--l5{
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__band{
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: '';
+      bottom: -45px;
+      left: 0;
+      height: 10px;
+      width: 250px;
+      background-color: #cc3366;
+    }
+  }
+}

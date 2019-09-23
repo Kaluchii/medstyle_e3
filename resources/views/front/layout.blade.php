@@ -13,7 +13,6 @@
     @include('front.scripts')
     @include('front.styles')
     @include('front.header')
-    @include('front.footer')
     @include('front.popups.question')
     @include('front.popups.thank')
 
@@ -28,7 +27,7 @@
             @yield('menu')
         </div>
         @yield('content')
-        @yield('footer')
+        @include('front.footer')
     </div>
         @yield('popup_question')
         @yield('popup_consult')
@@ -73,17 +72,17 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/22132025" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+{{--<script>--}}
+{{--  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){--}}
+{{--  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),--}}
+{{--  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)--}}
+{{--  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');--}}
 
-  ga('create', 'UA-80787415-1', 'auto');
-  ga('require', 'ringostat');
-  ga('send', 'pageview');
+{{--  ga('create', 'UA-80787415-1', 'auto');--}}
+{{--  ga('require', 'ringostat');--}}
+{{--  ga('send', 'pageview');--}}
 
-</script>
+{{--</script>--}}
 <script type="text/javascript">
     (function (d,s,u,e,p) {
         p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
