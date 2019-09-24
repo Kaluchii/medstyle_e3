@@ -27,7 +27,7 @@
             @yield('menu')
         </div>
         @yield('content')
-        @include('front.footer')
+{{--        @include('front.footer')--}}
     </div>
         @yield('popup_question')
         @yield('popup_consult')

@@ -1,21 +1,39 @@
 @section('menu')
     <nav class="main-menu">
-        <div class="popup-for-menu">
-            <ul class="menu">
-                <li class="menu-item"><a href="/about" class="item">О клинике</a></li>
-                <li class="menu-item"><a href="/specialists" class="item">Специалисты</a></li>
-                <li class="menu-item"><a href="/services" class="item">Услуги</a></li>
-                <li class="menu-item"><a href="/technology" class="item">Технологии</a></li>
-                <li class="menu-item"><a href="/helpful" class="item">Новинки</a></li>
-                <li class="menu-item"><a href="/questions" class="item">Вопросы и ответы</a></li>
-                <li class="menu-item"><a href="/news" class="item">Акции</a></li>
-                <li class="menu-item"><a href="/video" class="item">Видео</a></li>
-                <li class="menu-item"><a href="/contacts" class="item">Контакты</a></li>
-            </ul>
-        </div>
+        <ul class="main-menu__list">
+            <li class="main-menu__item js_menu_item">
+                <a href="/about" class="main-menu__item-link js_menu_item_link">О клинике</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/specialists" class="main-menu__item-link js_menu_item_link">Специалисты</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/services" class="main-menu__item-link js_menu_item_link">Услуги</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/technology" class="main-menu__item-link js_menu_item_link">Технологии</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/helpful" class="main-menu__item-link js_menu_item_link">Новинки</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/questions" class="main-menu__item-link js_menu_item_link">Вопросы и ответы</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/news" class="main-menu__item-link js_menu_item_link">Акции</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/video" class="main-menu__item-link js_menu_item_link">Видео</a>
+            </li>
+            <li class="main-menu__item js_menu_item">
+                <a href="/contacts" class="main-menu__item-link js_menu_item_link">Контакты</a>
+            </li>
+        </ul>
     </nav>
     <div class="main-menu__mob">
-        <div class="main-menu__mob-button">☰</div>
+        <div class="main-menu__mob-button-wrap">
+            <div class="main-menu__mob-button"></div>
+        </div>
         <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="main-menu__mob--phone"></a>
     </div>
 @endsection

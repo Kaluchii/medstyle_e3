@@ -1,0 +1,35 @@
+@media all and (max-width: 1220px){
+  .main-menu{
+    &__item-link{
+      font-size: 18px;
+      padding: 0 18px;
+
+      &::before{
+        left: 16px;
+        right: 16px;
+      }
+    }
+  }
+}
+@media all and (max-width: 1120px){
+  .main-menu{
+    &__list{
+      display: none;
+    }
+    &__mob{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media all and (max-width: 425px){
+  .main-menu{
+    &__mob{
+      padding: 0 10px;
+    }
+  }
+}
