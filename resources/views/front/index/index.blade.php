@@ -5,8 +5,8 @@
 
     @include('front.index.blocks.title-block')
     @include('front.index.blocks.procedures')
-{{--    @include('front.index.blocks.choose')--}}
-{{--    @include('front.index.blocks.features')--}}
+    @include('front.index.blocks.choose')
+    @include('front.index.blocks.features')
 {{--    @include('front.index.blocks.offers')--}}
 {{--    @include('front.index.blocks.new-video')--}}
 

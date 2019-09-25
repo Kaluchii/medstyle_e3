@@ -1,71 +1,69 @@
-@media all and (max-width: 1300px){
+@media all and (max-width: 1150px){
   .procedures{
-    padding: 80px 40px 140px;
-    background-image: url('/img/procedures-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: #E6E7EB;
-
-    &__title{
-      text-align: center;
-      color: #333333;
-    }
+    padding: 40px 40px 80px;
 
     &__list{
-      max-width: 1240px;
-      margin: 20px auto 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      margin: 0 auto;
     }
 
     &__item{
-      margin-top: 20px;
-      padding: 10px 20px 20px 20px;
-      background-color: #fff;
-      //width: 49%;
-      background-repeat: no-repeat;
-      background-position: 20px calc(100% - 12px);
-      border-radius: 5px;
-
-      &--1{
-        background-image: url('/img/procedures-item-bg.svg');
-      }
-
-      &--2{
-        background-image: url('/img/procedures-item-bg-2.svg');
-      }
-
-      &--3{
-        background-image: url('/img/procedures-item-bg-3.svg');
-      }
-
-      &--4{
-        background-image: url('/img/procedures-item-bg-4.svg');
-      }
-
-      &--5{
-        background-image: url('/img/procedures-item-bg-5.svg');
-      }
-
-      &--6{
-        background-image: url('/img/procedures-item-bg-6.svg');
-      }
-    }
-
-    &__item-title{
-      color: #333333;
+      width: 49%;
     }
 
     &__item-text{
-      margin-top: 10px;
-      max-width: 300px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 768px){
+  .procedures{
+    padding: 20px 20px 40px;
+
+    &__item{
+      margin-top: 15px;
+      width: 49%;
+    }
+  }
+}
+
+@media all and (max-width: 670px){
+  .procedures{
+    &__item{
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 425px){
+  .procedures{
+    padding: 10px 10px 30px;
+
+    &__list{
+      display: none;
     }
 
-    &__item-btn-wrap{
-      margin-top: 43px;
+    &__mob-list{
+      display: block;
+    }
+    
+    &__mob-item{
+      margin-top: 10px;
+    }
+
+    &__mob-item-btn{
       display: flex;
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      border: 1px solid #90A4AE;
+      background: linear-gradient(0deg, #E6E7EB 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+      box-shadow: 1px 2px 4px rgba(38, 50, 56, 0.25);
+      border-radius: 3px;
+      color: #333333;
+      font-size: 24px;
+      font-family: RobotoCondensedRegular, sans-serif;
     }
   }
 }

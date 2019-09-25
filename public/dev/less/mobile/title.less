@@ -1,46 +1,56 @@
-@media all and (max-width: 768px){
+@media all and (max-width: 1024px){
   .title{
     &--l1{
-      font-size: 48px;
+      font-size: 54px;
     }
 
     &--l2{
-      font-family: "RobotoCondensedRegular", sans-serif;
-      font-size: 32px;
-      font-weight: 400;
+      font-size: 28px;
     }
 
     &--l3{
-      font-family: "RobotoCondensedRegular", sans-serif;
-      font-size: 48px;
-      font-weight: 400;
+      font-size: 42px;
     }
 
     &--l4{
-      font-family: "RobotoCondensedLight", sans-serif;
-      font-size: 32px;
-      font-weight: 300;
-      line-height: 1.2;
+      font-size: 24px;
+    }
+  }
+}
+
+@media all and (max-width: 768px){
+  .title{
+    &--l1{
+      font-size: 44px;
     }
 
-    &--l5{
-      font-family: "RobotoMedium", sans-serif;
-      font-size: 18px;
-      font-weight: 500;
+    &--l2{
+      font-size: 24px;
     }
 
-    &__band{
-      position: relative;
+    &--l3{
+    }
+  }
+}
 
-      &::before{
-        position: absolute;
-        content: '';
-        bottom: -45px;
-        left: 0;
-        height: 10px;
-        width: 250px;
-        background-color: #cc3366;
-      }
+@media all and (max-width: 550px){
+  .title{
+    &--l1{
+      font-size: 38px;
+    }
+  }
+}
+
+@media all and (max-width: 425px){
+  .title{
+    &--l1{
+      font-size: 30px;
+    }
+
+    &--l4{
+      font-size: 20px;
+      font-family: RobotoCondensedRegular, sans-serif;
+      font-weight: 400;
     }
   }
 }

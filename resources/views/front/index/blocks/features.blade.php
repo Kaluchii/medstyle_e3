@@ -6,7 +6,8 @@
         <ul class="features__list">
             <li class="features__item">
                 <div class="features__item-img-wrap">
-                    <img src="/img/features-1.jpg" alt="" class="features__item-img">
+                    <video class="features__item-video js_video" poster="/img/001.jpg" loop muted src="/img/video.mp4"></video>
+                    <img src="/img/001.jpg" alt="" class="features__item-img">
                 </div>
                 <p class="features__item-title title--l2">Технологии</p>
                 <p class="features__item-text text-l1">
@@ -15,7 +16,8 @@
             </li>
             <li class="features__item">
                 <div class="features__item-img-wrap">
-                    <img src="/img/features-2.jpg" alt="" class="features__item-img">
+                    <video class="features__item-video js_video" poster="/img/001.jpg" loop muted src="/img/video.mp4"></video>
+                    <img src="/img/002.jpg" alt="" class="features__item-img">
                 </div>
                 <p class="features__item-title title--l2">Забота</p>
                 <p class="features__item-text text-l1">
@@ -23,7 +25,8 @@
             </li>
             <li class="features__item">
                 <div class="features__item-img-wrap">
-                    <img src="/img/features-3.jpg" alt="" class="features__item-img">
+                    <video class="features__item-video js_video" poster="/img/001.jpg" loop muted src="/img/video.mp4"></video>
+                    <img src="/img/003.jpg" alt="" class="features__item-img">
                 </div>
                 <p class="features__item-title title--l2">Безопасность</p>
                 <p class="features__item-text text-l1">

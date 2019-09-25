@@ -1,4 +1,5 @@
 <section class="choose">
+    <h2 class="choose__mob-title title--l1">Как выбрать процедуру?</h2>
     <div class="choose__wrap">
         <div class="choose__img-wrap">
             <img src="/img/choose-img.jpg" alt="" class="choose__img">
@@ -16,6 +17,7 @@
             <p class="choose__minor-text">
                 Ответы на несложные вопросы займут не более 5 минут
             </p>
+            <p class="choose__minor-text choose__minor-text--mob">не более 5 минут</p>
         </div>
     </div>
 </section>

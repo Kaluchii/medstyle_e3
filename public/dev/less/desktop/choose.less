@@ -12,10 +12,17 @@
     max-width: 600px;
     width: 100%;
     flex-shrink: 0;
+    font-size: 0;
   }
 
   &__img{
     border-radius: 6px;
+  }
+
+  &__mob-title{
+    color: #fff;
+    text-align: center;
+    display: none;
   }
 
   &__info-wrap{
@@ -44,5 +51,9 @@
     color: #999999;
     font-size: 16px;
     line-height: 1.5;
+
+    &--mob{
+      display: none;
+    }
   }
 }

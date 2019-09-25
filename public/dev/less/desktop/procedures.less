@@ -19,6 +19,8 @@
   }
   
   &__item{
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     padding: 10px 20px 20px 20px;
     background-color: #fff;
@@ -62,8 +64,14 @@
   }
 
   &__item-btn-wrap{
-    margin-top: 43px;
+    height: 85px;
+    margin-top: auto;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__mob-list{
+    display: none;
   }
 }
