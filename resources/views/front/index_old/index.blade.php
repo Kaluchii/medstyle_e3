@@ -76,7 +76,7 @@
                     @endforeach
                 </div>
 
-                <div class="new-video__list new-video__list--mobile js-slick-video">
+                <div class="new-video__list new-video__list--mobile js_slick_active">
                     @foreach($videos->videos_group as $item)
                         <div class="new-video__item video-item">
                             <div class="video-item__video-wrap video-item__video-wrap--main">

@@ -1,10 +1,21 @@
 .main-menu{
   background: #fff;
+  z-index: 1000;
+
+  &__wrap{
+    position: relative;
+    height: 50px;
+  }
 
   &__list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 50px;
     display: flex;
     justify-content: center;
+    background-color: #fff;
   }
 
   &__item{}
@@ -43,6 +54,11 @@
   &__mob{
     display: none;
     background-color: #282632;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   &__mob-button-wrap{

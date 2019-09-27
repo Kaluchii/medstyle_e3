@@ -31,6 +31,15 @@
             </div>
         </div>
         <div class="footer__bottom-block">
+            <div class="footer__tel-wrap footer__tel-wrap--bottom">
+                <h3 class="footer__tel-title title--l5">Запись на процедуры</h3>
+                <div class="footer__tel-link-wrap">
+                    <a href="#" class="footer__tel-link">+7 (727) 311-31-81</a>
+                </div>
+                <div class="footer__tel-link-wrap">
+                    <a href="#" class="footer__tel-link">+7 777 178-29-26</a>
+                </div>
+            </div>
             <p class="footer__copyright">
                 © Medstyle • Клиника эстетической
                 медицины в Алматы, 2011–2019

@@ -34,5 +34,26 @@
                 </p>
             </li>
         </ul>
+        <div class="features__mob-features mob-features">
+            <div class="mob-features__wrap">
+                <div class="mob-features__slider js_slick_active">
+                    <div class="mob-features__slide">
+                        <img src="/img/choose-img.jpg" alt="" class="mob-features__img">
+                        <h3 class="mob-features__title">Безопасность</h3>
+                        <p class="mob-features__text">Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.</p>
+                    </div>
+                    <div class="mob-features__slide">
+                        <img src="/img/choose-img.jpg" alt="" class="mob-features__img">
+                        <h3 class="mob-features__title">Безопасность</h3>
+                        <p class="mob-features__text">Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.</p>
+                    </div>
+                    <div class="mob-features__slide">
+                        <img src="/img/choose-img.jpg" alt="" class="mob-features__img">
+                        <h3 class="mob-features__title">Безопасность</h3>
+                        <p class="mob-features__text">Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

@@ -1,0 +1,76 @@
+.mob-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 265px;
+  background-color: #fff;
+  z-index: 2000;
+  padding: 50px 0;
+  overflow-y: auto;
+
+  &__wrap{}
+  &__nav-list{}
+  &__nav-item{}
+
+  &__nav-link{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 30px;
+    color: #CC3366;
+    transition: 0.1s;
+
+    &:hover{
+      color: #fff;
+      background-color: #282632;
+    }
+  }
+
+  &__social-list{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  &__social-item{
+    margin-left: 10px;
+  }
+
+  &__social-link{
+    display: inline-block;
+    background-image: url('/img/mob-m-soc.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
+
+  &__store-list{
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+
+  &__store-item{
+    font-size: 0;
+
+    & + &{
+      margin-top: 10px;
+    }
+  }
+
+  &__store-link{
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--ios{
+      background-image: url('/img/store-1.svg');
+    }
+
+    &--google{
+      background-image: url('/img/store-2.svg');
+    }
+  }
+}

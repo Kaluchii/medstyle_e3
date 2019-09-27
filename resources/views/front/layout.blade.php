@@ -15,7 +15,6 @@
     @include('front.header')
     @include('front.popups.question')
     @include('front.popups.thank')
-
     @yield('styles')
 </head>
 <body>
@@ -26,8 +25,9 @@
         <div class="menu-wrap">
             @yield('menu')
         </div>
+        @include('front.mob_menu')
         @yield('content')
-{{--        @include('front.footer')--}}
+        @include('front.footer')
     </div>
         @yield('popup_question')
         @yield('popup_consult')
