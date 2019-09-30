@@ -1,61 +1,31 @@
 <section class="procedures">
     <h2 class="procedures__title title--l1">Выберите процедуру</h2>
     <ul class="procedures__list">
-        <li class="procedures__item procedures__item--1">
-            <h3 class="procedures__item-title title--l2">Инъекционные методики</h3>
+        @php $i = 1 @endphp
+        @foreach($services->serv_category_group as $item)
+        <li class="procedures__item procedures__item--{{ $i++ }}">
+            <h3 class="procedures__item-title title--l2">{{$item->cat_name}}</h3>
             <p class="procedures__item-text text-l1">
-                Инъекционные методики позволят достигать точечного эффекта омоложения не прибегая к операциям
+                {!! $item->descr_on_main !!}
             </p>
-            <div class="procedures__item-btn-wrap">
-                <a href="#" class="procedures__item-btn btn">Смотреть процедуры</a>
+            <div class="procedures__item-btn-wrap js_parent_el">
+                <button class="procedures__item-btn btn js_procedures_popup_open">Смотреть процедуры</button>
+            </div>
+            <div class="procedures__item-popup js_procedure_popup">
+                <h4 class="procedures__popup-title title--l2">{{$item->cat_name}}</h4>
+                <ul class="procedures__popup-list">
+                    @foreach($item->services_group as $item)
+                    <li class="procedures__popup-item">
+                        <a href="/service/{{$item->slug}}" class="procedures__popup-link link--main">{{$item->serv_name}}<span class="procedures__popup-link--discount"> {{$item->discount_common}}</span></a>
+                    </li>
+                    @endforeach
+                </ul>
             </div>
         </li>
-        <li class="procedures__item procedures__item--2">
-            <h3 class="procedures__item-title title--l2">Контурная пластика</h3>
-            <p class="procedures__item-text text-l1">
-                Процедуры избавят от морщин, атрофических рубцов, складок, а также помогут в коррекции контура лица
-            </p>
-            <div class="procedures__item-btn-wrap">
-                <a href="#" class="procedures__item-btn btn">Смотреть процедуры</a>
-            </div>
-        </li>
-        <li class="procedures__item procedures__item--3">
-            <h3 class="procedures__item-title title--l2">Нитевые подтяжки</h3>
-            <p class="procedures__item-text text-l1">
-                Лифтинг нитями актуален с 30 лет, когда становятся заметны первые признаки старения
-            </p>
-            <div class="procedures__item-btn-wrap">
-                <a href="#" class="procedures__item-btn btn">Смотреть процедуры</a>
-            </div>
-        </li>
-        <li class="procedures__item procedures__item--4">
-            <h3 class="procedures__item-title title--l2">Аппаратные методики</h3>
-            <p class="procedures__item-text text-l1">
-                Мы используем сертифицированное европейское оборудование, доказавшее свою эффективность
-            </p>
-            <div class="procedures__item-btn-wrap">
-                <a href="#" class="procedures__item-btn btn">Смотреть процедуры</a>
-            </div>
-        </li>
-        <li class="procedures__item procedures__item--5">
-            <h3 class="procedures__item-title title--l2">Дерматология</h3>
-            <p class="procedures__item-text text-l1">
-                Эффективные методы восстановления тонуса дермы и устранения угревые высыпания
-            </p>
-            <div class="procedures__item-btn-wrap">
-                <a href="#" class="procedures__item-btn btn">Смотреть процедуры</a>
-            </div>
-        </li>
-        <li class="procedures__item procedures__item--6">
-            <h3 class="procedures__item-title title--l2">Пиллинги и уход за кожей</h3>
-            <p class="procedures__item-text text-l1">
-                Пилинг применяется для коррекции возрастных изменений, локального удаления пигментных пятен и кератом
-            </p>
-            <div class="procedures__item-btn-wrap">
-                <a href="#" class="procedures__item-btn btn">Смотреть процедуры</a>
-            </div>
-        </li>
+        @endforeach
     </ul>
+
+
     <ul class="procedures__mob-list">
         <li class="procedures__mob-item">
             <a href="#" class="procedures__mob-item-btn">Инъекционные методики</a>

@@ -19,6 +19,7 @@
   }
   
   &__item{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -69,6 +70,40 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+  }
+  
+  &__item-popup{
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 30px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.75);
+    transition: 0.2s;
+    transform: scale(0);
+    z-index: 2;
+
+    &.is-active{
+      transform: scale(1);
+    }
+  }
+
+  &__popup-title{
+    color: #333;
+  }
+
+  &__popup-list{}
+
+  &__popup-item{
+    margin-top: 10px;
+  }
+
+  &__popup-link{
+    &--discount{
+      color: #666;
+      text-transform: uppercase;
+    }
   }
 
   &__mob-list{

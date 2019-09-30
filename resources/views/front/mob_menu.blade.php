@@ -1,32 +1,34 @@
-<div class="mob-menu">
+<div class="mob-menu__bg js_mob_menu_bg"></div>
+<div class="mob-menu js_mob_menu">
+    <div class="mob-menu__btn-close js_mob_menu_close"></div>
     <div class="mob-menu__wrap">
         <ul class="mob-menu__nav-list">
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">О клинике</a>
+                <a href="/about" class="mob-menu__nav-link js_menu_item_link">О клинике</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Специалисты</a>
+                <a href="/specialists" class="mob-menu__nav-link js_menu_item_link">Специалисты</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Услуги</a>
+                <a href="/services" class="mob-menu__nav-link js_menu_item_link">Услуги</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Технологии</a>
+                <a href="/technology" class="mob-menu__nav-link js_menu_item_link">Технологии</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Новинки</a>
+                <a href="/helpful" class="mob-menu__nav-link js_menu_item_link">Новинки</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Вопросы и ответы</a>
+                <a href="/questions" class="mob-menu__nav-link js_menu_item_link">Вопросы и ответы</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Акции</a>
+                <a href="/news" class="mob-menu__nav-link js_menu_item_link">Акции</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Видео</a>
+                <a href="/video" class="mob-menu__nav-link js_menu_item_link">Видео</a>
             </li>
             <li class="mob-menu__nav-item">
-                <a href="#" class="mob-menu__nav-link">Контакты</a>
+                <a href="/contacts" class="mob-menu__nav-link js_menu_item_link">Контакты</a>
             </li>
         </ul>
         <ul class="mob-menu__social-list">

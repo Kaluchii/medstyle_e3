@@ -8,6 +8,55 @@
   z-index: 2000;
   padding: 50px 0;
   overflow-y: auto;
+  transition: 0.5s;
+  transform: translate3d(-370px, 0, 0);
+
+  &.is-active{
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__bg{
+    transition: 0.2s;
+    position: fixed;
+
+    &.is-active{
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+  }
+
+  &__btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    &::before,
+    &::after{
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: 14px;
+      width: 24px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #282632;
+    }
+
+    &::before{
+      transform: rotate(45deg);
+    }
+
+    &::after{
+      transform: rotate(-45deg);
+    }
+  }
 
   &__wrap{}
   &__nav-list{}
@@ -21,7 +70,7 @@
     color: #CC3366;
     transition: 0.1s;
 
-    &:hover{
+    &:hover, &.is-active{
       color: #fff;
       background-color: #282632;
     }

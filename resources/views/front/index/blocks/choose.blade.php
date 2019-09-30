@@ -12,7 +12,7 @@
                 специалистами
             </p>
             <div class="choose__btn-wrap">
-                <a href="#" class="choose__btn btn btn--big">Пройти тест</a>
+                <a href="/age" class="choose__btn btn btn--big">Пройти тест</a>
             </div>
             <p class="choose__minor-text">
                 Ответы на несложные вопросы займут не более 5 минут
