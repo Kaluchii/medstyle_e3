@@ -147,6 +147,18 @@ return [
         ]
     ],
 
+    'features' => [
+        'string'  => ['title'],
+        'groups' =>[
+            'features_list' => [
+                'image'   => ['img'],
+                'string'  => ['features_title'],
+                'text'    => ['text'],
+                'file'    => ['video']
+            ]
+        ]
+    ],
+
     'videos_block' => [
         'text' => ['text'],
         'image'   => ['img'],

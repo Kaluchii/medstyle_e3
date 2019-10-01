@@ -18,6 +18,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/features">
+                    <i class="fa fa-circle-o"></i> <span>Особенности</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/about">
                     <i class="fa fa-circle-o"></i> <span>О клинике</span>
                 </a>

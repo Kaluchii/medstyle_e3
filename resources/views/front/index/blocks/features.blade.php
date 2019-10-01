@@ -1,57 +1,30 @@
 <section class="features">
     <div class="features__wrap">
         <div class="features__title-wrap">
-            <h2 class="features__title title__band title--l1">Особенности Medstyle</h2>
+            <h2 class="features__title title__band title--l1">{{$features->title}}</h2>
         </div>
         <ul class="features__list">
+            @foreach($features->features_list_group as $item)
             <li class="features__item">
                 <div class="features__item-img-wrap">
-                    <video class="features__item-video js_video" poster="/img/001.jpg" loop muted src="/img/video.mp4"></video>
-                    <img src="/img/001.jpg" alt="" class="features__item-img">
+                    <video class="features__item-video js_video" poster="{{$item->img->link}}?{{$item->img->cache_index}}" loop muted src="{{$item->video->link}}"></video>
+                    <img src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->features_title}}" class="features__item-img">
                 </div>
-                <p class="features__item-title title--l2">Технологии</p>
-                <p class="features__item-text text-l1">
-                    Мы используем оборудование, прошедшее международную сертификацию и применяемое в клиниках по всему миру.
-                </p>
+                <p class="features__item-title title--l2">{{$item->features_title}}</p>
+                <p class="features__item-text text-l1">{{$item->text}}</p>
             </li>
-            <li class="features__item">
-                <div class="features__item-img-wrap">
-                    <video class="features__item-video js_video" poster="/img/001.jpg" loop muted src="/img/video.mp4"></video>
-                    <img src="/img/002.jpg" alt="" class="features__item-img">
-                </div>
-                <p class="features__item-title title--l2">Забота</p>
-                <p class="features__item-text text-l1">
-                    Пациенты клиники находятся в прямом контакте с врачом до и после процедуры, получая полную консультационную поддержку.                </p>
-            </li>
-            <li class="features__item">
-                <div class="features__item-img-wrap">
-                    <video class="features__item-video js_video" poster="/img/001.jpg" loop muted src="/img/video.mp4"></video>
-                    <img src="/img/003.jpg" alt="" class="features__item-img">
-                </div>
-                <p class="features__item-title title--l2">Безопасность</p>
-                <p class="features__item-text text-l1">
-                    Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.
-                </p>
-            </li>
+            @endforeach
         </ul>
         <div class="features__mob-features mob-features">
             <div class="mob-features__wrap">
                 <div class="mob-features__slider js_slick_active">
+                    @foreach($features->features_list_group as $item)
                     <div class="mob-features__slide">
-                        <img src="/img/choose-img.jpg" alt="" class="mob-features__img">
-                        <h3 class="mob-features__title">Безопасность</h3>
-                        <p class="mob-features__text">Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.</p>
+                        <video playsinline type="video/mp4" autoplay width="100%" class="mob-features__video" loop muted src="{{$item->video->link}}"></video>
+                        <h3 class="mob-features__title">{{$item->features_title}}</h3>
+                        <p class="mob-features__text">{{$item->text}}</p>
                     </div>
-                    <div class="mob-features__slide">
-                        <img src="/img/choose-img.jpg" alt="" class="mob-features__img">
-                        <h3 class="mob-features__title">Безопасность</h3>
-                        <p class="mob-features__text">Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.</p>
-                    </div>
-                    <div class="mob-features__slide">
-                        <img src="/img/choose-img.jpg" alt="" class="mob-features__img">
-                        <h3 class="mob-features__title">Безопасность</h3>
-                        <p class="mob-features__text">Наши специалисты — врачи с медицинским образованием и широкой практикой в дерматологии.</p>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

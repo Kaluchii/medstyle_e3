@@ -10,5 +10,7 @@
     @include('front.index.blocks.offers')
     @include('front.index.blocks.new-video')
 
+    @include('front.popups.procedures_popups')
+
 @endsection
 

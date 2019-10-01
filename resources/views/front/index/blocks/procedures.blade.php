@@ -27,23 +27,10 @@
 
 
     <ul class="procedures__mob-list">
+        @foreach($services->serv_category_group as $item)
         <li class="procedures__mob-item">
-            <a href="#" class="procedures__mob-item-btn">Инъекционные методики</a>
+            <a href="#procedures_popup-{{ $item->id }}" class="procedures__mob-item-btn js_popup_open">{{$item->cat_name}}</a>
         </li>
-        <li class="procedures__mob-item">
-            <a href="#" class="procedures__mob-item-btn">Контурная пластика</a>
-        </li>
-        <li class="procedures__mob-item">
-            <a href="#" class="procedures__mob-item-btn">Нитевые подтяжки</a>
-        </li>
-        <li class="procedures__mob-item">
-            <a href="#" class="procedures__mob-item-btn">Аппаратные методики</a>
-        </li>
-        <li class="procedures__mob-item">
-            <a href="#" class="procedures__mob-item-btn">Дерматология</a>
-        </li>
-        <li class="procedures__mob-item">
-            <a href="#" class="procedures__mob-item-btn">Пиллинги и уход за кожей</a>
-        </li>
+        @endforeach
     </ul>
 </section>

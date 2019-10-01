@@ -49,6 +49,14 @@ class AdminController extends Controller
         ]);
     }
 
+
+    public function getFeatures(){
+        $block = $this->extract->getBlock('features');
+        return view('back.blocks.features', [
+            'block' => $block
+        ]);
+    }
+
     
     public function getSlider(){
         $block = $this->extract->getBlock('slider');
