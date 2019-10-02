@@ -1,3 +1,3 @@
-<section class="title-block">
-    <h1 class="title-block__title">Дайте нам месяц <br> и мы вернем вам 10 лет</h1>
+<section class="title-block" style="background-image: url('{{$title_block->img->link}}?{{$title_block->img->cache_index}}')">
+    <h1 class="title-block__title">{!! $title_block->title !!}</h1>
 </section>

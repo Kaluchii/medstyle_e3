@@ -78,6 +78,18 @@
 
   &__list-mob{
     display: none;
+
+    &.slick-initialized{
+      .offers__item-mob + .offers__item-mob{
+        display: flex!important;
+      }
+    }
+  }
+
+  &__item-mob{
+    & + &{
+      display: none!important;
+    }
   }
 
   //Slick-slider

@@ -60,13 +60,14 @@ Route::post('/rating/send',      'RatingController@saveRating');
 Route::auth();
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
 
-    Route::get('/',         'AdminController@getIndex');
-
+    Route::get('/',                         'AdminController@getIndex');
 
     Route::get('/all',                      'AdminController@getAll');
     Route::get('/meta',                     'AdminController@getMeta');
     Route::get('/slider',                   'AdminController@getSlider');
+    Route::get('/title-block',              'AdminController@getTitleBlock');
     Route::get('/features',                 'AdminController@getFeatures');
+    Route::get('/offers',                   'AdminController@getOffers');
     Route::get('/about',                    'AdminController@getAbout');
     Route::get('/specialists',              'AdminController@getSpec');
     Route::get('/specialists/{id}',         'AdminController@getSpecItem');

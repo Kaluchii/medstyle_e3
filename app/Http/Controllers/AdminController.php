@@ -50,9 +50,25 @@ class AdminController extends Controller
     }
 
 
+    public function getTitleBlock(){
+        $block = $this->extract->getBlock('title_block');
+        return view('back.blocks.title_block', [
+            'block' => $block
+        ]);
+    }
+
+
     public function getFeatures(){
         $block = $this->extract->getBlock('features');
         return view('back.blocks.features', [
+            'block' => $block
+        ]);
+    }
+
+
+    public function getOffers(){
+        $block = $this->extract->getBlock('offers');
+        return view('back.blocks.offers', [
             'block' => $block
         ]);
     }

@@ -13,13 +13,18 @@
                 </a>
             </li>
             <li>
-                <a href="/adm/slider">
-                    <i class="fa fa-circle-o"></i> <span>Слайдер</span>
+                <a href="/adm/title-block">
+                    <i class="fa fa-circle-o"></i> <span>Титульный блок</span>
                 </a>
             </li>
             <li>
                 <a href="/adm/features">
                     <i class="fa fa-circle-o"></i> <span>Особенности</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/offers">
+                    <i class="fa fa-circle-o"></i> <span>Предложения</span>
                 </a>
             </li>
             <li>

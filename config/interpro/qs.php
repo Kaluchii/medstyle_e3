@@ -3,7 +3,8 @@
 return [
 
     'all_site' => [
-        'string' => ['copyright','inst','fb','phone','whatsapp','youtube']
+        'string' => ['copyright','inst','fb','phone','whatsapp','youtube','map_link','app_store','google_play'],
+        'text' => ['address']
     ],
 
     'slider' => [
@@ -13,6 +14,11 @@ return [
                 'string' => ['slide_title','link','descr']
             ]
         ]
+    ],
+
+    'title_block' => [
+        'text' => ['title'],
+        'image' => ['img'],
     ],
 
     'about' => [
@@ -159,14 +165,24 @@ return [
         ]
     ],
 
+    'offers' => [
+        'groups' =>[
+            'offers_list' => [
+                'image'   => ['img'],
+                'string'  => ['offers_title','offers_discount','offers_date'],
+                'text'    => ['text']
+            ]
+        ]
+    ],
+
     'videos_block' => [
         'text' => ['text'],
         'image'   => ['img'],
-        'string'  => ['video_name','subtitle','video_link','service_link'],
+        'string'  => ['video_name','subtitle','video_link','service_link','time'],
         'groups' =>[
             'videos' => [
                 'image'   => ['img'],
-                'string'  => ['video_name','video_link','service_link']
+                'string'  => ['video_name','video_link','service_link','time']
             ]
         ]
     ],

@@ -69,6 +69,16 @@
                                    data-id="0">
                         </div>
                         <div class="form-group">
+                            <label>Длительность видео (в формате 00:00)</label>
+                            <input class="form-control string"
+                                   type="text" placeholder=""
+                                   value="{{$block->time_field}}"
+                                   data-name="time"
+                                   data-type="string"
+                                   data-block="videos_block"
+                                   data-id="0">
+                        </div>
+                        <div class="form-group">
                             <label>Ссылка на услугу</label>
                             <input class="form-control string"
                                    type="text" placeholder=""

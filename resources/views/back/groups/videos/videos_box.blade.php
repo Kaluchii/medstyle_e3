@@ -27,6 +27,16 @@
                    data-id="{{$item->id_field}}">
         </div>
         <div class="form-group">
+            <label>Длительность видео (в формате 00:00)</label>
+            <input class="form-control string"
+                   type="text" placeholder=""
+                   value="{{$item->time_field}}"
+                   data-name="time"
+                   data-type="string"
+                   data-block="videos"
+                   data-id="{{$item->id_field}}">
+        </div>
+        <div class="form-group">
             <label>Ссылка на услугу</label>
             <input class="form-control string"
                    type="text" placeholder=""

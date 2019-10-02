@@ -4,8 +4,20 @@
     margin: 20px auto 0;
   }
 
-  &__slider{}
-  &__slide{}
+  &__slider{
+    &.slick-initialized{
+      .mob-features__slide + .mob-features__slide{
+        display: inline-block;
+      }
+    }
+  }
+
+  &__slide{
+    & + &{
+      display: none;
+    }
+  }
+
   &__img{
     border-radius: 5px;
   }

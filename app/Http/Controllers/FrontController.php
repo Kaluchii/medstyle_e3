@@ -53,16 +53,21 @@ class FrontController extends Controller
         $this->extract->tuneSelection('videos')->take(3)->sortBy('sorter','DESC');
         $this->extract->tuneSelection('serv_category')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('features_list')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('offers_list')->like('show', true)->sortBy('sorter','ASC');
 
         $slider = $this->extract->getBlock('slider');
         $services = $this->extract->getBlock('services_block');
         $videos = $this->extract->getBlock('videos_block');
         $features = $this->extract->getBlock('features');
+        $offers = $this->extract->getBlock('offers');
+        $title_block = $this->extract->getBlock('title_block');
         return view('front.index.index', [
             'slider' => $slider,
             'services' => $services,
             'videos' => $videos,
             'features' => $features,
+            'offers' => $offers,
+            'title_block' => $title_block,
         ]);
     }
 

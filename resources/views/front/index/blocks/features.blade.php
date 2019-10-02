@@ -20,7 +20,7 @@
                 <div class="mob-features__slider js_slick_active">
                     @foreach($features->features_list_group as $item)
                     <div class="mob-features__slide">
-                        <video playsinline type="video/mp4" autoplay width="100%" class="mob-features__video" loop muted src="{{$item->video->link}}"></video>
+                        <video playsinline autoplay style="width: 100%" class="mob-features__video" loop muted src="{{$item->video->link}}"></video>
                         <h3 class="mob-features__title">{{$item->features_title}}</h3>
                         <p class="mob-features__text">{{$item->text}}</p>
                     </div>
