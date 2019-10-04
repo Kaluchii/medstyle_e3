@@ -33,16 +33,13 @@
         </ul>
         <ul class="mob-menu__social-list">
             <li class="mob-menu__social-item">
-                <a href="#" class="mob-menu__social-link"></a>
+                <a href="{{ $all_site->inst }}" class="mob-menu__social-link mob-menu__social-link--inst" target="_blank"></a>
             </li>
             <li class="mob-menu__social-item">
-                <a href="#" class="mob-menu__social-link"></a>
+                <a href="{{ $all_site->youtube }}" class="mob-menu__social-link mob-menu__social-link--ytube" target="_blank"></a>
             </li>
             <li class="mob-menu__social-item">
-                <a href="#" class="mob-menu__social-link"></a>
-            </li>
-            <li class="mob-menu__social-item">
-                <a href="#" class="mob-menu__social-link"></a>
+                <a href="{{ $all_site->fb }}" class="mob-menu__social-link mob-menu__social-link--fb" target="_blank"></a>
             </li>
         </ul>
         <ul class="mob-menu__store-list">

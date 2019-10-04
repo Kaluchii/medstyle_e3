@@ -1,13 +1,11 @@
-<section class="procedures">
+<section class="procedures js_procedures">
     <h2 class="procedures__title title--l1">Выберите процедуру</h2>
     <ul class="procedures__list">
         @php $i = 1 @endphp
         @foreach($services->serv_category_group as $item)
-        <li class="procedures__item procedures__item--{{ $i++ }}">
+        <li class="procedures__item procedures__item--{{ $i++ }} js_animation" data-offset="50">
             <h3 class="procedures__item-title title--l2">{{$item->cat_name}}</h3>
-            <p class="procedures__item-text text-l1">
-                {!! $item->descr_on_main !!}
-            </p>
+            <p class="procedures__item-text text-l1">{!! $item->descr_on_main !!}</p>
             <div class="procedures__item-btn-wrap js_parent_el">
                 <button class="procedures__item-btn btn js_procedures_popup_open">Смотреть процедуры</button>
             </div>

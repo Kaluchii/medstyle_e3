@@ -74,13 +74,13 @@
                 <h3 class="footer__social-title title--l5">Наши соцсети</h3>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
-                        <a href="{{ $all_site->inst }}" class="footer__social-link"></a>
+                        <a href="{{ $all_site->inst }}" class="footer__social-link footer__social-link--inst" target="_blank"></a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="{{ $all_site->youtube }}" class="footer__social-link"></a>
+                        <a href="{{ $all_site->youtube }}" class="footer__social-link footer__social-link--ytube" target="_blank"></a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="{{ $all_site->fb }}" class="footer__social-link"></a>
+                        <a href="{{ $all_site->fb }}" class="footer__social-link footer__social-link--fb" target="_blank"></a>
                     </li>
                 </ul>
             </div>

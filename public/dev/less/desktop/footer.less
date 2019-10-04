@@ -119,11 +119,29 @@
   }
 
   &__social-list{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__social-item{
   }
 
   &__social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+
+    &--inst{
+      background-image: url('/img/inst.svg');
+    }
+    &--ytube{
+      width: 75px;
+      background-image: url('/img/ytube.svg');
+    }
+    &--fb{
+      background-image: url('/img/fb.svg');
+    }
   }
 }

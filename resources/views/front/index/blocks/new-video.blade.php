@@ -31,7 +31,7 @@
                             Подпишитесь на наш <br>
                             YouTube-канал
                         </p>
-                        <a href="https://www.youtube.com/channel/UCE2HHrjCN11fRl1J6Fyj-Gw" class="new-video__item-youtube-link" target="_blank"></a>
+                        <a href="{{ $all_site->youtube }}" class="new-video__item-youtube-link" target="_blank"></a>
                     </li>
                 </ul>
             </div>

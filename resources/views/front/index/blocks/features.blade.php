@@ -7,7 +7,7 @@
             @foreach($features->features_list_group as $item)
             <li class="features__item">
                 <div class="features__item-img-wrap">
-                    <video class="features__item-video js_video" poster="{{$item->img->link}}?{{$item->img->cache_index}}" loop muted src="{{$item->video->link}}"></video>
+                    <video class="features__item-video js_video js_video_load" data-src="{{$item->video->link}}" src="" poster="{{$item->img->link}}?{{$item->img->cache_index}}" loop muted ></video>
                     <img src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->features_title}}" class="features__item-img">
                 </div>
                 <p class="features__item-title title--l2">{{$item->features_title}}</p>
@@ -15,12 +15,13 @@
             </li>
             @endforeach
         </ul>
+
         <div class="features__mob-features mob-features">
             <div class="mob-features__wrap">
                 <div class="mob-features__slider js_slick_active">
                     @foreach($features->features_list_group as $item)
                     <div class="mob-features__slide">
-                        <video playsinline autoplay style="width: 100%" class="mob-features__video" loop muted src="{{$item->video->link}}"></video>
+                        <video class="mob-features__video js_mob_video_load" data-src="{{$item->video->link}}" src="" playsinline autoplay style="width: 100%" loop muted ></video>
                         <h3 class="mob-features__title">{{$item->features_title}}</h3>
                         <p class="mob-features__text">{{$item->text}}</p>
                     </div>
