@@ -18,7 +18,7 @@ return [
 
     'title_block' => [
         'text' => ['title'],
-        'image' => ['img'],
+        'image' => ['img', 'mobile_img'],
     ],
 
     'about' => [

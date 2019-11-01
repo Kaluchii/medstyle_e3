@@ -2,6 +2,7 @@
 @include('front.menu')
 @section('content')
 @include('front.meta', ['title' => $contacts->seo_title, 'description' => $contacts->seo_description, 'keywords' => $contacts->seo_keywords])
+<div class="hr"></div>
 <article class="content">
     <div class="content-head">
         <h1 class="content-head-title spec">{{$contacts->title}}</h1>

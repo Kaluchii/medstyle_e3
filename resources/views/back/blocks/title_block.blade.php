@@ -21,6 +21,11 @@
         'field_name' => 'img'
         ])
 
+        @include('back.tpls.image', [
+        'title' => 'Изображение для мобильной версии (в формате jpg, ??? на ??? пикселей)',
+        'field_name' => 'mobile_img'
+        ])
+
         </div>
     </div>
 

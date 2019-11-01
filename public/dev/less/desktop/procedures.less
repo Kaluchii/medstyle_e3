@@ -4,7 +4,8 @@
   background-size: cover;
   background-position: center;
   background-color: #E6E7EB;
-  
+  position: relative;
+
   &__title{
     text-align: center;
     color: #333333;
@@ -17,7 +18,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
+  &__wrap{
+    opacity: 1!important;
+  }
+
+  &__item-wrap{
+    position: relative;
+    z-index: 1;
+  }
+
   &__item{
     position: relative;
     display: flex;
@@ -29,7 +39,8 @@
     background-repeat: no-repeat;
     background-position: 20px calc(100% - 12px);
     border-radius: 5px;
-    
+    transition: 0.75s;
+
     &--1{
       background-image: url('/img/procedures-item-bg.svg');
     }
@@ -55,6 +66,23 @@
     }
   }
 
+  &__item-popup-wrap{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 30px;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 20px 48px 0 rgba(55, 71, 79, 0.75);
+  }
+
+  &__item-popup{
+  }
+
   &__item-title{
     color: #333333;
   }
@@ -71,30 +99,13 @@
     justify-content: flex-end;
     align-items: flex-end;
   }
-  
-  &__item-popup{
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 20px 30px;
-    box-shadow: 0 0 20px 0 rgba(55, 71, 79, 0.75);
-    transition: 0.2s;
-    transform: scale(0);
-    border-radius: 5px;
-    z-index: 2;
-
-    &.is-active{
-      transform: scale(1);
-    }
-  }
 
   &__popup-title{
     color: #333;
   }
 
-  &__popup-list{}
+  &__popup-list{
+  }
 
   &__popup-item{
     margin-top: 10px;

@@ -14,7 +14,7 @@
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->whatsapp) }}" class="footer__tel-link">{{ $all_site->whatsapp }}</a>
+                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp">{{ $all_site->whatsapp }}</a>
                 </div>
             </div>
             <div class="footer__store-wrap">
@@ -37,7 +37,7 @@
                     <a href="#" class="footer__tel-link">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="#" class="footer__tel-link">{{ $all_site->whatsapp }}</a>
+                    <a href="#" class="footer__tel-link footer__tel-link--wp">{{ $all_site->whatsapp }}</a>
                 </div>
             </div>
             <p class="footer__copyright">{!! $all_site->copyright !!}</p>
