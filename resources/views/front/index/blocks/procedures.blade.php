@@ -17,12 +17,14 @@
                             <h4 class="procedures__popup-title title--l2">{{$item->cat_name}}</h4>
                             <ul class="procedures__popup-list">
                                 @foreach($item->services_group as $item)
-                                    <li class="procedures__popup-item">
-                                        <a href="/service/{{$item->slug}}"
-                                           class="procedures__popup-link link--main">{{$item->serv_name}}
-                                            <span class="procedures__popup-link--discount"> {{$item->discount_common}}</span>
-                                        </a>
-                                    </li>
+                                    @if($item->show == true)
+                                        <li class="procedures__popup-item">
+                                            <a href="/service/{{$item->slug}}"
+                                               class="procedures__popup-link link--main">{{$item->serv_name}}
+                                                <span class="procedures__popup-link--discount"> {{$item->discount_common}}</span>
+                                            </a>
+                                        </li>
+                                    @endif
                                 @endforeach
                             </ul>
                         </div>
