@@ -2,7 +2,6 @@
 @include('front.menu')
 @section('content')
 @include('front.meta', ['title' => $videos->seo_title, 'description' => $videos->seo_description, 'keywords' => $videos->seo_keywords])
-<div class="hr"></div>
     <section class="content-wrap">
         <div class="video-block">
             <h1 class="video-block__title">{{$videos->title}}</h1>

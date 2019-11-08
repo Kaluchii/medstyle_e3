@@ -24,9 +24,12 @@
                     <div class="row">
                         <div class="col-9-12">
                             <h2 class="shares-name">
-                                @php $link = wrap_in_link($item->stock_name, $item->link); @endphp
-                                {!! $link !!}
+                                <a href="{{ $item->link }}" class="link">{{ $item->stock_name }}</a>
                             </h2>
+{{--                            <h2 class="shares-name">--}}
+{{--                                @php $link = wrap_in_link($item->stock_name, $item->link); @endphp--}}
+{{--                                {!! $link !!}--}}
+{{--                            </h2>--}}
                             <div class="shares-description text-block">{!! $item->text !!}</div>
                             <p class="shares-date">{{$item->discount}}</p>
                         </div>

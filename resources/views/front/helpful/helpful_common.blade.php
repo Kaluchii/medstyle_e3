@@ -2,7 +2,6 @@
 @include('front.menu')
 @section('content')
 @include('front.meta', ['title' => $helpful->seo_title, 'description' => $helpful->seo_description, 'keywords' => $helpful->seo_keywords])
-<div class="hr"></div>
     <article class="content" data-page="helpful">
         <div class="content-head">
             <h1 class="poleznoe-title">{{$helpful->title}}</h1>

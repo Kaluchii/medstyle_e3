@@ -23,11 +23,6 @@
                 </a>
             </li>
             <li>
-                <a href="/adm/offers">
-                    <i class="fa fa-circle-o"></i> <span>Предложения</span>
-                </a>
-            </li>
-            <li>
                 <a href="/adm/about">
                     <i class="fa fa-circle-o"></i> <span>О клинике</span>
                 </a>

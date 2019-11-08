@@ -147,7 +147,7 @@ return [
         'groups' =>[
             'stocks' => [
                 'image'   => ['img'],
-                'string'  => ['stock_name','link','discount'],
+                'string'  => ['stock_name','link','discount','numeral'],
                 'text'    => ['text']
             ]
         ]

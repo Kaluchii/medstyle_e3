@@ -20,50 +20,24 @@
   }
 
   &__wrap{
-    opacity: 1!important;
-  }
-
-  &__item-wrap{
-    position: relative;
-    z-index: 1;
+    opacity: 1 !important;
   }
 
   &__item{
     position: relative;
-    display: flex;
-    flex-direction: column;
     margin-top: 20px;
     padding: 10px 20px 20px 20px;
     background-color: #fff;
     width: 32.2%;
-    background-repeat: no-repeat;
-    background-position: 20px calc(100% - 12px);
     border-radius: 5px;
-    transition: 0.75s;
+  }
 
-    &--1{
-      background-image: url('/img/procedures-item-bg.svg');
-    }
-
-    &--2{
-      background-image: url('/img/procedures-item-bg-2.svg');
-    }
-
-    &--3{
-      background-image: url('/img/procedures-item-bg-3.svg');
-    }
-
-    &--4{
-      background-image: url('/img/procedures-item-bg-4.svg');
-    }
-
-    &--5{
-      background-image: url('/img/procedures-item-bg-5.svg');
-    }
-
-    &--6{
-      background-image: url('/img/procedures-item-bg-6.svg');
-    }
+  &__item-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
   }
 
   &__item-popup-wrap{
@@ -93,11 +67,78 @@
   }
 
   &__item-btn-wrap{
-    height: 85px;
     margin-top: auto;
+    position: relative;
+    height: 85px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+  }
+
+  &__item-btn{
+    &:hover{
+      & ~ .procedures__item-icon{
+        &--1{
+          background-image: url('/img/procedures-item-bg-1-h.svg');
+        }
+
+        &--2{
+          background-image: url('/img/procedures-item-bg-2-h.svg');
+        }
+
+        &--3{
+          background-image: url('/img/procedures-item-bg-3-h.svg');
+        }
+
+        &--4{
+          background-image: url('/img/procedures-item-bg-4-h.svg');
+        }
+
+        &--5{
+          background-image: url('/img/procedures-item-bg-5-h.svg');
+        }
+
+        &--6{
+          background-image: url('/img/procedures-item-bg-6-h.svg');
+        }
+      }
+    }
+  }
+
+  &__item-icon{
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    transition: 0.1s;
+
+    &--1{
+      background-image: url('/img/procedures-item-bg-1.svg');
+    }
+
+    &--2{
+      background-image: url('/img/procedures-item-bg-2.svg');
+    }
+
+    &--3{
+      background-image: url('/img/procedures-item-bg-3.svg');
+    }
+
+    &--4{
+      background-image: url('/img/procedures-item-bg-4.svg');
+    }
+
+    &--5{
+      background-image: url('/img/procedures-item-bg-5.svg');
+    }
+
+    &--6{
+      background-image: url('/img/procedures-item-bg-6.svg');
+      background-position: left 10px;
+    }
   }
 
   &__popup-title{
@@ -113,8 +154,18 @@
 
   &__popup-link{
     &--discount{
-      color: #666;
+      display: inline-block;
+      padding: 2px 5px 3px;
+      margin-left: 5px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      background-color: #cc3366;
+      color: #ffffff;
       text-transform: uppercase;
+
+      &.is-hide{
+        display: none;
+      }
     }
   }
 

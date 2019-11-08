@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="65" viewBox="0 0 61 65"><g><g><image width="61" height="65" xlink:href="data:image/png;base64,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"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M46.5,28.4
+			c0,0-0.6-1.5-1.8-1.5"/>
+		<g>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M21.9,51.4
+				c0.4-1.9,0.7-4.1,0.7-6.8"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M37.7,22.1
+				c0,0,2.2-5,10.6-2"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M38,27.2
+				c0,0,3.9,2,6.6-0.3c2.7-2.3,4.1-0.2,4.1-0.2"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M29,22.1
+				c0,0-2.2-5-10.6-2"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M28.8,27.2
+				c0,0-3.9,2-6.6-0.3s-4.1-0.2-4.1-0.2"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M20.3,28.4
+				c0,0,0.6-1.5,1.8-1.5"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M31.3,36.3
+				c0,0,1.8,2,4.3,0"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M28.5,42.5
+				c0,0,2.5-3.9,4.9-2.2c2.1-1.8,4.8,2.2,4.8,2.2S33.9,48.5,28.5,42.5z"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M16.3,18.1
+				c0,0,0,9,0,14.8s3.3,8.7,3.3,8.7l9.3,8.8c0,0,1.3,1.5,4.6,1.5s4.5-1.5,4.5-1.5s5.9-5.7,9.4-9c3.6-3.2,3.4-9.1,3.4-9.1l0-13.8"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M47.4,58.1
+				c0,0-3.3-4-3.3-13.6"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M52.9,38.4
+				c0,0,11.1-14-13.8-30.1"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M35.9,4.6
+				c0,0-1.8,5-9.7,6.7"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14.1,14.8
+				c0,0-6.3,1.8-8.7,9.8"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M58.6,29.3
+				c0,0,1,10.5-6.2,15.9"/>
+			<path fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M40.9,3.3
+				c0,0,0,6-8.6,10.1C23.5,17.7,10.6,15.5,9,25.3s9,19.3,9,27.7S11,60.6,11,60.6"/>
+		</g>
+	</g>
+	
+		<circle fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="46.4" cy="35.3" r="1.4"/>
+	
+		<circle fill="#FFFFFF" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.8" cy="42.5" r="1.4"/>
+	
+		<circle fill="#FFFFFF" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="33.3" cy="24.9" r="1.4"/>
+	
+		<circle fill="#FFFFFF" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="20.3" cy="35.3" r="1.4"/>
+	
+		<circle fill="#FFFFFF" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="33.3" cy="16.8" r="1.4"/>
+</g>
+</svg>

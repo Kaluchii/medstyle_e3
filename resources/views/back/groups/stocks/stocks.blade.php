@@ -26,6 +26,16 @@
                        data-id="{{$item->id_field}}">
             </div>
             <div class="form-group">
+                <label>Скидка</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$item->numeral_field}}"
+                       data-name="numeral"
+                       data-type="string"
+                       data-block="stocks"
+                       data-id="{{$item->id_field}}">
+            </div>
+            <div class="form-group">
                 <label>Время проведения акции</label>
                 <input class="form-control string"
                        type="text" placeholder=""

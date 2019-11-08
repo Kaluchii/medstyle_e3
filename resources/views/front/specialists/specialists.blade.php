@@ -2,7 +2,6 @@
 @include('front.menu', [$border_bottom = 'true'])
 @section('content')
 @include('front.meta', ['title' => $specialists->seo_title, 'description' => $specialists->seo_description, 'keywords' => $specialists->seo_keywords])
-<div class="hr"></div>
     <article class="content" data-page="specialists" >
         <div class="content-head">
             <h1 class="content-head-title specialists-title">{{$specialists->title}}</h1>

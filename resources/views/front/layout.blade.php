@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    @yield('google_tag_header')
     @if($app->environment('local'))
         <meta name="robots" content="noindex, nofollow" />
     @endif
@@ -18,6 +19,7 @@
     @yield('styles')
 </head>
 <body>
+    @yield('google_tag_body')
     <div class="wrapper">
         <div class="header-wrap">
             @yield('header')

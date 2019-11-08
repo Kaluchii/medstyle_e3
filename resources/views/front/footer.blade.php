@@ -14,17 +14,17 @@
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp">{{ $all_site->whatsapp }}</a>
+                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp" target="_blank">{{ $all_site->whatsapp }}</a>
                 </div>
             </div>
             <div class="footer__store-wrap">
                 <div class="footer__store-img-wrap">
-                    <a href="{{ $all_site->app_store }}">
+                    <a href="{{ $all_site->app_store }}" target="_blank">
                         <img src="/img/store-1.svg" alt="app store" class="footer__store-img">
                     </a>
                 </div>
                 <div class="footer__store-img-wrap">
-                    <a href="{{ $all_site->google_play }}">
+                    <a href="{{ $all_site->google_play }}" target="_blank">
                         <img src="/img/store-2.svg" alt="google play" class="footer__store-img">
                     </a>
                 </div>
@@ -37,7 +37,7 @@
                     <a href="#" class="footer__tel-link">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="#" class="footer__tel-link footer__tel-link--wp">{{ $all_site->whatsapp }}</a>
+                    <a href="#" class="footer__tel-link footer__tel-link--wp" target="_blank">{{ $all_site->whatsapp }}</a>
                 </div>
             </div>
             <p class="footer__copyright">{!! $all_site->copyright !!}</p>
@@ -71,7 +71,7 @@
                 </li>
             </ul>
             <div class="footer__social">
-                <h3 class="footer__social-title title--l5">Наши соцсети</h3>
+                <h3 class="footer__social-title title--l5">Мы в соцсетях</h3>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a href="{{ $all_site->inst }}" class="footer__social-link footer__social-link--inst" target="_blank"></a>

@@ -4,12 +4,13 @@
         <ul class="procedures__list">
             @php $i = 1; $j = 1; @endphp
             @foreach($services->serv_category_group as $item)
-                <li class="procedures__item procedures__item--{{ $i++ }}">
+                <li class="procedures__item">
                     <div class="procedures__item-wrap js_parent_el">
                         <h3 class="procedures__item-title title--l2 fade fadeInUp__child fade__delay-3">{{$item->cat_name}}</h3>
                         <p class="procedures__item-text text-l1 fade fadeInUp__child fade__delay-5">{!! $item->descr_on_main !!}</p>
                         <div class="procedures__item-btn-wrap fade fadeInUp__child fade__delay-7">
                             <button class="procedures__item-btn btn js_procedures_popup_open">Смотреть процедуры</button>
+                            <div class="procedures__item-icon procedures__item-icon--{{ $i++ }}"></div>
                         </div>
                     </div>
                     <div class="procedures__item-popup-wrap js_procedure_popup">
@@ -21,7 +22,7 @@
                                         <li class="procedures__popup-item">
                                             <a href="/service/{{$item->slug}}"
                                                class="procedures__popup-link link--main">{{$item->serv_name}}
-                                                <span class="procedures__popup-link--discount"> {{$item->discount_common}}</span>
+                                                <span class="procedures__popup-link--discount @if($item->discount_common == '') is-hide @endif"> {{$item->discount_common}} </span>
                                             </a>
                                         </li>
                                     @endif
