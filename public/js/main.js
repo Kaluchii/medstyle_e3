@@ -64,10 +64,14 @@ $(document).ready(function () {
         function addVideoSrc (scroll) {
             if(scroll >= proceduresBlockOffsetTop) {
                 if (windowWidth >768) {
-                    desktopVideos.attr('src',  desktopVideos.attr('data-src'));
+                    desktopVideos.each(function () {
+                        $(this).attr('src',  $(this).attr('data-src'));
+                    });
                     flag = false;
                 } else {
-                    mobileVideos.attr('src',  mobileVideos.attr('data-src'));
+                    mobileVideos.each(function () {
+                        $(this).attr('src',  $(this).attr('data-src'));
+                    });
                     flag = false;
                 }
             }

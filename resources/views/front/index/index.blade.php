@@ -1,7 +1,5 @@
 @extends('front.layout')
 @include('front.menu')
-@include('front.tags.google_tag_body')
-@include('front.tags.google_tag_header')
 @section('content')
 @include('front.meta', ['title' => $slider->seo_title, 'description' => $slider->seo_description, 'keywords' => $slider->seo_keywords])
 

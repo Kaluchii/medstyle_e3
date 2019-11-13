@@ -4,7 +4,7 @@
             <h2 class="features__title title__band title--l1">{{$features->title}}</h2>
         </div>
         <ul class="features__list">
-            @php $i = 1 @endphp
+            @php $j = 1; $i = 1; @endphp
             @foreach($features->features_list_group as $item)
             <li class="features__item fade fadeInUp__child fade__delay-{{ $i++ }}">
                 <div class="features__item-img-wrap">
@@ -23,7 +23,9 @@
                     @foreach($features->features_list_group as $item)
                     <div class="mob-features__slide">
                         <div class="mob-features__slide-media-wrap">
-                            <img class="mob-features__slide-img" src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->features_title}}">
+                            @if(!$item->img->link)
+                                <img class="mob-features__slide-img" src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->features_title}}">
+                            @endif
                             <video class="mob-features__video js_mob_video_load fade fadeInUp__child fade__delay-1" data-src="{{$item->video->link}}" src="" playsinline autoplay style="width: 100%" loop muted ></video>
                         </div>
                         <h3 class="mob-features__title fade fadeInUp__child fade__delay-2">{{$item->features_title}}</h3>

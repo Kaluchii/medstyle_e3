@@ -54,4 +54,12 @@ return [
         'resizes' => ['preview']
     ],
 
+    'features_list.img' => [
+        'resizes' => ['preview']
+    ],
+
+    'title_block.img' => [
+        'resizes' => ['preview']
+    ],
+
 ];

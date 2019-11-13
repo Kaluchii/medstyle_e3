@@ -16,9 +16,9 @@
                 </div>
                 <div class="information-block">
                     <h1 class="product-title">{{$service->serv_name}}</h1>
-                    <div class="all-product">
-                        <a href="#serv-popup" class="popup-changer all_serv">Все услуги <span class="treangle">▼</span></a>
-                    </div>
+{{--                    <div class="all-product">--}}
+{{--                        <a href="#serv-popup" class="popup-changer all_serv">Все услуги <span class="treangle">▼</span></a>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

@@ -35,8 +35,8 @@
   }
 
   &__tel-wrap{
-    width: 100%;
-    max-width: 380px;
+    max-width: 100%;
+    width: auto;
 
     &--bottom{
       display: none;
@@ -59,6 +59,7 @@
 
     &--wp{
       position: relative;
+
       &::before{
         content: '';
         position: absolute;
@@ -84,13 +85,14 @@
       margin-top: 10px;
     }
   }
-  procedures-item-bg-6-h
+
   &__store-link{
 
   }
 
   &__bottom-block{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-top: 50px;
     border-top: 1px solid #cfd8dc;
@@ -111,6 +113,10 @@
     width: 100%;
     max-width: 440px;
     padding-left: 30px;
+
+    &--n{
+      display: none;
+    }
   }
 
   &__nav-item{
@@ -128,6 +134,14 @@
     width: 100%;
     max-width: 190px;
     color: #333;
+
+    &--n{
+      display: none;
+    }
+
+    &--b{
+      margin-left: 50px;
+    }
   }
 
   &__social-title{
@@ -158,6 +172,23 @@
 
     &--fb{
       background-image: url('/img/facebook.svg');
+    }
+  }
+
+  &__nav-list-b{
+    display: flex;
+  }
+
+  &__nav-item-b{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+  }
+
+  &__nav-link-b{
+    & + &{
+      margin-top: 10px;
     }
   }
 }

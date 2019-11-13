@@ -8,7 +8,7 @@
                     <a href="{{ $all_site->map_link }}" class="footer__address-link link--main" target="_blank">Карта проезда</a>
                 </div>
             </address>
-            <div class="footer__tel-wrap">
+            <div class="footer__tel-wrap footer__tel-wrap--b">
                 <h3 class="footer__tel-title title--l5">Запись на процедуры</h3>
                 <div class="footer__tel-link-wrap">
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link">{{ $all_site->phone }}</a>
@@ -16,6 +16,20 @@
                 <div class="footer__tel-link-wrap">
                     <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp" target="_blank">{{ $all_site->whatsapp }}</a>
                 </div>
+            </div>
+            <div class="footer__social footer__social--b">
+                <h3 class="footer__social-title title--l5">Мы в соцсетях</h3>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="{{ $all_site->inst }}" class="footer__social-link footer__social-link--inst" target="_blank"></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="{{ $all_site->youtube }}" class="footer__social-link footer__social-link--ytube" target="_blank"></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="{{ $all_site->fb }}" class="footer__social-link footer__social-link--fb" target="_blank"></a>
+                    </li>
+                </ul>
             </div>
             <div class="footer__store-wrap">
                 <div class="footer__store-img-wrap">
@@ -41,7 +55,7 @@
                 </div>
             </div>
             <p class="footer__copyright">{!! $all_site->copyright !!}</p>
-            <ul class="footer__nav-list">
+            <ul class="footer__nav-list footer__nav-list--n">
                 <li class="footer__nav-item">
                     <a href="/about" class="footer__nav-link link--main">О клинике</a>
                 </li>
@@ -70,7 +84,7 @@
                     <a href="/helpful" class="footer__nav-link link--main">Новинки</a>
                 </li>
             </ul>
-            <div class="footer__social">
+            <div class="footer__social footer__social--n">
                 <h3 class="footer__social-title title--l5">Мы в соцсетях</h3>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
@@ -84,6 +98,28 @@
                     </li>
                 </ul>
             </div>
+            <ul class="footer__nav-list-b">
+                <li class="footer__nav-item-b">
+                    <a href="#" class="footer__nav-link-b link--main">О клинике
+                    </a>
+                    <a href="#" class="footer__nav-link-b link--main">Специалисты</a>
+                </li>
+                <li class="footer__nav-item-b">
+                    <a href="#" class="footer__nav-link-b link--main">Услуги
+                    </a>
+                    <a href="#" class="footer__nav-link-b link--main">Публикации</a>
+                </li>
+                <li class="footer__nav-item-b">
+                    <a href="#" class="footer__nav-link-b link--main">Акции
+                    </a>
+                    <a href="#" class="footer__nav-link-b link--main">Видео</a>
+                </li>
+                <li class="footer__nav-item-b">
+                    <a href="#" class="footer__nav-link-b link--main">Технологии
+                    </a>
+                    <a href="#" class="footer__nav-link-b link--main">Новинки</a>
+                </li>
+            </ul>
         </div>
     </div>
 </footer>
