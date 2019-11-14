@@ -17,6 +17,12 @@
 	<meta name="cmsmagazine" content="8595dcaa5a4b96a7f4b87b77b13368cb" />
     <link rel="shortcut icon" href="/img/fav.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/img/procedures-item-bg-1-h.svg" as="image">
+    <link rel="preload" href="/img/procedures-item-bg-2-h.svg" as="image">
+    <link rel="preload" href="/img/procedures-item-bg-3-h.svg" as="image">
+    <link rel="preload" href="/img/procedures-item-bg-4-h.svg" as="image">
+    <link rel="preload" href="/img/procedures-item-bg-5-h.svg" as="image">
+    <link rel="preload" href="/img/procedures-item-bg-6-h.svg" as="image">
     @yield('meta')
     @include('front.scripts')
     @include('front.styles')

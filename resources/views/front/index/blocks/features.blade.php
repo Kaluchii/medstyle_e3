@@ -23,9 +23,7 @@
                     @foreach($features->features_list_group as $item)
                     <div class="mob-features__slide">
                         <div class="mob-features__slide-media-wrap">
-                            @if(!$item->img->link)
-                                <img class="mob-features__slide-img" src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->features_title}}">
-                            @endif
+                            <img class="mob-features__slide-img" src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->features_title}}">
                             <video class="mob-features__video js_mob_video_load fade fadeInUp__child fade__delay-1" data-src="{{$item->video->link}}" src="" playsinline autoplay style="width: 100%" loop muted ></video>
                         </div>
                         <h3 class="mob-features__title fade fadeInUp__child fade__delay-2">{{$item->features_title}}</h3>
