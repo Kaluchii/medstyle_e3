@@ -128,7 +128,7 @@ class FrontController extends Controller
     public function getService( $slug ){
         $this->extract->tuneSelection('serv_category')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('services')->like('show', true)->sortBy('sorter','ASC');
-        $this->extract->tuneSelection('stocks')->like('show', true)->take(3)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('stocks')->like('show', true)->sortBy('sorter','ASC');
 
         $service = $this->extract->getBySlug('services', $slug);
         if (empty($service)) {
@@ -158,7 +158,7 @@ class FrontController extends Controller
 
     public function getTechnology( $slug ){
         $this->extract->tuneSelection('technologies')->like('show', true)->sortBy('sorter','ASC');
-        $this->extract->tuneSelection('stocks')->like('show', true)->take(3)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('stocks')->like('show', true)->sortBy('sorter','ASC');
 
         $technology = $this->extract->getBySlug('technologies', $slug);
         if (empty($technology)) {
@@ -187,7 +187,7 @@ class FrontController extends Controller
 
 
     public function getHelpful( $slug ){
-        $this->extract->tuneSelection('stocks')->like('show', true)->take(3)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('stocks')->like('show', true)->sortBy('sorter','ASC');
 
         $helpful = $this->extract->getBySlug('helpful', $slug);
         if (empty($helpful)) {

@@ -2,11 +2,19 @@
   .offers{
     &__item{
       width: 49%;
+
+      &--services{
+        width: 21.5%;
+      }
     }
 
     &__info-wrap{
       margin-left: 20px;
       max-width: 350px;
+
+      &--services{
+        margin-left: 0;
+      }
     }
   }
 }
@@ -27,15 +35,30 @@
       &:nth-child(n + 3){
         margin-top: 40px;
       }
+
+      &--services{
+        flex-direction: row;
+      }
     }
 
     &__item-title{
       max-width: 600px;
     }
 
+    &__item-img-wrap{
+      &--services{
+        width: 300px;
+      }
+    }
+
     &__info-wrap{
       margin-left: 20px;
       max-width: 600px;
+
+      &--services{
+        margin-top: 0;
+        text-align: left;
+      }
     }
   }
 }

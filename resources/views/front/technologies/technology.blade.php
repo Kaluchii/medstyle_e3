@@ -106,9 +106,8 @@
                 </div>
             </div>
         </div>
-        <div class="special-block-padding-top">
-        @include('front.specials')
-        @yield('special')
-        </div>
     </article>
+
+    @include('front.common.offers-row')
+
 @endsection

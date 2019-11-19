@@ -166,6 +166,7 @@
             </div>
         </div>
         </article>
+
         <div class="phone-and-consult">
             <p class="text-to-phone">Задайте вопрос или запишитесь на процедуру</p>
             <p class="phone-number">
@@ -173,10 +174,9 @@
                 <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="consult-phone phone-link desktop-hide">{{$all_site->phone}}</a>
             </p>
         </div>
-        <article class="content">
-            @include('front.specials')
-            @yield('special')
-        </article>
+
+        @include('front.common.offers-row')
+
     @include('front.popups.all_services')
     @yield('all_services')
 @endsection
