@@ -14,7 +14,7 @@
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp" target="_blank">{{ $all_site->whatsapp }}</a>
+                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp" target="_blank">{{ $all_site->whatsapp }}</a>
                 </div>
             </div>
             <div class="footer__social footer__social--b">
@@ -66,7 +66,7 @@
                     <a href="/services" class="footer__nav-link link--main">Услуги</a>
                 </li>
                 <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link link--main">Публикации</a>
+                    <a href="/" class="footer__nav-link link--main">Публикации</a>
                 </li>
                 <li class="footer__nav-item">
                     <a href="/age" class="footer__nav-link link--main">Ваш тест</a>
@@ -100,24 +100,20 @@
             </div>
             <ul class="footer__nav-list-b">
                 <li class="footer__nav-item-b">
-                    <a href="#" class="footer__nav-link-b link--main">О клинике
-                    </a>
-                    <a href="#" class="footer__nav-link-b link--main">Специалисты</a>
+                    <a href="/about" class="footer__nav-link-b link--main">О клинике</a>
+                    <a href="/specialists" class="footer__nav-link-b link--main">Специалисты</a>
                 </li>
                 <li class="footer__nav-item-b">
-                    <a href="#" class="footer__nav-link-b link--main">Услуги
-                    </a>
-                    <a href="#" class="footer__nav-link-b link--main">Публикации</a>
+                    <a href="/services" class="footer__nav-link-b link--main">Услуги</a>
+                    <a href="/" class="footer__nav-link-b link--main">Публикации</a>
                 </li>
                 <li class="footer__nav-item-b">
-                    <a href="#" class="footer__nav-link-b link--main">Акции
-                    </a>
-                    <a href="#" class="footer__nav-link-b link--main">Видео</a>
+                    <a href="/news" class="footer__nav-link-b link--main">Акции</a>
+                    <a href="/video" class="footer__nav-link-b link--main">Видео</a>
                 </li>
                 <li class="footer__nav-item-b">
-                    <a href="#" class="footer__nav-link-b link--main">Технологии
-                    </a>
-                    <a href="#" class="footer__nav-link-b link--main">Новинки</a>
+                    <a href="/technology" class="footer__nav-link-b link--main">Технологии</a>
+                    <a href="/helpful" class="footer__nav-link-b link--main">Новинки</a>
                 </li>
             </ul>
         </div>

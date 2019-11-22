@@ -8,7 +8,7 @@
 @endif
     <div class="content-head questions-page" style="background: url('/img/questions_bg.jpg') no-repeat center top;">
         <div class="wrapper-block">
-            <h1 class="content-head-title">{{$questions->title}}</h1>
+            <h1 class="content-head-title content-head-title--question title--l1">{{$questions->title}}</h1>
             <div class="all-product category">
                 <select class="all-techno">
                     <option @if($slug == '') selected @endif value="/questions">Все категории</option>

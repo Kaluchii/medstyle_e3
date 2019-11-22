@@ -30,7 +30,6 @@
 
 h1.content-head-title, h1.product-title {
   font-weight: 400;
-  text-transform: uppercase
 }
 
 .no-br, p.shares-date, span.discount, span.phone, span.sale-percent {
@@ -422,11 +421,19 @@ h1.content-head-title {
   font-family: RobotoCondensedLight;
   font-size: 43px;
   width: 100%;
-  max-width: 410px;
+  max-width: 700px;
   color: #333;
   line-height: 1.3em;
   position: relative;
-  padding-bottom: 32px
+  padding-bottom: 32px;
+
+  &--question{
+    font-size: 64px;
+  }
+
+  &--contacts{
+    font-size: 64px;
+  }
 }
 
 h3.category-name, h3.worry-title {
@@ -533,7 +540,7 @@ a.popup-changer.category {
 
 .content-head {
   background-size: cover;
-  padding-bottom: 40px;
+  padding-bottom: 85px;
   overflow: hidden
 }
 
@@ -851,7 +858,7 @@ a.popup-changer.category.clicked:hover {
 }
 h1.content-head-title.specialists-title{
   text-align: center;
-  padding: 30px 15px 0;
+  padding: 40px 15px 0;
   margin: 0 auto;
 }
 .specialists__text-block{
@@ -874,19 +881,16 @@ img.spec {
 }
 
 .grid.grid-pad.specialists {
-  padding-left: 90px;
+  padding-left: 0;
+  padding-bottom: 100px;
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 960px;
 
   .specialists__item{
     margin-top: 40px;
-
-    &:nth-child(n+4){
-      margin-top: 60px;
-    }
   }
 }
 
@@ -913,7 +917,8 @@ p.spec-prof {
 }
 
 .specialists__item{
-  width: 33.33333%;
+  width: 22.2%;
+  text-align: center;
 }
 
 .specialists .specialist .spec-name .name {
@@ -3445,3 +3450,16 @@ p.shares-date:empty {
 }
 
 .mobile-hide{}
+
+.content__specialist{
+  background-color: #e6e7eb;
+}
+
+.specialists-title{
+  margin-top: 40px;
+  font-family: "RobotoCondensedLight", sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+}

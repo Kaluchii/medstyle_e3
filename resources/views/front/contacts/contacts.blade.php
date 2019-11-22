@@ -4,7 +4,7 @@
 @include('front.meta', ['title' => $contacts->seo_title, 'description' => $contacts->seo_description, 'keywords' => $contacts->seo_keywords])
 <article class="content">
     <div class="content-head">
-        <h1 class="content-head-title spec">{{$contacts->title}}</h1>
+        <h1 class="content-head-title content-head-title--contacts spec">{{$contacts->title}}</h1>
     </div>
     <div class="grid grid-pad contacts">
         <div class="col-1-2 text-block">
