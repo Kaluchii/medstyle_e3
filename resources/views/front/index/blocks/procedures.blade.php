@@ -20,8 +20,8 @@
                                 @foreach($item->services_group as $item)
                                     @if($item->show == true)
                                         <li class="procedures__popup-item">
-                                            <a href="/service/{{$item->slug}}"
-                                               class="procedures__popup-link link--main">{{$item->serv_name}}
+                                            <a href="@if($item->slug != 'dysport') /service/{{$item->slug}} @else /service/dport @endif"
+                                               class="procedures__popup-link link--main">@if($item->slug != 'dysport') {{$item->serv_name}} @else Диспорт @endif
                                                 <span class="procedures__popup-link--discount @if($item->discount_common == '') is-hide @endif"> {{$item->discount_common}} </span>
                                             </a>
                                         </li>

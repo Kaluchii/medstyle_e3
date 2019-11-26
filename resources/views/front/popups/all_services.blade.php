@@ -32,9 +32,14 @@
                                             @if($service_item->slug != 'dysport')
                                                 @if($service_item->slug != 'диспорт')
                                                     @if($service_item->discount_common != '')
-                                                        <li class="category-name"><a href="/service/{{$service_item->slug}}" class="link bold">{{$service_item->serv_name}}</a> <span class="discount">{{$service_item->discount_common}}</span></li>
+                                                        <li class="category-name">
+                                                            <a href="/service/{{$service_item->slug}}" class="link bold">{{$service_item->serv_name}}</a>
+                                                            <span class="discount">{{$service_item->discount_common}}</span>
+                                                        </li>
                                                     @else
-                                                        <li class="category-name"><a href="/service/{{$service_item->slug}}" class="link">{{$service_item->serv_name}}</a></li>
+                                                        <li class="category-name">
+                                                            <a href="/service/{{$service_item->slug}}" class="link">{{$service_item->serv_name}}</a>
+                                                        </li>
                                                     @endif
                                                 @endif
                                             @else

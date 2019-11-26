@@ -46,7 +46,7 @@
                        data-id="{{$item->id_field}}">
             </div>
             <div class="form-group">
-                <label>Превью</label>
+                <label>Превью (300x300)</label>
                 <div class="dropzone">
                     <div class="file-input">
                         <div class="file-preview">
