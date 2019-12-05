@@ -4,7 +4,7 @@
     <ul class="procedures-popup__list">
         @foreach($item->services_group as $item)
         <li class="procedures-popup__item">
-            <a href="/service/{{$item->slug}}" class="procedures-popup__link link--main">{{$item->serv_name}}</a>
+            <a href="@if($item->slug != 'dysport') /service/{{$item->slug}} @else /service/dport @endif" class="procedures-popup__link link--main">@if($item->slug != 'dysport') {{$item->serv_name}} @else Диспорт @endif</a>
             <p class="procedures-popup__discount @if($item->discount_common == '') is-hide @endif"  > {{$item->discount_common}} </p>
         </li>
         @endforeach

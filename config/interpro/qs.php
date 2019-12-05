@@ -99,6 +99,33 @@ return [
         ]
     ],
 
+    'articles_block' => [
+        'text' => ['text'],
+        'groups' => [
+            'articles' => [
+                'image' => ['preview','img'],
+                'string' => ['articles_name', 'services_link'],
+                'text' => ['descr_1','descr_2','preview_descr','right_side_1','right_side_2']
+            ],
+            'articles_pokazania' =>[
+                'string' => ['p_name'],
+                'articles' => ['superior']
+            ],
+            'articles_protivopokazania' =>[
+                'string' => ['p_name'],
+                'articles' => ['superior']
+            ],
+            'articles_after_proc' =>[
+                'string' => ['p_name'],
+                'articles' => ['superior']
+            ],
+            'articles_effect_up'=>[
+                'string' => ['serv_name','link'],
+                'articles' => ['superior']
+            ]
+        ]
+    ],
+
     'helpful_block' => [
         'groups' => [
             'helpful' => [

@@ -1,10 +1,27 @@
 .services-page{
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 40px 20px 100px;
 
+  &__test-wrap{
+    display: flex;
+    justify-content: center;
+    margin: 60px auto 0;
+    max-width: 750px;
+    box-shadow: 0 40px 40px -20px #999999;
+    padding: 40px 50px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  &__block-title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__content-wrap{
-    max-width: 1060px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 
@@ -12,12 +29,16 @@
     line-height: 1;
     font-size: 64px;
     font-weight: normal;
-    font-family: RobotoCondensedLight;
+    font-family: RobotoCondensedLight, sans-serif;
     color: #333333;
   }
 
   &__category-list{
     margin-top: 60px;
+
+    &--services{
+      margin-top: 40px;
+    }
   }
 }
 
@@ -25,12 +46,25 @@
 .test-block{
   max-width: 400px;
 
+  &__text-wrap{
+    display: flex;
+    align-items: center;
+  }
+
   &__text{
     margin-top: 35px;
     line-height: 1.5;
     font-size: 20px;
-    font-family: RobotoCondensedLight;
+    font-family: RobotoCondensedLight, sans-serif;
     color: #666666;
+
+    &--services{
+      margin-top: 0;
+      margin-right: 80px;
+      font-size: 20px;
+      color: #333333;
+      font-family: RobotoRegular, sans-serif;
+    }
   }
 
   &__button{
@@ -40,8 +74,21 @@
     background-color: #FFFFFF;
     border-radius: 3px;
     font-size: 20px;
-    font-family: RobotoRegular;
+    font-family: RobotoRegular, sans-serif;
     color: #666666;
+
+    &--services{
+      margin-top: 5px;
+      background-color: #cc3366;
+      color: #fff;
+      padding: 12px 22px 14px;
+      transition: 0.1s;
+      font-family: RobotoMedium, sans-serif;
+
+      &:hover{
+        background-color: #791d4b;
+      }
+    }
   }
 }
 
@@ -57,6 +104,7 @@
     font-family: RobotoCondensedRegular;
     color: #333333;
     font-weight: normal;
+    margin-left: auto;
   }
 
   &__services-list{

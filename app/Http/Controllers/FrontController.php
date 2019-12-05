@@ -175,6 +175,35 @@ class FrontController extends Controller
         ]);
     }
 
+    public function getArticles(){
+        $this->extract->tuneSelection('articles')->like('show', true)->sortBy('sorter','ASC');
+
+        $articles = $this->extract->getBlock('articles_block');
+        return view('front.articles.articles', [
+            'articles' => $articles,
+        ]);
+    }
+
+
+    public function getArticle( $slug ){
+        $this->extract->tuneSelection('articles')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('stocks')->like('show', true)->sortBy('sorter','ASC');
+
+        $article = $this->extract->getBySlug('articles', $slug);
+        if (empty($article)) {
+            return view('errors.404');
+        }
+        $articles = $this->extract->getBlock('articles_block');
+        $stocks = $this->extract->getBlock('stocks_block');
+        $rating = $this->getRatingById($article->id);
+        return view('front.articles.article', [
+            'articles' => $articles,
+            'article' => $article,
+            'stocks' => $stocks,
+            'rating' => $rating,
+        ]);
+    }
+
 
     public function getHelpfulCommon(){
         $this->extract->tuneSelection('helpful')->like('show', true)->sortBy('sorter','ASC');

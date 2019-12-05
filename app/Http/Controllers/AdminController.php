@@ -144,6 +144,22 @@ class AdminController extends Controller
             'item' => $item
         ]);
     }
+
+
+    public function getArticles(){
+        $block = $this->extract->getBlock('articles_block');
+        return view('back.blocks.articles_block', [
+            'block' => $block
+        ]);
+    }
+
+
+    public function getArticlesItem( $id ){
+        $item = $this->extract->getGroupItem('articles', $id);
+        return view('back.groups.articles.articles', [
+            'item' => $item
+        ]);
+    }
     
     
     public function getHelpful(){

@@ -17,6 +17,7 @@ return [
             'services',
             'technologies_block',
             'technologies',
+            'articles',
             'helpful_block',
             'helpful',
             'questions_block',

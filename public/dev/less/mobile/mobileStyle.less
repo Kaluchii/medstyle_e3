@@ -220,12 +220,9 @@
   }
 
   h1.product-title {
-    font-weight: 400;
     font-family: RobotoCondensedLight;
-    text-transform: uppercase;
     font-size: 30px;
     width: 280px;
-    color: #666;
     line-height: 1.3em;
     padding-bottom: 32px
   }
@@ -967,12 +964,14 @@
 @media screen and (max-width: 1000px) {
   .social-buttons, h1.product-title {
     padding-bottom: 0;
-    padding-left: 90px;
+    padding-left: 40px;
   }
 
   .information-block {
     padding-top: 0;
-    padding-left: 0
+    padding-left: 0;
+    position: absolute;
+    bottom: 20px;
   }
 
   .about-head .information-block {
@@ -981,8 +980,6 @@
 
   h1.product-title {
     width: 100%;
-    background: #e5e5e5;
-    color: #666 !important
   }
 
   .about-head img.head-img {
@@ -990,7 +987,7 @@
   }
 
   img.head-img {
-    object-position: 65% 50px
+    //object-position: 65% 50px
   }
 
   a.popup-changer {
@@ -1031,7 +1028,6 @@
 
   h1.product-title {
     width: 100%;
-    background: #e5e5e5;
     padding: 10px 0 10px 20px
   }
 
@@ -1076,7 +1072,6 @@
   h1.product-title {
     width: 100%;
     padding: 10px 0 10px 20px;
-    background: #e5e5e5
   }
 
   .social-buttons {
@@ -1434,7 +1429,7 @@
 @media screen and (max-width: 600px) {
   h1.product-title{
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: RobotoCondensedLight;
   }
 
@@ -1447,19 +1442,18 @@
   }
 
   .head-img-wrap{
-    top: 50px;
   }
 
   img.head-img.over {
     left: 50%;
     transform: translateX(-50%);
-    min-height: 220px;
+    min-height: 270px;
     max-height: 100%;
     object-position: initial;
   }
 
   img.head-img {
-    min-height: 220px;
+    min-height: 270px;
     object-position: initial;
   }
 

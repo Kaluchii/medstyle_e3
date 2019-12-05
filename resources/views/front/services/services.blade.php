@@ -5,12 +5,10 @@
     <section class="content-wrap" data-page="services">
         <div class="services-page" style="background: url('/img/molecula.jpg') no-repeat right top;">
             <div class="services-page__content-wrap">
-                <h1 class="services-page__block-title">{{$services->title}}</h1>
-                <div class="test-block">
-                    <p class="test-block__text">Чтобы помочь вам с выбором процедуры, мы разработали несложный тест</p>
-                    <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="test-block__button">Пройти тест</a>
+                <div class="services-page__block-title-wrap">
+                    <h1 class="services-page__block-title">{{$services->title}}</h1>
                 </div>
-                <div class="services-page__category-list trowelling-block">
+                <div class="services-page__category-list services-page__category-list--services trowelling-block">
                     @php $i = 0;
                          $c_1 = $services->count_1;
                          $c_2 = $services->count_2;
@@ -32,6 +30,12 @@
                         @if( $i == ($c_1 - 1) or $i == ($c_1 + $c_2 - 1) or $i == ($cat_count - 1) ) </ul> @endif
                         @php $i++ @endphp
                     @endforeach
+                </div>
+            </div>
+            <div class="services-page__test-wrap">
+                <div class="test-block__text-wrap">
+                    <p class="test-block__text test-block__text--services">Чтобы помочь вам с выбором процедуры,<br> мы разработали несложный тест</p>
+                    <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="test-block__button test-block__button--services">Пройти тест</a>
                 </div>
             </div>
         </div>

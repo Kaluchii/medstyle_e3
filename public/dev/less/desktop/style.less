@@ -123,14 +123,14 @@ header.header {
 }
 
 h1.product-title {
-  font-family: RobotoCondensedRegular;
+  font-family: RobotoCondensedRegular, sans-serif;
   font-size: 42px;
   width: 650px;
-  color: #333;
+  color: #333333;
   line-height: 1.3em;
   padding-bottom: 32px;
   position: relative;
-  z-index: 2
+  z-index: 2;
 }
 
 img.head-img {
@@ -170,6 +170,7 @@ a.popup-changer {
 }
 
 .head-section {
+  position: relative;
   background-size: cover;
   width: 100%;
   min-height: 370px
@@ -3462,4 +3463,10 @@ p.shares-date:empty {
   font-weight: 300;
   line-height: 1.2;
   text-align: center;
+}
+
+.stop-scroll{
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }

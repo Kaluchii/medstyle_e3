@@ -27,6 +27,9 @@ Route::get('/service/{slug}', 'FrontController@getService');
 Route::get('/technology', 'FrontController@getTechnologies');
 Route::get('/technology/{slug}', 'FrontController@getTechnology');
 
+Route::get('/articles', 'FrontController@getArticles');
+Route::get('/articles/{slug}', 'FrontController@getArticle');
+
 Route::get('/helpful', 'FrontController@getHelpfulCommon');
 Route::get('/helpful/{slug}', 'FrontController@getHelpful');
 
@@ -76,6 +79,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/services/{cat_id}/{id}',   'AdminController@getServicesItem');
     Route::get('/technologies',             'AdminController@getTechnologies');
     Route::get('/technologies/{id}',        'AdminController@getTechnologiesItem');
+    Route::get('/articles',                 'AdminController@getArticles');
+    Route::get('/articles/{id}',            'AdminController@getArticlesItem');
     Route::get('/helpful',                  'AdminController@getHelpful');
     Route::get('/helpful/{id}',             'AdminController@getHelpfulItem');
     Route::get('/problems',                 'AdminController@getProblems');

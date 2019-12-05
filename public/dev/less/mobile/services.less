@@ -45,6 +45,41 @@
   }
 }
 
+@media all and (max-width: 840px){
+  .services-page{
+    &__block-title-wrap{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__test-wrap{
+      padding: 20px 10px;
+    }
+
+    .test-block{
+      &__text-wrap{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+      }
+
+      &__text{
+        &--services{
+          margin-right: 0;
+        }
+      }
+
+      &__button{
+        &--services{
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 740px) {
   .services-page{
     &__block-title{

@@ -43,6 +43,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/articles">
+                    <i class="fa fa-circle-o"></i> <span>Публикации</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/helpful">
                     <i class="fa fa-circle-o"></i> <span>Новинки</span>
                 </a>
