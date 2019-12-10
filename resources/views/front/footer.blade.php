@@ -66,7 +66,7 @@
                     <a href="/services" class="footer__nav-link link--main">Услуги</a>
                 </li>
                 <li class="footer__nav-item">
-                    <a href="/" class="footer__nav-link link--main">Публикации</a>
+                    <a href="/articles" class="footer__nav-link link--main">Публикации</a>
                 </li>
                 <li class="footer__nav-item">
                     <a href="/age" class="footer__nav-link link--main">Ваш тест</a>
@@ -105,7 +105,7 @@
                 </li>
                 <li class="footer__nav-item-b">
                     <a href="/services" class="footer__nav-link-b link--main">Услуги</a>
-                    <a href="/" class="footer__nav-link-b link--main">Публикации</a>
+                    <a href="/articles" class="footer__nav-link-b link--main">Публикации</a>
                 </li>
                 <li class="footer__nav-item-b">
                     <a href="/news" class="footer__nav-link-b link--main">Акции</a>

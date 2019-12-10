@@ -15,9 +15,6 @@
                     <a href="/technology" class="main-menu__item-link js_menu_item_link fade fadeInUp__child fade__delay-4">Технологии</a>
                 </li>
                 <li class="main-menu__item js_menu_item">
-                    <a href="/articles" class="main-menu__item-link js_menu_item_link fade fadeInUp__child fade__delay-4">Публикации</a>
-                </li>
-                <li class="main-menu__item js_menu_item">
                     <a href="/helpful" class="main-menu__item-link js_menu_item_link fade fadeInUp__child fade__delay-5">Новинки</a>
                 </li>
                 <li class="main-menu__item js_menu_item">

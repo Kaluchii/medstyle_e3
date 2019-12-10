@@ -5,7 +5,7 @@
 <div class="article__wrap">
     <div class="article__main-block">
         <h2 class="article__title title--l1">{{$article->articles_name}}</h2>
-        <a href="{{$article->services_link}}" class="article__btn btn">Перейти к услуге</a>
+        <a href="{{$article->services_link}}" class="article__btn btn btn--big">Перейти к услуге</a>
     </div>
     <div class="grid margin">
         <div class="col-1-1 head">
