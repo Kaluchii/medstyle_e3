@@ -21,9 +21,10 @@
                                 <h3 class="category-item__title" id="{{$item_category->cat_name}}">{{$item_category->cat_name}}</h3>
                                 <ul class="category-item__services-list strings-list">
                                     @foreach($item_category->services_group as $item_service)
-                                        @if($item_service->slug != 'диспорт')
-                                            <li class="strings-list__item"><a href="/service/{{$item_service->slug}}" class="strings-list__link pink-link">{{$item_service->serv_name}}</a><span class="strings-list__stock">{{$item_service->discount_common}}</span></li>
-                                        @endif
+                                        <li class="strings-list__item">
+                                            <a href="@if($item_service->slug != 'dysport') /service/{{$item_service->slug}} @else /service/dport @endif" class="strings-list__link pink-link">@if($item_service->slug != 'dysport') {{$item_service->serv_name}} @else Диспорт @endif</a>
+                                            <span class="strings-list__stock">{{$item_service->discount_common}}</span>
+                                        </li>
                                     @endforeach
                                 </ul>
                             </li>
