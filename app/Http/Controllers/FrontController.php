@@ -55,6 +55,7 @@ class FrontController extends Controller
         $this->extract->tuneSelection('features_list')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('offers_list')->like('show', true)->sortBy('sorter','ASC');
         $this->extract->tuneSelection('stocks')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('services')->like('show', true)->sortBy('sorter','ASC');
 
 
         $slider = $this->extract->getBlock('slider');
