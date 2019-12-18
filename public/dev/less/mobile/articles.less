@@ -1,0 +1,25 @@
+@media all and (max-width: 1000px){
+  .articles{
+    &__wrap{
+      flex-direction: column;
+    }
+
+    &__list{
+      margin-top: 0;
+      width: 100%;
+    }
+
+    &__item{
+      & + &{
+        margin-top: 10px;
+      }
+    }
+
+    &__link{}
+
+    &__individual-test{
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+}

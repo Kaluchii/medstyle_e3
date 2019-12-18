@@ -1,0 +1,21 @@
+.articles{
+  &__wrap{
+    display: flex;
+  }
+
+  &__list{
+    width: ~'calc(100% - 400px)';
+  }
+
+  &__item{
+    & + &{
+      margin-top: 10px;
+    }
+  }
+
+  &__link{}
+
+  &__individual-test{
+    width: 400px;
+  }
+}

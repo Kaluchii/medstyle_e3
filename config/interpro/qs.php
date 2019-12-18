@@ -101,6 +101,7 @@ return [
 
     'articles_block' => [
         'text' => ['text'],
+        'image' => ['img' , 'bg_img'],
         'groups' => [
             'articles' => [
                 'image' => ['preview','img'],
