@@ -33,9 +33,11 @@
                 </div>
             </div>
             <div class="services-page__test-wrap">
-                <div class="test-block__text-wrap">
-                    <p class="test-block__text test-block__text--services">Чтобы помочь вам с выбором процедуры,<br> мы разработали несложный тест</p>
-                    <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="test-block__button test-block__button--services">Пройти тест</a>
+                <div class="test-block__text-wrap test-block__text-wrap--services">
+                    <p class="test-block__text test-block__text--services">Если Вы затрудняетесь с выбором услуги, пройдите несложный тест</p>
+                    <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="test-block__button test-block__button--services">
+                    Пройти тест
+                    </a>
                 </div>
             </div>
         </div>

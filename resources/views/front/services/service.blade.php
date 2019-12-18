@@ -5,17 +5,18 @@
     @if($service->slug == 'диспорт')
         @include('front.page_close')
     @endif
-    <div class="grid @if($service->discount_in == '') margin @endif">
+    <div class="grid grig--mobile @if($service->discount_in == '') margin @endif">
         <div class="col-1-1 head">
             <div class="head-section">
-                <div class="head-img-wrap">
+                <h1 class="product-title product-title--mobile">{{$service->serv_name}}</h1>
+                <div class="head-img-wrap head-img-wrap--mobile">
                     @if($service->img->link != '')
                         <img src="{{$service->img->link}}?{{$service->img->cache_index}}" alt="{{$service->img->alt}}" class="head-img over">
                     @endif
                     <img src="{{$service->bg_img->link}}?{{$service->bg_img->cache_index}}" alt="{{$service->bg_img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
-                    <h1 class="product-title">{{$service->serv_name}}</h1>
+                    <h1 class="product-title product-title--desktop">{{$service->serv_name}}</h1>
 {{--                    <div class="all-product">--}}
 {{--                        <a href="#serv-popup" class="popup-changer all_serv">Все услуги <span class="treangle">▼</span></a>--}}
 {{--                    </div>--}}

@@ -16,6 +16,9 @@
                 <a href="/technology" class="mob-menu__nav-link js_menu_item_link">Технологии</a>
             </li>
             <li class="mob-menu__nav-item">
+                <a href="/articles" class="mob-menu__nav-link js_menu_item_link">Публикации</a>
+            </li>
+            <li class="mob-menu__nav-item">
                 <a href="/helpful" class="mob-menu__nav-link js_menu_item_link">Новинки</a>
             </li>
             <li class="mob-menu__nav-item">

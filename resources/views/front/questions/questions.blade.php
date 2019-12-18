@@ -6,21 +6,21 @@
 @else
     @include('front.meta', ['title' => $problem->seo_title, 'description' => $problem->seo_description, 'keywords' => $problem->seo_keywords])
 @endif
-    <div class="content-head questions-page" style="background: url('/img/questions_bg.jpg') no-repeat center top;">
+    <div class="content-head content-head--questions questions-page" style="background: url('/img/questions_bg.jpg') no-repeat center top;">
         <div class="wrapper-block">
             <h1 class="content-head-title content-head-title--question title--l1">{{$questions->title}}</h1>
-            <div class="all-product category">
+        </div>
+    </div>
+    <article class="content" data-page="questions">
+        <div class="all-product category category--questions ">
                 <select class="all-techno">
                     <option @if($slug == '') selected @endif value="/questions">Все категории</option>
                     @foreach($problems->problems_group as $item)
                         <option value="/questions/{{$item->slug}}" @if($slug == $item->slug) selected @endif>{{$item->problem_name}}</option>
                     @endforeach
                 </select>
-            </div>
         </div>
-    </div>
-    <article class="content" data-page="questions">
-        <div class="grid grid-pad question-page">
+        <div class="grid grid--questions grid-pad question-page">
             <div class="col-1-2">
                 @foreach($questions->questions_group as $item)
                     <div class="questions">

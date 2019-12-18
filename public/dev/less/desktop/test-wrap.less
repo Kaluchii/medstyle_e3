@@ -1,0 +1,41 @@
+.test-block__button--services{
+    position: relative;
+    background-image: linear-gradient(180deg, #CA3668 0%, #822443 100%) !important;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 21px 62px !important;
+    z-index: 1;
+    transition: 1s linear;
+
+    &:hover{
+        &:before {
+            opacity: 1;
+        }
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 104.6%;
+        height: 108%;
+        top: -2px;
+        left: -5px;
+        border-radius: 12px;
+        background-color: transparent;
+        border: 6px solid #BFBFBF;
+        z-index: -1;
+    }
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(180deg, #c8426f 0%, #55082f 100%) !important;
+        z-index: -1;
+        transition: opacity .1s linear;
+        opacity: 0;
+    }
+}
