@@ -46,7 +46,6 @@
                         <br>
                         <a href="/age" class="go-to-test right-side grad-btn grad-btn--small">Пройти тест</a>
                         <br>
-                        <br>
                     </div>
             </div>
         </div>
