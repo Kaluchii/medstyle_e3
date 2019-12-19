@@ -2,11 +2,11 @@
 @include('front.menu')
 @section('content')
 {{--@include('front.meta', ['title' => $article->seo_title, 'description' => $article->seo_description, 'keywords' => $article->seo_keywords])--}}
-<div class="article__wrap">
+<div class="article__wrap js_article_wrap">
     <div class="article__main-block">
-        <h2 class="article__title title--l1">{{$article->articles_name}}</h2>
-        <a href="{{$article->services_link}}" class="article__btn btn btn--big grad-btn grad-btn--article">Перейти к услуге</a>
-        <a href="{{$article->services_link}}" class="article__btn btn btn--big grad-btn grad-btn--article">Читать публикацию</a>
+        <h2 class="article__title title--l1 js_article_title">{{$article->articles_name}}</h2>
+        <a href="{{$article->services_link}}" class="article__btn btn btn--big">Перейти к услуге</a>
+        <button class="article__btn btn btn--big js_scroll_on">Читать публикацию</button>
     </div>
     <div class="grid margin">
         <div class="col-1-1 head">
@@ -108,6 +108,13 @@
 </div>
 <script>
     document.querySelector('body').classList.add('stop-scroll');
+
+    document.querySelector('.js_scroll_on').addEventListener('click', function () {
+        document.querySelector('body').classList.remove('stop-scroll');
+        document.querySelector('.js_article_wrap').classList.add('scroll-on');
+        document.querySelector('.js_article_title').classList.add('scroll-on');
+        this.classList.add('scroll-on');
+    });
 </script>
 
 @include('front.common.offers-row')
