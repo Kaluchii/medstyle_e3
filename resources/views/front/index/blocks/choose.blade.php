@@ -13,7 +13,7 @@
                     специалистами
                 </p>
                 <div class="choose__btn-wrap fade fadeInUp__child fade__delay-4">
-                    <a href="/age" class="choose__btn btn btn--big grad-btn">Пройти тест</a>
+                    <a href="/age" class="choose__btn btn btn--big grad-btn" onclick="gtag('event', 'Click', {'event_category': 'Button', 'event_action': 'Click', 'event_label': 'mainpage'});">Пройти тест</a>
                 </div>
                 <p class="choose__minor-text fade fadeInUp__child fade__delay-5">
                     Ответы на несложные вопросы займут не более 5 минут

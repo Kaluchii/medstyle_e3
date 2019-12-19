@@ -35,6 +35,17 @@
                         </div>
                     </div>
                 </div>
+
+                @include('back.tpls.image', [
+                'title' => 'Обложка (600x370 пикселей)',
+                'field_name' => 'img'
+                ])
+
+                @include('back.tpls.image', [
+                'title' => 'Изображение (в формате jpg, 980 на 550 пикселей)',
+                'field_name' => 'bg_img'
+                ])
+
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="box table-widget">

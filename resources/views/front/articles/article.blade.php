@@ -113,7 +113,7 @@
         document.querySelector('body').classList.remove('stop-scroll');
         document.querySelector('.js_article_wrap').classList.add('scroll-on');
         document.querySelector('.js_article_title').classList.add('scroll-on');
-        this.classList.add('scroll-on');
+        this.classList.add('scroll-on'); 
     });
 </script>
 
