@@ -5,25 +5,26 @@
     <div class="grid margin">
         <div class="col-1-1 head">
             <div class="head-section">
-                <div class="head-img-wrap">
+                <h1 class="product-title product-title--mobile">{{$technology->tech_name}}</h1>
+                <div class="head-img-wrap head-img-wrap--mobile">
                     <img src="{{$technology->img->link}}?{{$technology->img->cache_index}}" alt="{{$technology->img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
-                    <h1 class="product-title">{{$technology->tech_name}}</h1>
-                    <div class="all-product">
-                        <select class="all-techno">
-                            <option value="" selected>Все технологии</option>
-                            @foreach($technologies->technologies_group as $item)
-                                <option value="/technology/{{$item->slug}}">{{$item->tech_name}}</option>
-                            @endforeach
-                        </select>
-                    </div>
+                    <h1 class="product-title product-title--desktop">{{$technology->tech_name}}</h1>
                 </div>
             </div>
         </div>
     </div>
     <article class="content" data-page="technology" itemscope itemtype="http://schema.org/Service">
-        <div class="grid content text-block">
+        <div class="all-product category category--technologie">
+            <select class="all-techno">
+                <option value="" selected>Все технологии</option>
+                @foreach($technologies->technologies_group as $item)
+                    <option value="/technology/{{$item->slug}}">{{$item->tech_name}}</option>
+                @endforeach
+            </select>
+        </div>
+        <div class="grid grid--technologie content text-block">
             <div class="col-1-2">
                 <div class="first-paragraph">@if($technology->descr_1 !== '<p><br></p>'){!! $technology->descr_1 !!}@endif</div>
             </div>
