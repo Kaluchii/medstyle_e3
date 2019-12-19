@@ -36,7 +36,7 @@
             <div class="services-page__test-wrap">
                 <div class="test-block__text-wrap test-block__text-wrap--services">
                     <p class="test-block__text test-block__text--services">Если Вы затрудняетесь с выбором услуги, пройдите несложный тест</p>
-                    <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="test-block__button test-block__button--services">
+                    <a href="/age" onClick="ga('send','event','Button','Click','Uslugi');" class="grad-btn grad-btn--services">
                     Пройти тест
                     </a>
                 </div>

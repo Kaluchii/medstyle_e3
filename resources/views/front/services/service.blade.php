@@ -44,7 +44,7 @@
                         <p>Чтобы помочь вам с выбором процедуры, специалисты «Медстайла» разработали несложный тест.</p>
                         <br>
                         <br>
-                        <a href="/age" class="go-to-test right-side">Пройти тест</a>
+                        <a href="/age" class="go-to-test right-side grad-btn grad-btn--small">Пройти тест</a>
                         <br>
                         <br>
                     </div>

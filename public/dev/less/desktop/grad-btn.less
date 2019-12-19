@@ -1,0 +1,64 @@
+.grad-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: 1s linear;
+    font-size: 20px;
+    font-family: RobotoRegular,
+    sans-serif;
+    color: #ffffff;
+    white-space: nowrap;
+    background-image: linear-gradient(180deg, #CA3668 0%, #822443 100%) !important;
+    border-radius: 4px;
+    max-width: 240px !important;
+    margin-top: 0;
+    padding: 21px 62px !important;
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -5px;
+        z-index: -1;
+        border-radius: 12px;
+        background-color: transparent;
+        border: 6px solid #BFBFBF;
+        width: 104.6%;
+        height: 108%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(180deg, #c8426f 0%, #55082f 100%) !important;
+        z-index: -1;
+        transition: opacity .1s linear;
+        opacity: 0;
+    }
+
+    &--small{
+        max-width: 170px !important;
+        padding: 17px 0px !important;
+        
+        &::after{
+            width: 106.6%;
+        }
+    }
+
+    &--article{
+
+        margin-top: 20px;
+    }
+}

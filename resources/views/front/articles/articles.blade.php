@@ -62,7 +62,7 @@
                         Чтобы помочь вам с выбором процедуры, специалисты «Медстайла» разработали несложный тест.
                     </p>
                     <div class="individual-test__link-wrap">
-                        <a href="/age" class="individual-test__link go-to-test right-side">Пройти тест</a>
+                        <a href="/age" class="individual-test__link go-to-test right-side grad-btn grad-btn--small">Пройти тест</a>
                     </div>
                 </div>
             </div>
