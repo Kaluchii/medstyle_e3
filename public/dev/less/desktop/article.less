@@ -2,7 +2,13 @@
   &__wrap{
     position: relative;
 
-    &:before{
+    &.scroll-on{
+     &::before{
+       display: none;
+     }
+    }
+
+    &::before{
       content: '';
       position: absolute;
       left: 0;
@@ -29,10 +35,18 @@
 
   &__title{
     color: #fff;
+    
+    &.scroll-on{
+      color: #333;
+    }
   }
 
   &__btn{
     margin-top: 20px;
     flex-shrink: 0;
+
+    &.scroll-on{
+      display: none;
+    }
   }
 }
