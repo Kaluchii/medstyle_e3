@@ -5,8 +5,8 @@
 <div class="article__wrap js_article_wrap">
     <div class="article__main-block">
         <h2 class="article__title title--l1 js_article_title">{{$article->articles_name}}</h2>
-        <a href="{{$article->services_link}}" class="article__btn btn btn--big">Перейти к услуге</a>
-        <button class="article__btn btn btn--big js_scroll_on">Читать публикацию</button>
+        <a href="{{$article->services_link}}" class="article__btn btn btn--big grad-btn grad-btn--article">Перейти к услуге</a>
+        <button class="article__btn btn btn--big js_scroll_on grad-btn grad-btn--article">Читать публикацию</button>
     </div>
     <div class="grid margin">
         <div class="col-1-1 head">
