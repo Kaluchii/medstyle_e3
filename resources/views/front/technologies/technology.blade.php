@@ -108,6 +108,42 @@
             </div>
         </div>
     </article>
+    <script type="application/ld+json">
+        {
+         "@context": "http://schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement":
+         [
+          {
+           "@type": "ListItem",
+           "position": 1,
+           "item":
+           {
+            "@id": "/",
+            "name": "Главная"
+            }
+          },
+          {
+           "@type": "ListItem",
+           "position": 2,
+           "item":
+           {
+            "@id": "/technology",
+            "name": "Наши технологии"
+            }
+          },
+          {
+          "@type": "ListItem",
+          "position": 3,
+          "item":
+           {
+             "@id": "/technology/{{$technology->slug}}",
+             "name": "{{$technology->tech_name}}"
+           }
+          }
+         ]
+        }
+    </script>
 
     @include('front.common.offers-row')
 

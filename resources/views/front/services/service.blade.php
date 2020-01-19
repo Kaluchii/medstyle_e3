@@ -174,6 +174,42 @@
                 <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="consult-phone phone-link desktop-hide">{{$all_site->phone}}</a>
             </p>
         </div>
+        <script type="application/ld+json">
+            {
+             "@context": "http://schema.org",
+             "@type": "BreadcrumbList",
+             "itemListElement":
+             [
+              {
+               "@type": "ListItem",
+               "position": 1,
+               "item":
+               {
+                "@id": "/",
+                "name": "Главная"
+                }
+              },
+              {
+               "@type": "ListItem",
+               "position": 2,
+               "item":
+               {
+                "@id": "/services",
+                "name": "Услуги"
+                }
+              },
+              {
+              "@type": "ListItem",
+              "position": 3,
+              "item":
+               {
+                 "@id": "/service/{{$service->slug}}",
+                 "name": "{{$service->serv_name}}"
+               }
+              }
+             ]
+            }
+        </script>
 
         @include('front.common.offers-row')
 

@@ -82,4 +82,31 @@
             </div>
         </div>
     </article>
+    <script type="application/ld+json">
+        {
+         "@context": "http://schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement":
+         [
+          {
+           "@type": "ListItem",
+           "position": 1,
+           "item":
+           {
+            "@id": "/",
+            "name": "Главная"
+            }
+          },
+          {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+           {
+             "@id": "/questions",
+             "name": "Вопросы и ответы"
+           }
+          }
+         ]
+        }
+    </script>
 @endsection

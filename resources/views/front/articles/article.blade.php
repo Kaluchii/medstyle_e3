@@ -116,6 +116,42 @@
         this.classList.add('scroll-on'); 
     });
 </script>
+<script type="application/ld+json">
+    {
+     "@context": "http://schema.org",
+     "@type": "BreadcrumbList",
+     "itemListElement":
+     [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "item":
+       {
+        "@id": "/",
+        "name": "Главная"
+        }
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "item":
+       {
+        "@id": "/articles",
+        "name": "Статьи"
+        }
+      },
+      {
+      "@type": "ListItem",
+      "position": 3,
+      "item":
+       {
+         "@id": "/articles/{{$article->articles_name}}",
+         "name": "{{$article->slug}}"
+       }
+      }
+     ]
+    }
+</script>
 
 @include('front.common.offers-row')
 

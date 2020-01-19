@@ -3,8 +3,7 @@
     <script  defer src="/js/jquery-ui.min.js"></script>
     <script  defer src="/js/jquery.magnific-popup.js"></script>
     <script  defer src="/js/slick.min.js?2"></script>
-    <script  defer src="/js/blocksit.min.js"></script>
-    <script  defer src="/js/main.js?5"></script>
+    <script  defer src="/js/main.js?6"></script>
     <script  defer src="/js/testing.js"></script>
     <script  defer src="/js/send.js"></script>
     <script  defer src="/js/rating.js"></script>
