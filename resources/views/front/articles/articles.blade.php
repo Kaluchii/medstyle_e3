@@ -1,7 +1,7 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-{{--@include('front.meta', ['title' => $articles->seo_title, 'description' => $articles->seo_description, 'keywords' => $articles->seo_keywords])--}}
+@include('front.meta', ['title' => $articles->seo_title, 'description' => $articles->seo_description, 'keywords' => $articles->seo_keywords])
     <section class="content-wrap" data-page="articles">
         <div class="grid grig--mobile margin">
             <div class="col-1-1 head">
@@ -21,7 +21,6 @@
         </div>
 
         <div class="technologies">
-
 {{--            <h1 class="technologies__block-title">{{$articles->title}}</h1>--}}
 {{--            <div class="technologies__subtitle-text">{!! $articles->text !!}</div>--}}
 {{--            <div class="technologies__list trowelling-block">--}}

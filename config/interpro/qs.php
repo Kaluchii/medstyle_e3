@@ -19,6 +19,7 @@ return [
     'title_block' => [
         'text' => ['title'],
         'image' => ['img', 'mobile_img'],
+        'file'  => ['video']
     ],
 
     'about' => [
@@ -104,7 +105,7 @@ return [
         'image' => ['img' , 'bg_img'],
         'groups' => [
             'articles' => [
-                'image' => ['preview','img'],
+                'image' => ['img','bg_img'],
                 'string' => ['articles_name', 'services_link'],
                 'text' => ['descr_1','descr_2','preview_descr','right_side_1','right_side_2']
             ],

@@ -1,25 +1,25 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-{{--@include('front.meta', ['title' => $article->seo_title, 'description' => $article->seo_description, 'keywords' => $article->seo_keywords])--}}
+@include('front.meta', ['title' => $article->seo_title, 'description' => $article->seo_description, 'keywords' => $article->seo_keywords])
 <div class="article__wrap js_article_wrap">
-    <div class="article__main-block">
-        <h2 class="article__title title--l1 js_article_title">{{$article->articles_name}}</h2>
-        <a href="{{$article->services_link}}" class="article__btn btn btn--big grad-btn grad-btn--article">Перейти к услуге</a>
-        <button class="article__btn btn btn--big js_scroll_on grad-btn grad-btn--article">Читать публикацию</button>
-    </div>
     <div class="grid margin">
+        <div class="article__main-block">
+            <h2 class="article__title title--l1 js_article_title">{{$article->articles_name}}</h2>
+            <a href="{{$article->services_link}}" class="article__btn btn btn--big grad-btn grad-btn--article">Перейти к услуге</a>
+        </div>
         <div class="col-1-1 head">
             <div class="head-section">
-                <div class="head-img-wrap">
+                <div class="head-img-wrap head-img-wrap--mobile">
+                    @if($articles->img->link != '')
+                        <img src="{{$article->bg_img->link}}?{{$article->bg_img->cache_index}}" alt="{{$article->bg_img->alt}}" class="head-img over">
+                    @endif
                     <img src="{{$article->img->link}}?{{$article->img->cache_index}}" alt="{{$article->img->alt}}" class="head-img">
-                </div>
-                <div class="information-block">
-{{--                    <h1 class="product-title">{{$article->articles_name}}</h1>--}}
                 </div>
             </div>
         </div>
     </div>
+
     <article class="content" data-page="articles" itemscope itemtype="http://schema.org/Service">
         <div class="grid content text-block">
             <div class="col-1-2">
@@ -106,16 +106,16 @@
         </div>
     </article>
 </div>
-<script>
-    document.querySelector('body').classList.add('stop-scroll');
+{{--<script>--}}
+{{--    document.querySelector('body').classList.add('stop-scroll');--}}
 
-    document.querySelector('.js_scroll_on').addEventListener('click', function () {
-        document.querySelector('body').classList.remove('stop-scroll');
-        document.querySelector('.js_article_wrap').classList.add('scroll-on');
-        document.querySelector('.js_article_title').classList.add('scroll-on');
-        this.classList.add('scroll-on'); 
-    });
-</script>
+{{--    document.querySelector('.js_scroll_on').addEventListener('click', function () {--}}
+{{--        document.querySelector('body').classList.remove('stop-scroll');--}}
+{{--        document.querySelector('.js_article_wrap').classList.add('scroll-on');--}}
+{{--        document.querySelector('.js_article_title').classList.add('scroll-on');--}}
+{{--        this.classList.add('scroll-on'); --}}
+{{--    });--}}
+{{--</script>--}}
 <script type="application/ld+json">
     {
      "@context": "http://schema.org",

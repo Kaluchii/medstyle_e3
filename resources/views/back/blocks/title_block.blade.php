@@ -16,6 +16,11 @@
        'br_replace' => true
        ])
 
+        @include('back.tpls.file', [
+        'field_name' => 'video',
+        'title' => 'Видеоролик в формате mp4'
+        ])
+
         @include('back.tpls.image', [
         'title' => 'Изображение (в формате jpg, 1600 на 600 пикселей)',
         'field_name' => 'img'

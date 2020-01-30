@@ -1,6 +1,6 @@
 @extends('back.layout')
 @section('content')
-    @include('back.content-top', ['title' => 'Технология'])
+    @include('back.content-top', ['title' => 'Публикация'])
     <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tab_g1" data-toggle="tab" aria-expanded="true">Контент</a></li>
@@ -40,22 +40,23 @@
                                data-block="articles"
                                data-id="{{$item->id_field}}">
                     </div>
+
                     <div class="form-group">
-                        <label>Превью в списке</label>
+                        <label>Изображение (в формате jpg, 600 на 370 пикселей)</label>
                         <div class="dropzone">
                             <div class="file-input">
                                 <div class="file-preview">
                                     <div class="input-group file-caption-main">
                                         <div class="file-preview-frame">
                                             <div class="kv-file-content">
-                                                <img src="{{$item->preview_field->link}}?{{$item->preview_field->cache_index}}" class="kv-preview-data file-preview-image"
-                                                     title="{{$item->preview_field->alt}}" alt="{{$item->preview_field->alt}}">
+                                                <img src="{{$item->bg_img_field->link}}?{{$item->bg_img_field->cache_index}}" class="kv-preview-data file-preview-image"
+                                                     title="{{$item->bg_img_field->alt}}" alt="{{$item->bg_img_field->alt}}">
                                             </div>
                                             <div class="file-thumbnail-footer">
                                                 <div class="file-actions">
                                                     <input type="text" class="form-control alt-text" data-block="articles"
                                                            data-type="images" data-id="{{$item->id_field}}" data-name="alt"
-                                                           value="{{$item->preview_field->alt}}">
+                                                           value="{{$item->bg_img_field->alt}}">
                                                     <div class="clearfix"></div>
                                                 </div>
                                             </div>
@@ -73,7 +74,7 @@
                                             <span class="hidden-xs">Выбрать изображение …</span>
                                             <input type="file" class="form-control file"
                                                    data-block="articles"
-                                                   data-name="preview"
+                                                   data-name="bg_img"
                                                    data-type="image"
                                                    data-id="{{$item->id_field}}">
                                         </div>
@@ -83,16 +84,17 @@
                         </div>
                     </div>
 
+{{--                    <div class="form-group">--}}
+{{--                        <label>Текст в превью</label>--}}
+{{--                        <textarea class="form-control text" data-reg="true"--}}
+{{--                                  data-name="preview_descr"--}}
+{{--                                  data-type="string"--}}
+{{--                                  data-block="articles"--}}
+{{--                                  data-id="{{$item->id_field}}">{{$item->preview_descr_field}}</textarea>--}}
+{{--                    </div>--}}
+
                     <div class="form-group">
-                        <label>Текст в превью</label>
-                        <textarea class="form-control text" data-reg="true"
-                                  data-name="preview_descr"
-                                  data-type="string"
-                                  data-block="articles"
-                                  data-id="{{$item->id_field}}">{{$item->preview_descr_field}}</textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Задний фон</label>
+                        <label>Изображение (в формате jpg, 1980 на 550 пикселей)</label>
                         <div class="dropzone">
                             <div class="file-input">
                                 <div class="file-preview">

@@ -13,7 +13,7 @@
 
         "interpro/imageaggr": "1.1.*",
         "interpro/qsaggr": "1.1.*",
-        "interpro/fileaggr": "1.0.*",
+        "interpro/fileaggr": "1.1.*",
 
         "interpro/entrance": "1.1.*",
         "interpro/extractor": "1.0.*",

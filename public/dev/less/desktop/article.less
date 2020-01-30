@@ -2,51 +2,45 @@
   &__wrap{
     position: relative;
 
-    &.scroll-on{
-     &::before{
-       display: none;
-     }
-    }
-
-    &::before{
-      content: '';
+    &:before{
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       z-index: 10;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0,0,0,.6);
+    }
+
+    .grid{
+      position: relative;
     }
   }
 
   &__main-block{
-    padding-top: 40px;
     position: absolute;
     top: 0;
     left: 50%;
+    height: 100%;
+    width: 100%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     z-index: 11;
     min-width: 300px;
+    padding: 0 20px 20px;
   }
 
   &__title{
     color: #fff;
-    
-    &.scroll-on{
-      color: #333;
-    }
+    text-align: center;
   }
 
   &__btn{
     margin-top: 20px;
     flex-shrink: 0;
-
-    &.scroll-on{
-      display: none;
-    }
   }
 }

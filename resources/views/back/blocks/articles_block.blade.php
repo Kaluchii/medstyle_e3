@@ -1,6 +1,6 @@
 @extends('back.layout')
 @section('content')
-    @include('back.content-top', ['title' => 'Технологии'])
+    @include('back.content-top', ['title' => 'Публикации'])
     <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tab_g1" data-toggle="tab" aria-expanded="true">Контент</a></li>
@@ -42,7 +42,7 @@
                 ])
 
                 @include('back.tpls.image', [
-                'title' => 'Изображение (в формате jpg, 980 на 550 пикселей)',
+                'title' => 'Изображение (в формате jpg, 1980 на 550 пикселей)',
                 'field_name' => 'bg_img'
                 ])
 
@@ -101,36 +101,36 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab_g2">
-{{--                <div class="box-body">--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label>Тайтл</label>--}}
-{{--                        <input class="form-control string"--}}
-{{--                               type="text" placeholder=""--}}
-{{--                               value="{{$block->seo_title_field}}"--}}
-{{--                               data-name="seo_title"--}}
-{{--                               data-type="seo"--}}
-{{--                               data-block="articles_block"--}}
-{{--                               data-id="0">--}}
-{{--                    </div>--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label>Ключевые слова (keywords)</label>--}}
-{{--                        <input class="form-control string"--}}
-{{--                               type="text" placeholder=""--}}
-{{--                               value="{{$block->seo_keywords_field}}"--}}
-{{--                               data-name="seo_keywords"--}}
-{{--                               data-type="seo"--}}
-{{--                               data-block="articles_block"--}}
-{{--                               data-id="0">--}}
-{{--                    </div>--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label>Описание страницы (description)</label>--}}
-{{--                        <textarea class="form-control text"--}}
-{{--                                  data-name="seo_description"--}}
-{{--                                  data-type="seo"--}}
-{{--                                  data-block="articles_block"--}}
-{{--                                  data-id="0">{{$block->seo_description_field}}</textarea>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Тайтл</label>
+                        <input class="form-control string"
+                               type="text" placeholder=""
+                               value="{{$block->seo_title_field}}"
+                               data-name="seo_title"
+                               data-type="seo"
+                               data-block="articles_block"
+                               data-id="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Ключевые слова (keywords)</label>
+                        <input class="form-control string"
+                               type="text" placeholder=""
+                               value="{{$block->seo_keywords_field}}"
+                               data-name="seo_keywords"
+                               data-type="seo"
+                               data-block="articles_block"
+                               data-id="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Описание страницы (description)</label>
+                        <textarea class="form-control text"
+                                  data-name="seo_description"
+                                  data-type="seo"
+                                  data-block="articles_block"
+                                  data-id="0">{{$block->seo_description_field}}</textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
