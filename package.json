@@ -32,5 +32,9 @@
     "postcss-reporter": "^2.0.0",
     "laravel-elixir": "*",
     "normalize.css": "^5.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp-uglify": "^3.0.2"
   }
 }

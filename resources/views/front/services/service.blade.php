@@ -51,7 +51,110 @@
         </div>
         <div class="grid content con-2">
             <div class="col-1-2">
-                <div class="overall">@if($service->descr_2 !== '<p><br></p>'){!! $service->descr_2 !!}@endif</div>
+                <div class="overall">
+                    @if($service->descr_2 !== '<p><br></p>'){!! $service->descr_2 !!}@endif
+                    <ul class="subservices-tiles">
+                        <li class="subservices-tiles__item">
+                            <a href="/service/sredinnye-pilingi" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-8.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-8-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Срединные пилинги</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/glikolevie-pilingi" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-4.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-4-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Гликолевые пилинги</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/ferulovye-pilingi" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Феруловый пилинг</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/molochnii-piling" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-2.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-2-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Молочный пилинг</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/retinoevii-piling" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-1.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-1-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Ретиноевый пилинг Restises CT-желтый пилинг</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/sesretinal-piling" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-6.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-6-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Оранжевый пилинг ses-retinal</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/cpeel" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-7.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-7-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Вспышка красоты C-peel</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/prxt-terapy" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-5.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-5-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">PRX-T</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="subservices-tiles__item">
+                            <a href="/service/traneksamovii-piling" class="subservices-tiles__link">
+                                <div class="subservices-tiles__img-wrap">
+                                    <img src="/img/services-icons/pil-3.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
+                                    <img src="/img/services-icons/pil-3-h.svg" alt="" class="subservices-tiles__img subservices-tiles__img--hover">
+                                </div>
+                                <div class="subservices-tiles__name-wrapper">
+                                    <span class="subservices-tiles__name">Транексамовый пилинг</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-1-2 fr-2  service-right-col">
                 @if($service->right_side_1 != '' && $service->right_side_1 != '<p><br></p>')
