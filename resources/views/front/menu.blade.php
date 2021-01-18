@@ -35,7 +35,7 @@
             <div class="main-menu__mob-button-wrap js_menu_mob_open">
                 <div class="main-menu__mob-button"></div>
             </div>
-            <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="main-menu__mob--phone"></a>
+            <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="main-menu__mob--phone binct-phone-number-2"></a>
         </div>
     </div>
 @endsection
