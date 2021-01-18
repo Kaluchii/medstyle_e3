@@ -47,10 +47,10 @@
         </ul>
         <ul class="mob-menu__store-list">
             <li class="mob-menu__store-item">
-                <a href="#" class="mob-menu__store-link mob-menu__store-link--ios"></a>
+                <a href="{{ $all_site->app_store }}" target="_blank" class="mob-menu__store-link mob-menu__store-link--ios"></a>
             </li>
             <li class="mob-menu__store-item">
-                <a href="#" class="mob-menu__store-link mob-menu__store-link--google"></a>
+                <a href="{{ $all_site->google_play }}" target="_blank" class="mob-menu__store-link mob-menu__store-link--google"></a>
             </li>
         </ul>
     </div>
