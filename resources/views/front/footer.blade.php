@@ -11,10 +11,13 @@
             <div class="footer__tel-wrap footer__tel-wrap--b">
                 <h3 class="footer__tel-title title--l5">Запись на процедуры</h3>
                 <div class="footer__tel-link-wrap">
-                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link">{{ $all_site->phone }}</a>
+                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link binct-phone-number-1">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="footer__tel-link  footer__tel-link--wp" target="_blank" rel="nofollow">{{ $all_site->whatsapp }}</a>
+                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="footer__tel-link binct-phone-number-2" rel="nofollow">{{ $all_site->whatsapp }}</a>
+                </div>
+                <div class="footer__tel-link-wrap">
+                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="footer__tel-link footer__tel-link--wp link--main" target="_blank" rel="nofollow">WhatsApp</a>
                 </div>
             </div>
             <div class="footer__social footer__social--b">
@@ -48,10 +51,13 @@
             <div class="footer__tel-wrap footer__tel-wrap--bottom">
                 <h3 class="footer__tel-title title--l5">Запись на процедуры</h3>
                 <div class="footer__tel-link-wrap">
-                    <a href="#" class="footer__tel-link">{{ $all_site->phone }}</a>
+                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link binct-phone-number-1">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="#" class="footer__tel-link footer__tel-link--wp" target="_blank">{{ $all_site->whatsapp }}</a>
+                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="footer__tel-link binct-phone-number-2">{{ $all_site->whatsapp }}</a>
+                </div>
+                <div class="footer__tel-link-wrap">
+                    <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="footer__tel-link footer__tel-link--wp link--main" target="_blank">WhatsApp</a>
                 </div>
             </div>
             <p class="footer__copyright">{!! $all_site->copyright !!}</p>
