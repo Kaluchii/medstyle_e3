@@ -54,7 +54,7 @@
                 <div class="overall">
                     @if($service->descr_2 !== '<p><br></p>'){!! $service->descr_2 !!}@endif
                     <ul class="subservices-tiles">
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/sredinnye-pilingi" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-8.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -65,7 +65,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/glikolevie-pilingi" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-4.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -76,7 +76,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/ferulovye-pilingi" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -87,7 +87,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/molochnii-piling" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-2.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -98,7 +98,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/retinoevii-piling" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-1.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -109,7 +109,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/sesretinal-piling" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-6.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -120,7 +120,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/cpeel" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-7.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -131,7 +131,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/prxt-terapy" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-5.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">
@@ -142,7 +142,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="subservices-tiles__item">
+                        <li class="subservices-tiles__item subservices-tiles__item--without-img">
                             <a href="/service/traneksamovii-piling" class="subservices-tiles__link">
                                 <div class="subservices-tiles__img-wrap">
                                     <img src="/img/services-icons/pil-3.svg" alt="" class="subservices-tiles__img subservices-tiles__img--main">

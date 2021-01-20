@@ -23,6 +23,27 @@
     &__item {
       width: ~'calc(50% - 30px)';
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+
+      &--without-img{
+        min-height: 120px;
+
+        .subservices-tiles{
+          &__link{
+            height: 100%;
+            padding: 20px 15px;
+            justify-content: center;
+          }
+
+          &__img-wrap{
+            display: none;
+          }
+
+          &__name-wrapper{
+            margin-top: 0;
+            min-height: auto;
+          }
+        }
+      }
     }
 
     &__name-wrapper{
