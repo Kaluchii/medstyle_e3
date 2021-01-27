@@ -38,8 +38,8 @@
                     <strong>1.ТЕРМИНЫ</strong><br>
                     1.1. Сайт - сайт, расположенный в сети Интернет по адресу <u><a
                                 href="https://medstyle.kz/privacy-policy">https://medstyle.kz/privacy-policy</a></u>.<br>
-                    Мобильные приложения расположены по адресам: <a href="https://www.apple.com/ios/app-store/">iOS</a>, <a
-                            href="https://play.google.com">Android</a><br>
+                    Мобильные приложения расположены по адресам: <a href="https://www.apple.com/ios/app-store/" rel="nofollow">iOS</a>, <a
+                            href="https://play.google.com" rel="nofollow">Android</a><br>
 
                     Все исключительные права на Сайт и Мобильные приложение, а также отдельные элементы (включая программное
                     обеспечение, дизайн) принадлежат Оператору в полном объеме. Передача исключительных прав Пользователю не
@@ -119,7 +119,7 @@
                     5.5. Пользователь обязуется самостоятельно следить за изменениями Политики конфиденциальности путем
                     ознакомления с актуальной редакцией.<br>
                     5.6. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать по
-                    электронной почте: <a href="mailto:info@medstyle.kz">info@medstyle.kz</a> или по телефонам: +7 (727)
+                    электронной почте: <a href="mailto:info@medstyle.kz" rel="nofollow">info@medstyle.kz</a> или по телефонам: +7 (727)
                     311-31-81, +7 777 178-29-26. </p>
                 <div class="clear"></div>
             </div>

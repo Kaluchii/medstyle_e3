@@ -288,4 +288,30 @@ class FrontController extends Controller
             'services' => $services,
         ]);
     }
+
+
+    public function getSitemapXml()
+    {
+        $this->extract->tuneSelection('serv_category')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('services')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('technologies')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('specialists')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('questions')->like('show', true)->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('articles')->like('show', true)->sortBy('sorter','ASC');
+
+        $services = $this->extract->getBlock('services_block');
+        $technologies = $this->extract->getBlock('technologies_block');
+        $specialists = $this->extract->getBlock('specialists_about');
+        $problems = $this->extract->getBlock('problems_block');
+        $articles = $this->extract->getBlock('articles_block');
+
+        return response()->view('front.sitemap_xml', [
+            'services' => $services,
+            'technologies' => $technologies,
+            'specialists' => $specialists,
+            'problems' => $problems,
+            'articles' => $articles,
+        ])->header('Content-Type', 'text/xml');
+    }
+
 }

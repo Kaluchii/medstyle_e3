@@ -45,6 +45,8 @@ Route::get('/privacy-policy', function(){
     return view('front.privacy-policy.privacy-policy');
 });
 
+Route::get('/sitemap.xml', 'FrontController@getSitemapXml');
+
 
 Route::get('/age', 'TestController@selectAge');
 Route::get('/test/{id}', 'TestController@getTest');

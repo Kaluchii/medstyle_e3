@@ -35,7 +35,7 @@
             <div class="main-menu__mob-button-wrap js_menu_mob_open">
                 <div class="main-menu__mob-button"></div>
             </div>
-            <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="main-menu__mob--phone binct-phone-number-2"></a>
+            <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="main-menu__mob--phone binct-phone-number-2" rel="nofollow"></a>
         </div>
     </div>
 @endsection

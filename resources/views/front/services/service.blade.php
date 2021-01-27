@@ -1,7 +1,11 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.meta', ['title' => $service->seo_title, 'description' => $service->seo_description, 'keywords' => $service->seo_keywords])
+@include('front.meta', [
+    'title' => $service->seo_title ?: $service->serv_name . ' - клиника эстетической медицины в Алматы,  цена, отзывы, скидки | MEDSTYLE',
+    'description' => $service->seo_description ?: $service->serv_name . ' - Лучшая цена, скидки от Medstyle ✅ Запись на прием к врачу онлайн ☎️: ' . $all_site->phone . ' ✅ Квалифицированные специалисты ✅ Алматы, Казахстан.',
+    'keywords' => $service->seo_keywords ?: $service->serv_name . ', услуга, врач, косметология, клиника, Medstyle, Алматы, Казахстан'
+])
     @if($service->slug == 'диспорт')
         @include('front.page_close')
     @endif
@@ -16,7 +20,7 @@
                     <img src="{{$service->bg_img->link}}?{{$service->bg_img->cache_index}}" alt="{{$service->bg_img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
-                    <h1 class="product-title product-title--desktop">{{$service->serv_name}}</h1>
+                    <p class="product-title product-title--desktop">{{$service->serv_name}}</p>
 {{--                    <div class="all-product">--}}
 {{--                        <a href="#serv-popup" class="popup-changer all_serv">Все услуги <span class="treangle">▼</span></a>--}}
 {{--                    </div>--}}
@@ -235,37 +239,6 @@
         @endif
         <div class="grid content con-4">
             <div class="col-1-2">
-                <span class="head-reiting">Пожалуйста, оцените наш материал:</span>
-                <div class="raiting-star" data-entity="{{$service->name}}" data-id="{{$service->id}}">
-                    <ul class="star-rating-default" style="width:125px">
-                        <li class="current-rating" style="width:{{$rating['percent']}}%;">{{$rating['middle']}}</li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="1" title="1/5" style="width:20%;z-index:6"
-                               rel="nofollow">1</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="2" title="2/5" style="width:40%;z-index:5"
-                               rel="nofollow">2</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="3" title="3/5" style="width:60%;z-index:4"
-                               rel="nofollow">3</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="4" title="4/5" style="width:80%;z-index:3"
-                               rel="nofollow">4</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="5" title="5/5" style="width:100%;z-index:2"
-                               rel="nofollow">5</a>
-                        </li>
-                    </ul>
-                    <span class="totalvotes" itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
-                    <meta itemprop="ratingValue" content="{{$rating['middle']}}">Текущий рейтинг — {{$rating['middle']}}
-                    <meta itemprop="bestRating" content="5">
-                    <meta itemprop="ratingCount" content="{{$rating['count']}}"> ({{$rating['count']}} человек)
-                    </span>
-                </div>
             </div>
         </div>
         </article>
@@ -274,7 +247,7 @@
             <p class="text-to-phone">Задайте вопрос или запишитесь на процедуру</p>
             <p class="phone-number">
                 <span class="consult-phone phone-link mobile-hide">{{$all_site->phone}}</span>
-                <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="consult-phone phone-link desktop-hide">{{$all_site->phone}}</a>
+                <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="consult-phone phone-link desktop-hide" rel="nofollow">{{$all_site->phone}}</a>
             </p>
         </div>
         <script type="application/ld+json">

@@ -17,6 +17,11 @@
 	<meta name="cmsmagazine" content="8595dcaa5a4b96a7f4b87b77b13368cb" />
     <link rel="shortcut icon" href="/img/fav.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="googlebot" content="NOODP" />
+    <meta name="publisher" content="Medstyle"/>
+    <meta name="author" content="Medstyle"/>
+    <meta name="copyright" content="Medstyle" />
+    <meta name="revisit-after" content="2 days" />
     <link rel="preload" href="/img/procedures-item-bg-1-h.svg" as="image">
     <link rel="preload" href="/img/procedures-item-bg-2-h.svg" as="image">
     <link rel="preload" href="/img/procedures-item-bg-3-h.svg" as="image">

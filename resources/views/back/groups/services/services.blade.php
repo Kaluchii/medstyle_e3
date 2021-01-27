@@ -50,6 +50,17 @@
                                data-block="services"
                                data-id="{{$item->id_field}}">
                     </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" class="minimal bool"
+                                   data-name="has_subservices"
+                                   data-type="bool"
+                                   data-block="services"
+                                   data-id="{{$item->id_field}}"
+                                   @if($item->has_subservices) checked @endif>
+                            Имеет вложенные услуги
+                        </label>
+                    </div>
 
                     <div class="form-group">
                         <label>Обложка (600x370 пикселей)</label>

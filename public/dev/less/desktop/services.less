@@ -125,6 +125,40 @@
   &__link{
   }
 
+  &__link-arrow{
+    position: relative;
+    padding-left: 24px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 600;
+      border-radius: 50%;
+      text-align: center;
+      background-color: #cc0066;
+      color: #fff;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      right: 6px;
+      bottom: 4px;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #ffffff;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      transform: rotate(45deg);
+    }
+  }
+
   &__stock{
     font-size: 14px;
     color: #FFFFFF;

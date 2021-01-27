@@ -1,7 +1,11 @@
 @extends('front.layout')
 @include('front.menu')
 @section('content')
-@include('front.meta', ['title' => $technology->seo_title, 'description' => $technology->seo_description, 'keywords' => $technology->seo_keywords])
+@include('front.meta', [
+    'title' => $technology->seo_title ?: $technology->tech_name . ' в клинике эстетической медицины в Алматы, цена, отзывы, скидки | MEDSTYLE',
+    'description' => $technology->seo_description ?: $technology->tech_name . ' - Лучшая цена, скидки от Medstyle ✅ Запись на прием к врачу онлайн ☎️: ' . $all_site->phone . ' ✅ Новые технологии ✅ Алматы, Казахстан.',
+    'keywords' => $technology->seo_keywords ?: $technology->tech_name . ', технология, косметология, клиника, Medstyle, Алматы, Казахстан'
+    ])
     <div class="grid margin">
         <div class="col-1-1 head">
             <div class="head-section">
@@ -10,7 +14,7 @@
                     <img src="{{$technology->img->link}}?{{$technology->img->cache_index}}" alt="{{$technology->img->alt}}" class="head-img">
                 </div>
                 <div class="information-block">
-                    <h1 class="product-title product-title--desktop">{{$technology->tech_name}}</h1>
+                    <p class="product-title product-title--desktop">{{$technology->tech_name}}</p>
                 </div>
             </div>
         </div>
@@ -74,37 +78,6 @@
         @endif
         <div class="grid content con-4">
             <div class="col-1-2">
-                <span class="head-reiting">Пожалуйста, оцените наш материал:</span>
-                <div class="raiting-star" data-entity="{{$technology->name}}" data-id="{{$technology->id}}">
-                    <ul class="star-rating-default" style="width:125px">
-                        <li class="current-rating" style="width:{{$rating['percent']}}%;">{{$rating['middle']}}</li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="1" title="1/5" style="width:20%;z-index:6"
-                               rel="nofollow">1</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="2" title="2/5" style="width:40%;z-index:5"
-                               rel="nofollow">2</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="3" title="3/5" style="width:60%;z-index:4"
-                               rel="nofollow">3</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="4" title="4/5" style="width:80%;z-index:3"
-                               rel="nofollow">4</a>
-                        </li>
-                        <li class="star">
-                            <a class="star-link" data-raiting="5" title="5/5" style="width:100%;z-index:2"
-                               rel="nofollow">5</a>
-                        </li>
-                    </ul>
-                    <span class="totalvotes" itemprop="aggregateRating" itemReviewed="Thing" itemscope="itemscope" itemtype="http://schema.org/AggregateRating">
-                    <meta itemprop="ratingValue" content="{{$rating['middle']}}">Текущий рейтинг — {{$rating['middle']}}
-                    <meta itemprop="bestRating" content="5">
-                    <meta itemprop="ratingCount" content="{{$rating['count']}}"> ({{$rating['count']}} человек)
-                    </span>
-                </div>
             </div>
         </div>
     </article>

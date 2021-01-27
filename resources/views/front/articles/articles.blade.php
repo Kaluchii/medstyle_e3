@@ -14,7 +14,7 @@
                             <img src="{{$articles->bg_img->link}}?{{$articles->bg_img->cache_index}}" alt="{{$articles->bg_img->alt}}" class="head-img">
                     </div>
                     <div class="information-block">
-                        <h1 class="product-title product-title--desktop">{{$articles->title}}</h1>
+                        <p class="product-title product-title--desktop">{{$articles->title}}</p>
                     </div>
                 </div>
             </div>

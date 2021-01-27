@@ -99,14 +99,14 @@
                 <div class="new-video__btn-wrap">
                     <a href="/video" class="new-video__btn">Смотреть все видео</a>
                 </div>
-                <a target="_blank" href="https://www.youtube.com/channel/UCE2HHrjCN11fRl1J6Fyj-Gw?sub_confirmation=1" class="new-video__subscribe new-video__subscribe--mobile">
+                <a target="_blank" href="https://www.youtube.com/channel/UCE2HHrjCN11fRl1J6Fyj-Gw?sub_confirmation=1" class="new-video__subscribe new-video__subscribe--mobile" rel="nofollow">
                     <p class="new-video__text new-video__text--mobile">Подпишитесь на наш YouTube-канал, чтобы узнавать о роликах сразу, как&nbsp;они&nbsp;вышли.</p>
                     <img src="/img/youtube_play.png" alt="YouTube-канал Medstyle" class="new-video__play-img">
                     <p class="new-video__link-wrap">
                         <span class="new-video__link pink-link">Подписаться на YouTube</span>
                     </p>
                 </a>
-                <p class="new-video__subscribe">Подпишитесь на наш <a target="_blank" href="{{$all_site->youtube}}?sub_confirmation=1" class="pink-link">YouTube-канал</a>, чтобы узнавать о роликах сразу, как они вышли.</p>
+                <p class="new-video__subscribe">Подпишитесь на наш <a target="_blank" href="{{$all_site->youtube}}?sub_confirmation=1" class="pink-link" rel="nofollow">YouTube-канал</a>, чтобы узнавать о роликах сразу, как они вышли.</p>
             </div>
         </div>
         <div class="block-shadow"><img src="/img/block_shadow.png" alt="Тень"></div>

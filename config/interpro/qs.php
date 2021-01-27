@@ -52,6 +52,7 @@ return [
                 'image' => ['bg_img','img'],
                 'string' => ['serv_name', 'discount_common', 'discount_in'],
                 'text' => ['descr_1','descr_2','descr_3','right_side_1','right_side_2'],
+                'bool' => ['has_subservices'],
                 'serv_category' => ['superior']
             ],
             'serv_pokazania' =>[

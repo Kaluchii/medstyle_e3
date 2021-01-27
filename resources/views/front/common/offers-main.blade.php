@@ -1,6 +1,6 @@
 <section class="offers">
     <div class="offers__wrap offers__wrap--main fade js_animation" data-offset="40">
-        <h2 class="offers__title offers__title--center title--l1 fade fadeInUp__child">Акции и скидки</h2>
+        <h1 class="offers__title offers__title--center title--l1 fade fadeInUp__child">Акции и скидки</h1>
         <h2 class="offers__title offers__title--mob title--l1 fade fadeInUp__child">Акции и скидки</h2>
         <ul class="offers__list">
             @php $i = 1 @endphp
