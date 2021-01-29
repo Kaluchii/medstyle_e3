@@ -123,52 +123,32 @@
   }
 
   &__link{
-    &:hover{
-      & + .strings-list{
-        &__link-arrow{
-          &::before{
-            background-color: #cc0066;
-          }
-
-          .strings-list{
-            &__link-arrow-row{
-              border-right-color: #ffffff;
-              border-top-color: #ffffff;
-
-              &::before, &::after{
-                border-right-color: #ffffff;
-                border-top-color: #ffffff;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 
   &__link-arrow{
     position: relative;
-    padding-left: 30px;
+    top: 2px;
+    padding-left: 39px;
 
     &::before{
       content: '';
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 27px;
-      height: 16px;
+      width: 30px;
+      height: 21px;
       border-radius: 3px;
-      transition: .1s;
+      background-color: #cc0066;
     }
   }
 
   &__link-arrow-row{
     position: absolute;
-    right: 12px;
-    bottom: 4px;
+    right: 13px;
+    bottom: 6px;
     width: 8px;
     height: 8px;
-    border: 2px solid #cc0066;
+    border: 2px solid #ffffff;
     border-left-color: transparent;
     border-bottom-color: transparent;
     transform: rotate(45deg);
@@ -179,7 +159,7 @@
       position: absolute;
       width: 8px;
       height: 8px;
-      border: 2px solid #cc0066;
+      border: 2px solid #ffffff;
       border-left-color: transparent;
       border-bottom-color: transparent;
       transition: .1s;
