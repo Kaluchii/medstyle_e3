@@ -23,7 +23,7 @@
                                     @foreach($item_category->services_group as $item_service)
                                         <li class="strings-list__item">
                                             <a href="@if($item_service->slug != 'dysport') /service/{{$item_service->slug}} @else /service/dport @endif" class="strings-list__link pink-link">@if($item_service->slug != 'dysport') {{$item_service->serv_name}} @else Диспорт @endif</a>
-                                            @if($item_service->has_subservices) <span class="strings-list__link-arrow"></span> @endif
+                                            @if($item_service->has_subservices) <span class="strings-list__link-arrow"><span class="strings-list__link-arrow-row"></span></span> @endif
                                             <span class="strings-list__stock">{{$item_service->discount_common}}</span>
                                         </li>
                                     @endforeach

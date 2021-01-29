@@ -5,7 +5,7 @@
     'title' => $technology->seo_title ?: $technology->tech_name . ' в клинике эстетической медицины в Алматы, цена, отзывы, скидки | MEDSTYLE',
     'description' => $technology->seo_description ?: $technology->tech_name . ' - Лучшая цена, скидки от Medstyle ✅ Запись на прием к врачу онлайн ☎️: ' . $all_site->phone . ' ✅ Новые технологии ✅ Алматы, Казахстан.',
     'keywords' => $technology->seo_keywords ?: $technology->tech_name . ', технология, косметология, клиника, Medstyle, Алматы, Казахстан'
-    ])
+])
     <div class="grid margin">
         <div class="col-1-1 head">
             <div class="head-section">
