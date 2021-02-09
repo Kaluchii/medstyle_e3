@@ -44,8 +44,8 @@
 	RewriteCond %{HTTP_HOST} ^www.medstyle.kz$ [NC]
 	RewriteRule ^(.*)$ http://medstyle.kz/$1 [L,R=301]
 
-#	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-#    RewriteRule ^index\.html$ https://medstyle.kz/[L,R=301]
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+	RewriteRule ^index\.html$ http://medstyle.kz/ [R=301,L]
 
     # Redirect Trailing Slashes...
 	RewriteCond %{REQUEST_URI} ^(.*)//(.*)$

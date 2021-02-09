@@ -5,7 +5,7 @@
 <div class="article__wrap js_article_wrap">
     <div class="grid margin article__top-wrap">
         <div class="article__main-block">
-            <h2 class="article__title title--l1 js_article_title">{{$article->articles_name}}</h2>
+            <h1 class="article__title title--l1 js_article_title">{{$article->articles_name}}</h1>
             <a href="{{$article->services_link}}" class="article__btn btn btn--big grad-btn grad-btn--article">Перейти к услуге</a>
         </div>
         <div class="col-1-1 head">
