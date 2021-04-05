@@ -43,6 +43,16 @@
                        data-id="0">
             </div>
             <div class="form-group">
+                <label>Номер телефона 2</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$block->phone_2_field}}"
+                       data-name="phone_2"
+                       data-type="string"
+                       data-block="all_site"
+                       data-id="0">
+            </div>
+            <div class="form-group">
                 <label>Номер WhatsApp</label>
                 <input class="form-control string"
                        type="text" placeholder=""

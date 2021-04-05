@@ -14,7 +14,7 @@
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" rel="nofollow" class="footer__tel-link binct-phone-number-1">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="footer__tel-link binct-phone-number-2" rel="nofollow">{{ $all_site->whatsapp }}</a>
+                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone_2)}}" class="footer__tel-link binct-phone-number-2" rel="nofollow">{{ $all_site->phone_2 }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
                     <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="footer__tel-link footer__tel-link--wp link--main" target="_blank" rel="nofollow">WhatsApp</a>
@@ -54,7 +54,7 @@
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link binct-phone-number-1">{{ $all_site->phone }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
-                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="footer__tel-link binct-phone-number-2">{{ $all_site->whatsapp }}</a>
+                    <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone_2)}}" class="footer__tel-link binct-phone-number-2">{{ $all_site->phone_2 }}</a>
                 </div>
                 <div class="footer__tel-link-wrap">
                     <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="footer__tel-link footer__tel-link--wp link--main" target="_blank">WhatsApp</a>

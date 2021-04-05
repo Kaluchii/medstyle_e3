@@ -246,8 +246,8 @@
         <div class="phone-and-consult">
             <p class="text-to-phone">Задайте вопрос или запишитесь на процедуру</p>
             <p class="phone-number">
-                <span class="consult-phone phone-link mobile-hide">{{$all_site->phone}}</span>
-                <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="consult-phone phone-link desktop-hide" rel="nofollow">{{$all_site->phone}}</a>
+                <span class="consult-phone phone-link mobile-hide">{{$all_site->phone_2}}</span>
+                <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone_2)}}" class="consult-phone phone-link desktop-hide" rel="nofollow">{{$all_site->phone_2}}</a>
             </p>
         </div>
         <script type="application/ld+json">

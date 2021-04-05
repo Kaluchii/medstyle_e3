@@ -140,6 +140,11 @@ $(document).ready(function () {
             mobMenuBg.removeClass('is-active');
             body.removeClass('body-stop');
         }
+
+        var $video = $('.js_title_video');
+        if ($(window).width() > 620 && !$video.attr('src')) {
+            $video.attr('src', $video.attr('data-src'));
+        }
     });
 
     // Скрипт для откытия попапов блока "Выберите процедуру"
