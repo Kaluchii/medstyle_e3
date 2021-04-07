@@ -15,7 +15,7 @@
                     </div>
                     <div class="procedures__item-popup-wrap js_procedure_popup">
                         <div class="procedures__item-popup">
-                            <h4 class="procedures__popup-title title--l2">{{$item->cat_name}}</h4>
+                            <p class="procedures__popup-title title--l2">{{$item->cat_name}}</p>
                             <ul class="procedures__popup-list">
                                 @foreach($item->services_group as $item)
                                     @if($item->show == true)

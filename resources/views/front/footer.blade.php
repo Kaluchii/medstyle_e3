@@ -9,7 +9,7 @@
                 </div>
             </address>
             <div class="footer__tel-wrap footer__tel-wrap--b">
-                <h3 class="footer__tel-title title--l5">Запись на процедуры</h3>
+                <p class="footer__tel-title title--l5">Запись на процедуры</p>
                 <div class="footer__tel-link-wrap">
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" rel="nofollow" class="footer__tel-link binct-phone-number-1">{{ $all_site->phone }}</a>
                 </div>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="footer__social footer__social--b">
-                <h3 class="footer__social-title title--l5">Мы в соцсетях</h3>
+                <p class="footer__social-title title--l5">Мы в соцсетях</p>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a href="{{ $all_site->inst }}" class="footer__social-link footer__social-link--inst" target="_blank"></a>
@@ -49,7 +49,7 @@
         </div>
         <div class="footer__bottom-block">
             <div class="footer__tel-wrap footer__tel-wrap--bottom">
-                <h3 class="footer__tel-title title--l5">Запись на процедуры</h3>
+                <p class="footer__tel-title title--l5">Запись на процедуры</p>
                 <div class="footer__tel-link-wrap">
                     <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->phone)}}" class="footer__tel-link binct-phone-number-1">{{ $all_site->phone }}</a>
                 </div>
@@ -95,7 +95,7 @@
                 </li>
             </ul>
             <div class="footer__social footer__social--n">
-                <h3 class="footer__social-title title--l5">Мы в соцсетях</h3>
+                <p class="footer__social-title title--l5">Мы в соцсетях</p>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a rel="nofollow" href="{{ $all_site->inst }}" class="footer__social-link footer__social-link--inst" target="_blank"></a>

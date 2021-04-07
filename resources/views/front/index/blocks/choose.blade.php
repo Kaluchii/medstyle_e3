@@ -6,7 +6,7 @@
                 <img src="/img/choose-img.jpg" alt="" class="choose__img">
             </div>
             <div class="choose__info-wrap">
-                <h2 class="choose__title title--l3 fade fadeInUp__child fade__delay-2">Как выбрать процедуру?</h2>
+                <p class="choose__title title--l3 fade fadeInUp__child fade__delay-2">Как выбрать процедуру?</p>
                 <p class="choose__text title--l4 fade fadeInUp__child fade__delay-3">
                     Пройдите простой тест,
                     разработанный нашими

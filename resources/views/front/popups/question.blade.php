@@ -3,7 +3,7 @@
     <div class="popup_table">
         <div class="popup_cell">
             <div id="quest" class="white-popup mfp-with-anim mfp-hide" data-popup="send">
-                <h3 class="popup_title">Задать вопрос</h3>
+                <p class="popup_title">Задать вопрос</p>
                 <div class="row">
                     <p class="row-name">Имя</p>
                     <input class="input popup_field" type="text" data-field-type="string" data-field-name="user_name">
