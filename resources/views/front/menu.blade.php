@@ -35,7 +35,10 @@
             <div class="main-menu__mob-button-wrap js_menu_mob_open">
                 <div class="main-menu__mob-button"></div>
             </div>
-            <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="main-menu__mob--phone binct-phone-number-3" rel="nofollow"></a>
+            <div class="main-menu__mob-links-wrap">
+                <a href="https://api.whatsapp.com/send?phone={{ str_replace(array(' ', '(' , ')', '-', '+'), '', $all_site->whatsapp) }}" class="main-menu__mob-link main-menu__mob-link--wp" rel="nofollow" target="_blank"></a>
+                <a href="tel:{{str_replace([' ', '(', ')', '-'], '', $all_site->whatsapp)}}" class="main-menu__mob-link main-menu__mob-link--phone binct-phone-number-3" rel="nofollow"></a>
+            </div>
         </div>
     </div>
 @endsection
