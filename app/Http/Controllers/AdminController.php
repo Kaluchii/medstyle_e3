@@ -44,8 +44,10 @@ class AdminController extends Controller
 
     public function getMeta(){
         $block = $this->extract->getBlock('slider');
+        $title_block = $this->extract->getBlock('title_block');
         return view('back.blocks.meta', [
-            'block' => $block
+            'block' => $block,
+            'title_block' => $title_block
         ]);
     }
 

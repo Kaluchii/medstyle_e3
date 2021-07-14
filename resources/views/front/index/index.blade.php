@@ -9,6 +9,7 @@
     @include('front.index.blocks.features')
     @include('front.common.offers')
     @include('front.index.blocks.new-video')
+    @include('front.common.seo-text')
 
     @include('front.popups.procedures_popups')
 

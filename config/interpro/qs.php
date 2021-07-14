@@ -17,7 +17,7 @@ return [
     ],
 
     'title_block' => [
-        'text' => ['title'],
+        'text' => ['title', 'seo_text'],
         'image' => ['img', 'mobile_img'],
         'file'  => ['video']
     ],
